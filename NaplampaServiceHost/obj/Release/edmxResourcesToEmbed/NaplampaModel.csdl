@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NaplampaModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="NaplampaEntities">
+    <EntitySet Name="Address" EntityType="NaplampaModel.Address" />
+    <EntitySet Name="Country" EntityType="NaplampaModel.Country" />
+    <EntitySet Name="Currency" EntityType="NaplampaModel.Currency" />
+    <EntitySet Name="Discount" EntityType="NaplampaModel.Discount" />
+    <EntitySet Name="Invoice" EntityType="NaplampaModel.Invoice" />
+    <EntitySet Name="InvoiceLine" EntityType="NaplampaModel.InvoiceLine" />
+    <EntitySet Name="Log" EntityType="NaplampaModel.Log" />
+    <EntitySet Name="Order" EntityType="NaplampaModel.Order" />
+    <EntitySet Name="OrderProductXRef" EntityType="NaplampaModel.OrderProductXRef" />
+    <EntitySet Name="Partner" EntityType="NaplampaModel.Partner" />
+    <EntitySet Name="Person" EntityType="NaplampaModel.Person" />
+    <EntitySet Name="Product" EntityType="NaplampaModel.Product" />
+    <EntitySet Name="StockItem" EntityType="NaplampaModel.StockItem" />
+    <EntitySet Name="Survey" EntityType="NaplampaModel.Survey" />
+    <EntitySet Name="SurveyResult" EntityType="NaplampaModel.SurveyResult" />
+    <EntitySet Name="Transaction" EntityType="NaplampaModel.Transaction" />
+    <AssociationSet Name="FK_Address_Country" Association="NaplampaModel.FK_Address_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Address_Partner" Association="NaplampaModel.FK_Address_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_AddressBuyer" Association="NaplampaModel.FK_Invoice_AddressBuyer">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_AddressIssuer" Association="NaplampaModel.FK_Invoice_AddressIssuer">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Address" Association="NaplampaModel.FK_Order_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partner_AddressBilling" Association="NaplampaModel.FK_Partner_AddressBilling">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Partner" EntitySet="Partner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partner_AddressDelivery" Association="NaplampaModel.FK_Partner_AddressDelivery">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="Partner" EntitySet="Partner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockItem_Address" Association="NaplampaModel.FK_StockItem_Address">
+      <End Role="Address" EntitySet="Address" />
+      <End Role="StockItem" EntitySet="StockItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Country_Currency" Association="NaplampaModel.FK_Country_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Country" EntitySet="Country" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Currency" Association="NaplampaModel.FK_Invoice_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Currency" Association="NaplampaModel.FK_Order_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Currency" Association="NaplampaModel.FK_Product_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_Currency" Association="NaplampaModel.FK_Transaction_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Transaction" EntitySet="Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discount_Product" Association="NaplampaModel.FK_Discount_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Discount" EntitySet="Discount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Order" Association="NaplampaModel.FK_Invoice_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_PartnerBuyer" Association="NaplampaModel.FK_Invoice_PartnerBuyer">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_PartnerIssuer" Association="NaplampaModel.FK_Invoice_PartnerIssuer">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLine_Invoice" Association="NaplampaModel.FK_InvoiceLine_Invoice">
+      <End Role="Invoice" EntitySet="Invoice" />
+      <End Role="InvoiceLine" EntitySet="InvoiceLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLine_Product" Association="NaplampaModel.FK_InvoiceLine_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="InvoiceLine" EntitySet="InvoiceLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Log_Order" Association="NaplampaModel.FK_Log_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Log" EntitySet="Log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Log_Partner" Association="NaplampaModel.FK_Log_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Log" EntitySet="Log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Partner" Association="NaplampaModel.FK_Order_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_PersonSentBy" Association="NaplampaModel.FK_Order_PersonSentBy">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Survey" Association="NaplampaModel.FK_Order_Survey">
+      <End Role="Survey" EntitySet="Survey" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderProductXRef_Order" Association="NaplampaModel.FK_OrderProductXRef_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderProductXRef" EntitySet="OrderProductXRef" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResult_Order" Association="NaplampaModel.FK_SurveyResult_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="SurveyResult" EntitySet="SurveyResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_Order" Association="NaplampaModel.FK_Transaction_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Transaction" EntitySet="Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderProductXRef_Product" Association="NaplampaModel.FK_OrderProductXRef_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderProductXRef" EntitySet="OrderProductXRef" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partner_Person" Association="NaplampaModel.FK_Partner_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Partner" EntitySet="Partner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person_Partner" Association="NaplampaModel.FK_Person_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockItem_Partner" Association="NaplampaModel.FK_StockItem_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="StockItem" EntitySet="StockItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_PartnerReceiver" Association="NaplampaModel.FK_Transaction_PartnerReceiver">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Transaction" EntitySet="Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_PartnerSender" Association="NaplampaModel.FK_Transaction_PartnerSender">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Transaction" EntitySet="Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockItem_Product" Association="NaplampaModel.FK_StockItem_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="StockItem" EntitySet="StockItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SurveyResult_Survey" Association="NaplampaModel.FK_SurveyResult_Survey">
+      <End Role="Survey" EntitySet="Survey" />
+      <End Role="SurveyResult" EntitySet="SurveyResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partner_Partner" Association="NaplampaModel.FK_Partner_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="Partner1" EntitySet="Partner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discount_Country" Association="NaplampaModel.FK_Discount_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Discount" EntitySet="Discount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Country_Person" Association="NaplampaModel.FK_Country_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Country" EntitySet="Country" />
+    </AssociationSet>
+    <EntitySet Name="PartnerRight" EntityType="NaplampaModel.PartnerRight" />
+    <AssociationSet Name="FK_PartnerRight_Order" Association="NaplampaModel.FK_PartnerRight_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="PartnerRight" EntitySet="PartnerRight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnerRight_Partner" Association="NaplampaModel.FK_PartnerRight_Partner">
+      <End Role="Partner" EntitySet="Partner" />
+      <End Role="PartnerRight" EntitySet="PartnerRight" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Name="AddressId" Type="Int32" Nullable="false" />
+    <Property Name="Town" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="AddressLine" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Deleted" Type="DateTime" />
+    <NavigationProperty Name="Country" Relationship="NaplampaModel.FK_Address_Country" FromRole="Address" ToRole="Country" />
+    <NavigationProperty Name="Partner" Relationship="NaplampaModel.FK_Address_Partner" FromRole="Address" ToRole="Partner" />
+    <NavigationProperty Name="BuyerBillingInvoices" Relationship="NaplampaModel.FK_Invoice_AddressBuyer" FromRole="Address" ToRole="Invoice" />
+    <NavigationProperty Name="IssuerBillingInvoices" Relationship="NaplampaModel.FK_Invoice_AddressIssuer" FromRole="Address" ToRole="Invoice" />
+    <NavigationProperty Name="Orders" Relationship="NaplampaModel.FK_Order_Address" FromRole="Address" ToRole="Order" />
+    <NavigationProperty Name="BillingPartners" Relationship="NaplampaModel.FK_Partner_AddressBilling" FromRole="Address" ToRole="Partner" />
+    <NavigationProperty Name="DeliveryPartners" Relationship="NaplampaModel.FK_Partner_AddressDelivery" FromRole="Address" ToRole="Partner" />
+    <NavigationProperty Name="StockItems" Relationship="NaplampaModel.FK_StockItem_Address" FromRole="Address" ToRole="StockItem" />
+    <Property Name="Name" Type="String" Nullable="true" />
+    <Property Name="Province" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="ISO" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCodeValidatorRegularExpression" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Address" Relationship="NaplampaModel.FK_Address_Country" FromRole="Country" ToRole="Address" />
+    <NavigationProperty Name="Currency" Relationship="NaplampaModel.FK_Country_Currency" FromRole="Country" ToRole="Currency" />
+    <Property Name="DefaultCultureName" Type="String" Nullable="false" />
+    <NavigationProperty Name="Discount" Relationship="NaplampaModel.FK_Discount_Country" FromRole="Country" ToRole="Discount" />
+    <Property Name="AdditionalCultureNames" Type="String" Nullable="false" />
+    <Property Name="VATMultiplier" Type="Double" Nullable="false" />
+    <Property Name="PostalCodeSample" Type="String" Nullable="true" />
+    <NavigationProperty Name="Representative" Relationship="NaplampaModel.FK_Country_Person" FromRole="Country" ToRole="Person" />
+    <Property Type="String" Name="AvailablePaymentMethods" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyId" />
+    </Key>
+    <Property Name="CurrencyId" Type="Int32" Nullable="false" />
+    <Property Name="ISO" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Prefix" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Postfix" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="DefaultDecimalPlaces" Type="Int32" Nullable="false" />
+    <Property Name="ConversionToEur" Type="Double" Nullable="false" />
+    <Property Name="ConversionRatioDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="DefaultInCountries" Relationship="NaplampaModel.FK_Country_Currency" FromRole="Currency" ToRole="Country" />
+    <NavigationProperty Name="Invoices" Relationship="NaplampaModel.FK_Invoice_Currency" FromRole="Currency" ToRole="Invoice" />
+    <NavigationProperty Name="Orders" Relationship="NaplampaModel.FK_Order_Currency" FromRole="Currency" ToRole="Order" />
+    <NavigationProperty Name="Products" Relationship="NaplampaModel.FK_Product_Currency" FromRole="Currency" ToRole="Product" />
+    <NavigationProperty Name="Transactions" Relationship="NaplampaModel.FK_Transaction_Currency" FromRole="Currency" ToRole="Transaction" />
+  </EntityType>
+  <EntityType Name="Discount">
+    <Key>
+      <PropertyRef Name="DiscountId" />
+    </Key>
+    <Property Name="DiscountId" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="MinimumPartnerRank" Type="Int16" />
+    <Property Name="Multiplier" Type="Double" Nullable="false" />
+    <Property Name="ValidFrom" Type="DateTime" Nullable="false" />
+    <Property Name="ValidUntil" Type="DateTime" />
+    <NavigationProperty Name="Product" Relationship="NaplampaModel.FK_Discount_Product" FromRole="Discount" ToRole="Product" />
+    <NavigationProperty Name="Country" Relationship="NaplampaModel.FK_Discount_Country" FromRole="Discount" ToRole="Country" />
+    <Property Name="MinimumQuantity" Type="Int32" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Name="InvoiceId" Type="Int32" Nullable="false" />
+    <Property Name="InvoiceNo" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="DateOfDelivery" Type="DateTime" Nullable="false" />
+    <Property Name="DateOfInvoice" Type="DateTime" Nullable="false" />
+    <Property Name="DeadlineOfPayment" Type="DateTime" Nullable="false" />
+    <Property Name="Observation" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Total" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="VAT" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Subtotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="BuyerBillingAddress" Relationship="NaplampaModel.FK_Invoice_AddressBuyer" FromRole="Invoice" ToRole="Address" />
+    <NavigationProperty Name="IssuerBillingAddress" Relationship="NaplampaModel.FK_Invoice_AddressIssuer" FromRole="Invoice" ToRole="Address" />
+    <NavigationProperty Name="Currency" Relationship="NaplampaModel.FK_Invoice_Currency" FromRole="Invoice" ToRole="Currency" />
+    <NavigationProperty Name="Order" Relationship="NaplampaModel.FK_Invoice_Order" FromRole="Invoice" ToRole="Order" />
+    <NavigationProperty Name="BuyerPartner" Relationship="NaplampaModel.FK_Invoice_PartnerBuyer" FromRole="Invoice" ToRole="Partner" />
+    <NavigationProperty Name="IssuerPartner" Relationship="NaplampaModel.FK_Invoice_PartnerIssuer" FromRole="Invoice" ToRole="Partner" />
+    <NavigationProperty Name="InvoiceLines" Relationship="NaplampaModel.FK_InvoiceLine_Invoice" FromRole="Invoice" ToRole="InvoiceLine" />
+    <Property Name="PassCode" Type="String" Nullable="true" />
+    <Property Name="Flags" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InvoiceLine">
+    <Key>
+      <PropertyRef Name="InvoiceLineId" />
+    </Key>
+    <Property Name="InvoiceLineId" Type="Int32" Nullable="false" />
+    <Property Name="LineNumber" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="Invoice" Relationship="NaplampaModel.FK_InvoiceLine_Invoice" FromRole="InvoiceLine" ToRole="Invoice" />
+    <NavigationProperty Name="Product" Relationship="NaplampaModel.FK_InvoiceLine_Product" FromRole="InvoiceLine" ToRole="Product" />
+    <Property Name="VAT" Type="Decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int16" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Order" Relationship="NaplampaModel.FK_Log_Order" FromRole="Log" ToRole="Order" />
+    <NavigationProperty Name="Partner" Relationship="NaplampaModel.FK_Log_Partner" FromRole="Log" ToRole="Partner" />
+    <Property Name="LoggedInPersonId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <Property Name="PaymentMethod" Type="Int16" Nullable="false" />
+    <Property Name="Referer" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EstimatedPackageWeight" Type="Int32" Nullable="false" />
+    <Property Name="TransactionCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PackageCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SendingCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SentOn" Type="DateTime" />
+    <Property Name="TrackingNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DeliveredOn" Type="DateTime" />
+    <Property Name="SurveySentOn" Type="DateTime" />
+    <Property Name="SurveyCompletedOn" Type="DateTime" />
+    <Property Name="DiscountCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="CommentBySeller" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CommentByBuyer" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="DeliveryAddress" Relationship="NaplampaModel.FK_Order_Address" FromRole="Order" ToRole="Address" />
+    <NavigationProperty Name="Currency" Relationship="NaplampaModel.FK_Order_Currency" FromRole="Order" ToRole="Currency" />
+    <NavigationProperty Name="Invoices" Relationship="NaplampaModel.FK_Invoice_Order" FromRole="Order" ToRole="Invoice" />
+    <NavigationProperty Name="Logs" Relationship="NaplampaModel.FK_Log_Order" FromRole="Order" ToRole="Log" />
+    <NavigationProperty Name="Partner" Relationship="NaplampaModel.FK_Order_Partner" FromRole="Order" ToRole="Partner" />
+    <NavigationProperty Name="SentBy" Relationship="NaplampaModel.FK_Order_PersonSentBy" FromRole="Order" ToRole="Person" />
+    <NavigationProperty Name="Survey" Relationship="NaplampaModel.FK_Order_Survey" FromRole="Order" ToRole="Survey" />
+    <NavigationProperty Name="OrderProductXRefs" Relationship="NaplampaModel.FK_OrderProductXRef_Order" FromRole="Order" ToRole="OrderProductXRef" />
+    <NavigationProperty Name="SurveyResults" Relationship="NaplampaModel.FK_SurveyResult_Order" FromRole="Order" ToRole="SurveyResult" />
+    <NavigationProperty Name="Transactions" Relationship="NaplampaModel.FK_Transaction_Order" FromRole="Order" ToRole="Transaction" />
+    <Property Name="PassCode" Type="String" Nullable="true" />
+    <Property Name="ProductsCost" Type="Decimal" Nullable="false" />
+    <Property Name="InsuranceCost" Type="Decimal" Nullable="false" />
+    <Property Name="OrderTotal" Type="Decimal" Nullable="false" />
+    <Property Name="VATTotal" Type="Decimal" Nullable="false" />
+    <Property Name="PayPalToken" Type="String" Nullable="true" />
+    <Property Name="QuantityDiscount" Type="Decimal" Nullable="false" />
+    <Property Name="Refund" Type="Decimal" Nullable="true" />
+    <Property Name="CouponDiscount" Type="Decimal" Nullable="false" />
+    <NavigationProperty Name="PartnerRight" Relationship="NaplampaModel.FK_PartnerRight_Order" FromRole="Order" ToRole="PartnerRight" />
+  </EntityType>
+  <EntityType Name="OrderProductXRef">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="NaplampaModel.FK_OrderProductXRef_Order" FromRole="OrderProductXRef" ToRole="Order" />
+    <NavigationProperty Name="Product" Relationship="NaplampaModel.FK_OrderProductXRef_Product" FromRole="OrderProductXRef" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Partner">
+    <Key>
+      <PropertyRef Name="PartnerId" />
+    </Key>
+    <Property Name="PartnerId" Type="Int32" Nullable="false" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Rank" Type="Int32" Nullable="false" />
+    <Property Name="RefererCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SWIFT" Type="String" MaxLength="11" Unicode="true" FixedLength="false" />
+    <Property Name="IBAN" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Addresses" Relationship="NaplampaModel.FK_Address_Partner" FromRole="Partner" ToRole="Address" />
+    <NavigationProperty Name="BillingAddress" Relationship="NaplampaModel.FK_Partner_AddressBilling" FromRole="Partner" ToRole="Address" />
+    <NavigationProperty Name="DeliveryAddress" Relationship="NaplampaModel.FK_Partner_AddressDelivery" FromRole="Partner" ToRole="Address" />
+    <NavigationProperty Name="BuyerInvoices" Relationship="NaplampaModel.FK_Invoice_PartnerBuyer" FromRole="Partner" ToRole="Invoice" />
+    <NavigationProperty Name="IssuerInvoices" Relationship="NaplampaModel.FK_Invoice_PartnerIssuer" FromRole="Partner" ToRole="Invoice" />
+    <NavigationProperty Name="Logs" Relationship="NaplampaModel.FK_Log_Partner" FromRole="Partner" ToRole="Log" />
+    <NavigationProperty Name="Orders" Relationship="NaplampaModel.FK_Order_Partner" FromRole="Partner" ToRole="Order" />
+    <NavigationProperty Name="ContactPerson" Relationship="NaplampaModel.FK_Partner_Person" FromRole="Partner" ToRole="Person" />
+    <NavigationProperty Name="Persons" Relationship="NaplampaModel.FK_Person_Partner" FromRole="Partner" ToRole="Person" />
+    <NavigationProperty Name="StockItems" Relationship="NaplampaModel.FK_StockItem_Partner" FromRole="Partner" ToRole="StockItem" />
+    <NavigationProperty Name="ReceiverTransactions" Relationship="NaplampaModel.FK_Transaction_PartnerReceiver" FromRole="Partner" ToRole="Transaction" />
+    <NavigationProperty Name="SenderTransactions" Relationship="NaplampaModel.FK_Transaction_PartnerSender" FromRole="Partner" ToRole="Transaction" />
+    <NavigationProperty Name="ChildPartners" Relationship="NaplampaModel.FK_Partner_Partner" FromRole="Partner" ToRole="Partner1" />
+    <NavigationProperty Name="ParentPartner" Relationship="NaplampaModel.FK_Partner_Partner" FromRole="Partner1" ToRole="Partner" />
+    <Property Name="Fax" Type="String" Nullable="true" />
+    <NavigationProperty Name="PartnerRight" Relationship="NaplampaModel.FK_PartnerRight_Partner" FromRole="Partner" ToRole="PartnerRight" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailConfirmationCode" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="EmailConfirmed" Type="DateTime" />
+    <Property Name="Newsletter" Type="Boolean" Nullable="false" />
+    <Property Name="OpenIdUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Orders" Relationship="NaplampaModel.FK_Order_PersonSentBy" FromRole="Person" ToRole="Order" />
+    <NavigationProperty Name="ContactPartners" Relationship="NaplampaModel.FK_Partner_Person" FromRole="Person" ToRole="Partner" />
+    <NavigationProperty Name="Base" Relationship="NaplampaModel.FK_Person_Partner" FromRole="Person" ToRole="Partner" />
+    <Property Name="PasswordExpiresOn" Type="DateTime" Nullable="true" />
+    <Property Name="CultureName" Type="String" Nullable="false" />
+    <NavigationProperty Name="Country" Relationship="NaplampaModel.FK_Country_Person" FromRole="Person" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="ListedFrom" Type="DateTime" Nullable="false" />
+    <Property Name="ListedUntil" Type="DateTime" />
+    <Property Name="MSRP" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ManufacturingCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Weight" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Currency" Relationship="NaplampaModel.FK_Product_Currency" FromRole="Product" ToRole="Currency" />
+    <NavigationProperty Name="Discounts" Relationship="NaplampaModel.FK_Discount_Product" FromRole="Product" ToRole="Discount" />
+    <NavigationProperty Name="InvoiceLines" Relationship="NaplampaModel.FK_InvoiceLine_Product" FromRole="Product" ToRole="InvoiceLine" />
+    <NavigationProperty Name="OrderProductXRefs" Relationship="NaplampaModel.FK_OrderProductXRef_Product" FromRole="Product" ToRole="OrderProductXRef" />
+    <NavigationProperty Name="StockItems" Relationship="NaplampaModel.FK_StockItem_Product" FromRole="Product" ToRole="StockItem" />
+    <Property Name="ImageURI" Type="String" Nullable="false" />
+    <Property Name="ThumbnailURI" Type="String" Nullable="false" />
+    <Property Name="BoxWidth" Type="Int32" Nullable="true" />
+    <Property Name="BoxHeight" Type="Int32" Nullable="true" />
+    <Property Name="BoxLength" Type="Int32" Nullable="true" />
+  </EntityType>
+  <EntityType Name="StockItem">
+    <Key>
+      <PropertyRef Name="StockItemId" />
+    </Key>
+    <Property Name="StockItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="BookingTime" Type="DateTime" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Address" Relationship="NaplampaModel.FK_StockItem_Address" FromRole="StockItem" ToRole="Address" />
+    <NavigationProperty Name="Owner" Relationship="NaplampaModel.FK_StockItem_Partner" FromRole="StockItem" ToRole="Partner" />
+    <NavigationProperty Name="Product" Relationship="NaplampaModel.FK_StockItem_Product" FromRole="StockItem" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Survey">
+    <Key>
+      <PropertyRef Name="SurveyId" />
+    </Key>
+    <Property Name="SurveyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="NaplampaModel.FK_Order_Survey" FromRole="Survey" ToRole="Order" />
+    <NavigationProperty Name="SurveyResults" Relationship="NaplampaModel.FK_SurveyResult_Survey" FromRole="Survey" ToRole="SurveyResult" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Expires" Type="DateTime" Nullable="true" />
+    <Property Name="Name" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SurveyResult">
+    <Key>
+      <PropertyRef Name="SurveyResultId" />
+    </Key>
+    <Property Name="SurveyResultId" Type="Int32" Nullable="false" />
+    <Property Name="ResultValue1" Type="Int32" />
+    <Property Name="ResultValue2" Type="Int32" />
+    <Property Name="ResultValue3" Type="Int32" />
+    <Property Name="ResultValue4" Type="Int32" />
+    <Property Name="ResultValue5" Type="Int32" />
+    <Property Name="ResultValue6" Type="Int32" />
+    <NavigationProperty Name="Order" Relationship="NaplampaModel.FK_SurveyResult_Order" FromRole="SurveyResult" ToRole="Order" />
+    <NavigationProperty Name="Survey" Relationship="NaplampaModel.FK_SurveyResult_Survey" FromRole="SurveyResult" ToRole="Survey" />
+    <Property Name="SurveyQuestions" Type="String" Nullable="false" />
+    <Property Name="CultureName" Type="String" Nullable="false" />
+    <Property Name="ResultValue7" Type="Int32" Nullable="true" />
+    <Property Name="ResultText1" Type="String" Nullable="true" />
+    <Property Name="ResultText2" Type="String" Nullable="true" />
+    <Property Name="ResultText3" Type="String" Nullable="true" />
+    <Property Name="ResultText4" Type="String" Nullable="true" />
+    <Property Name="ResultText5" Type="String" Nullable="true" />
+    <Property Name="ResultText6" Type="String" Nullable="true" />
+    <Property Name="ResultText7" Type="String" Nullable="true" />
+    <Property Name="ResultFlags1" Type="Int32" Nullable="true" />
+    <Property Name="ResultFlags2" Type="Int32" Nullable="true" />
+    <Property Name="ResultFlags3" Type="Int32" Nullable="true" />
+    <Property Name="ResultFlags4" Type="Int32" Nullable="true" />
+    <Property Name="ResultFlags5" Type="Int32" Nullable="true" />
+    <Property Name="ResultFlags6" Type="Int32" Nullable="true" />
+    <Property Name="ResultFlags7" Type="Int32" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransactionId" />
+    </Key>
+    <Property Name="TransactionId" Type="Int32" Nullable="false" />
+    <Property Name="Started" Type="DateTime" Nullable="false" />
+    <Property Name="Ended" Type="DateTime" />
+    <Property Name="EndedSuccessfully" Type="Boolean" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TransactionReference" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Currency" Relationship="NaplampaModel.FK_Transaction_Currency" FromRole="Transaction" ToRole="Currency" />
+    <NavigationProperty Name="Order" Relationship="NaplampaModel.FK_Transaction_Order" FromRole="Transaction" ToRole="Order" />
+    <NavigationProperty Name="ReceiverPartner" Relationship="NaplampaModel.FK_Transaction_PartnerReceiver" FromRole="Transaction" ToRole="Partner" />
+    <NavigationProperty Name="SenderPartner" Relationship="NaplampaModel.FK_Transaction_PartnerSender" FromRole="Transaction" ToRole="Partner" />
+  </EntityType>
+  <Association Name="FK_Address_Country">
+    <End Role="Country" Type="NaplampaModel.Country" Multiplicity="1" />
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Address_Partner">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_AddressBuyer">
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="0..1" />
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_AddressIssuer">
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="0..1" />
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_Address">
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="1" />
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Partner_AddressBilling">
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="0..1" />
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Partner_AddressDelivery">
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="0..1" />
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockItem_Address">
+    <End Role="Address" Type="NaplampaModel.Address" Multiplicity="1" />
+    <End Role="StockItem" Type="NaplampaModel.StockItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Country_Currency">
+    <End Role="Currency" Type="NaplampaModel.Currency" Multiplicity="1" />
+    <End Role="Country" Type="NaplampaModel.Country" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_Currency">
+    <End Role="Currency" Type="NaplampaModel.Currency" Multiplicity="1" />
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_Currency">
+    <End Role="Currency" Type="NaplampaModel.Currency" Multiplicity="1" />
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Product_Currency">
+    <End Role="Currency" Type="NaplampaModel.Currency" Multiplicity="1" />
+    <End Role="Product" Type="NaplampaModel.Product" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Transaction_Currency">
+    <End Role="Currency" Type="NaplampaModel.Currency" Multiplicity="1" />
+    <End Role="Transaction" Type="NaplampaModel.Transaction" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Discount_Product">
+    <End Role="Product" Type="NaplampaModel.Product" Multiplicity="0..1" />
+    <End Role="Discount" Type="NaplampaModel.Discount" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_Order">
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="1" />
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_PartnerBuyer">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_PartnerIssuer">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_InvoiceLine_Invoice">
+    <End Role="Invoice" Type="NaplampaModel.Invoice" Multiplicity="1" />
+    <End Role="InvoiceLine" Type="NaplampaModel.InvoiceLine" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_InvoiceLine_Product">
+    <End Role="Product" Type="NaplampaModel.Product" Multiplicity="0..1" />
+    <End Role="InvoiceLine" Type="NaplampaModel.InvoiceLine" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Log_Order">
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="0..1" />
+    <End Role="Log" Type="NaplampaModel.Log" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Log_Partner">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="0..1" />
+    <End Role="Log" Type="NaplampaModel.Log" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_Partner">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_PersonSentBy">
+    <End Role="Person" Type="NaplampaModel.Person" Multiplicity="0..1" />
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Order_Survey">
+    <End Role="Survey" Type="NaplampaModel.Survey" Multiplicity="0..1" />
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_OrderProductXRef_Order">
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="1" />
+    <End Role="OrderProductXRef" Type="NaplampaModel.OrderProductXRef" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderProductXRef">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SurveyResult_Order">
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="1" />
+    <End Role="SurveyResult" Type="NaplampaModel.SurveyResult" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Transaction_Order">
+    <End Role="Order" Type="NaplampaModel.Order" Multiplicity="0..1" />
+    <End Role="Transaction" Type="NaplampaModel.Transaction" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_OrderProductXRef_Product">
+    <End Role="Product" Type="NaplampaModel.Product" Multiplicity="1" />
+    <End Role="OrderProductXRef" Type="NaplampaModel.OrderProductXRef" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="OrderProductXRef">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Partner_Person">
+    <End Role="Person" Type="NaplampaModel.Person" Multiplicity="0..1" />
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Person_Partner">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Person" Type="NaplampaModel.Person" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockItem_Partner">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="StockItem" Type="NaplampaModel.StockItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Transaction_PartnerReceiver">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Transaction" Type="NaplampaModel.Transaction" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Transaction_PartnerSender">
+    <End Role="Partner" Type="NaplampaModel.Partner" Multiplicity="1" />
+    <End Role="Transaction" Type="NaplampaModel.Transaction" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockItem_Product">
+    <End Role="Product" Type="NaplampaModel.Product" Multiplicity="1" />
+    <End Role="StockItem" Type="NaplampaModel.StockItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_SurveyResult_Survey">
+    <End Role="Survey" Type="NaplampaModel.Survey" Multiplicity="1" />
+    <End Role="SurveyResult" Type="NaplampaModel.SurveyResult" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Partner_Partner">
+    <End Type="NaplampaModel.Partner" Role="Partner" Multiplicity="0..1" />
+    <End Type="NaplampaModel.Partner" Role="Partner1" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Discount_Country">
+    <End Type="NaplampaModel.Country" Role="Country" Multiplicity="0..1" />
+    <End Type="NaplampaModel.Discount" Role="Discount" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Country_Person">
+    <End Type="NaplampaModel.Person" Role="Person" Multiplicity="1" />
+    <End Type="NaplampaModel.Country" Role="Country" Multiplicity="*" />
+  </Association>
+  <EntityType Name="PartnerRight">
+    <Key>
+      <PropertyRef Name="PartnerRightId" />
+    </Key>
+    <Property Name="PartnerRightId" Type="Int32" Nullable="false" />
+    <Property Name="RightType" Type="Int32" Nullable="false" />
+    <Property Name="RightParameter" Type="String" Nullable="true" />
+    <NavigationProperty Name="Order" Relationship="NaplampaModel.FK_PartnerRight_Order" FromRole="PartnerRight" ToRole="Order" />
+    <NavigationProperty Name="Partner" Relationship="NaplampaModel.FK_PartnerRight_Partner" FromRole="PartnerRight" ToRole="Partner" />
+  </EntityType>
+  <Association Name="FK_PartnerRight_Order">
+    <End Type="NaplampaModel.Order" Role="Order" Multiplicity="0..1" />
+    <End Type="NaplampaModel.PartnerRight" Role="PartnerRight" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_PartnerRight_Partner">
+    <End Type="NaplampaModel.Partner" Role="Partner" Multiplicity="1" />
+    <End Type="NaplampaModel.PartnerRight" Role="PartnerRight" Multiplicity="*" />
+  </Association>
+</Schema>

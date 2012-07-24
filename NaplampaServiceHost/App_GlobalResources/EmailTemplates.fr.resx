@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CONFIRMEMAIL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Veuillez confirmer votre adresse e-mail dans notre système pour rendre notre communication plus sécurisée et afin que vous puissiez accéder aux fonctionnalités avancées de notre site. Cliquez sur ce lien. &lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://www.magmalight.com/Admin/ConfirmEmail.aspx?Email={1}&amp;ConfirmationCode={2}"&gt;Confirmation de l’adresse e-mail ICI&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez modifier vos coordonnées &lt;a href="http://www.naplampa.hu/Admin/UserPreferences.aspx?PersonId={3}&amp;ConfirmationCode={2}"&gt;ICI&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="CONFIRMEMAIL_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil – Confirmation de l’adresse e-mail</value>
+  </data>
+  <data name="DEFAULT_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil – Message généré automatiquement</value>
+  </data>
+  <data name="ERRORREPORT_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Monsieur l'Administrateur du site,&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Le système a rencontré un problème.
+&lt;br /&gt;&lt;br /&gt;
+{0}&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+{1}&lt;br /&gt;&lt;br /&gt;
+{2}&lt;br /&gt;&lt;br /&gt;
+{3}&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ERRORREPORT_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Erreur</value>
+  </data>
+  <data name="ORDERNOTPAID_BANKTRANSFER_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Lors de votre commande, vous avez opté pour un paiement par virement bancaire. Néanmoins, nous n’avons reçu ni la confirmation ni le virement. Veuillez vérifier si la transaction a été effectuée avec succès. Si elle ne l’était pas, veuillez réessayer avec les données suivantes:&lt;br /&gt;
+Montant: {2}&lt;br /&gt;
+BIC/SWIFT Code: CIBH HUHB HU88&lt;br /&gt;
+IBAN: HU88 1070 0103 5256 7595 5110 0005.&lt;br /&gt;
+Nom du bénéficiaire : András Fuchs&lt;br /&gt;
+Votre numéro de commande: {0}. &lt;br /&gt;&lt;br /&gt;
+Afin d’accélérer la transaction, veuillez nous renvoyer la confirmation que vous recevez de votre virement.&lt;br /&gt;
+&lt;br /&gt;
+Nous posterons votre commande et vous en informerons dès que votre virement ou la confirmation de votre virement nous est parvenue. &lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de votre commande &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERNOTPAID_BANKTRANSFER_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Commande {0}</value>
+  </data>
+  <data name="ORDERNOTPAID_PAYPAL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Lors de votre commande, vous avez opté pour un paiement par carte bancaire ou par PayPal, par contre, le paiement n’a pas encore été effectué. Veuillez vérifier si la transaction a été effectuée avec succès. Si elle ne l’était pas, veuillez réessayer &lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&amp;token={4}"&gt;ICI&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+Dès que la transaction a été effectuée avec succès, nous posterons votre commander et vous en informerons.&lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de votre commande&lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERNOTPAID_PAYPAL_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil – Commande {0} – Nouveau rappel au paiement</value>
+  </data>
+  <data name="ORDERPLACED_BANKTRANSFER_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Merci pour votre commande! Votre numéro de commande : {0}.&lt;br /&gt;
+&lt;br /&gt;
+Veuillez effectuer le virement de {2} sur le compte suivant :&lt;br/&gt;
+&lt;br /&gt;
+BIC/SWIFT Code: OKHB HUHB&lt;br /&gt;
+IBAN: HU96 1040 2506 8675 5490 8378 1009.&lt;br /&gt;
+Nom du bénéficiaire : Róbert Fuchs&lt;br /&gt;
+&lt;br /&gt;
+N’oubliez pas d’indiquer votre numéro de commande : {0}. Afin d’accélérer la transaction, veuillez nous renvoyer la confirmation que vous recevez de votre virement.&lt;br /&gt;
+&lt;br /&gt;
+Nous posterons votre commande et vous en informerons dès que votre virement ou la confirmation de votre virement nous est parvenue. &lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de votre commande &lt;a  href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.
+&lt;br/&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_BANKTRANSFER_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Commande {0}</value>
+  </data>
+  <data name="ORDERPLACED_PAYPAL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+/&gt; Merci pour votre commande! Votre numéro de commande: (0).&lt;br /&gt;
+&lt;br /&gt;
+Vous avez opté pour un paiement par carte bancaire ou par PayPal. Nous vous avons donc redirigé(e) vers la page de paiement. Nous espérons que le paiement a été effectué avec succès. Si non, vous pouvez réessayer&lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&amp;token={4}"&gt;ICI&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+Dès que la transaction a été effectuée avec succès, nous posterons votre commande et vous en informerons.&lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de votre commande&lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_PAYPAL_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Commande {0}</value>
+  </data>
+  <data name="ORDERPLACED_POST_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Merci pour votre commande! Le numéro de votre commande: (0).&lt;br /&gt;
+&lt;br /&gt;
+Nous vous informerons dès que votre commande a été postée. Votre commande sera postée dans environ 2 à 3 jours ouvrés.&lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de votre commande&lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_POST_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Commande {0}</value>
+  </data>
+  <data name="PACKAGESENT_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Votre commande vient d’être postée. Elle vous parviendra dans environ 1 à 2 jours ouvrés.&lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de votre commande ainsi que la FACTURE &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Merci pour votre achat!&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="PACKAGESENT_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil – Commande {0} – Votre commande vient d’être postée</value>
+  </data>
+  <data name="PASSWORDRESET_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+"&gt; Cher/Chère {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Votre mot de passe vient d’être modifié. Votre nouveau mot de passe temporaire est: '{1}'.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="PASSWORDRESET_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Changement de mot de passe</value>
+  </data>
+  <data name="RECOMMENDATION_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Monsieur l'Administrateur du site,&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Le client ayant le numéro de commande {0} a recommandé le site aux personnes suivantes:&lt;br /&gt;
+{1}&lt;br /&gt;
+&lt;br /&gt;
+Son message est le suivant: &lt;br /&gt;
+{2}&lt;br /&gt;
+&lt;br /&gt;
+Notez que pour l’instant, la transmission du message aux destinataires se fait manuellement.
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="RECOMMENDATION_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Recommandez nos produits à vos amis</value>
+  </data>
+  <data name="SURVEYREQUEST_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Cher/Chère {1},&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Nous espérons que nos produits vous sont bien parvenus et que vous en êtes satisfait! Consacrez-nous une minute en remplissant notre questionnaire de satisfaction. Votre contribution nous permettra d'améliorer notre service.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://www.magmalight.com/Admin/ShowSurvey.aspx?OrderID={0}&amp;ConfirmationCode={2}&amp;SurveyID={3}"&gt;Cliquez ici pour remplir le questionnaire.&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Merci pour votre contribution.&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="SURVEYREQUEST_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Sondage</value>
+  </data>
+  <data name="UNKNOWNSTATUSCHANGE_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Monsieur l'Administrateur du site,&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Le statut de la commande de numéro{0} a changé de {1} à {2}.&lt;br /&gt;
+&lt;br /&gt;
+Vous pouvez consulter les détails et le statut de la commande&lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ICI&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="UNKNOWNSTATUSCHANGE_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Changement de statut</value>
+  </data>
+  <data name="WEBMAIL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;/head&gt;
+
+&lt;body lang="fr"&gt;
+
+Monsieur l'Administrateur du site,&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+À{2} heure(s), un visiteur du site a posté un message sur le site. Son adresse e-mail est '{0}' et son message est le suivant :&lt;br /&gt;
+&lt;br /&gt;
+{1}&lt;br/&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Cordialement,&lt;br /&gt;
+Lampe soleil&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="WEBMAIL_SUBJECT" xml:space="preserve">
+    <value>Lampe soleil - Message sur le site</value>
+  </data>
+</root>

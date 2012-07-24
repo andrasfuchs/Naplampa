@@ -1,0 +1,11 @@
+NaplampaServiceHost
+- compilation Debug -> Release
+- web.config / ConnectionString
+- web.config / PayPal
+- Service reference: PayPal (https://www.sandbox.paypal.com/wsdl/PayPalSvc.wsdl -> https://www.paypal.com/wsdl/PayPalSvc.wsdl)
+- E-mail templates: https://www.sandbox.paypal.com -> https://www.paypal.com
+
+NaplampaWeb
+- compilation Debug -> Release
+- https://www.sandbox.paypal.com -> https://www.paypal.com (Order_step2.aspx.cs)
+- NaplampaService reference

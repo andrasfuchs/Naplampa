@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblHeader.Text" xml:space="preserve">
+    <value>Actualités</value>
+  </data>
+  <data name="lblNewsHead2.Text" xml:space="preserve">
+    <value>19/05/2010 Nous recherchons des agents commerciaux.</value>
+  </data>
+  <data name="lblNewsHead3.Text" xml:space="preserve">
+    <value>18/05/2010 Nouveau site partenaire</value>
+  </data>
+  <data name="lblNewsHead4.Text" xml:space="preserve">
+    <value>10/03/2010 Nos donataires de janvier et de février 2010</value>
+  </data>
+  <data name="lblNewsHead5.Text" xml:space="preserve">
+    <value>18/01/2010 Notre donataire de décembre 2009</value>
+  </data>
+  <data name="lblNewsHead6.Text" xml:space="preserve">
+    <value>09/12/2009 Notre participation à la vie sociale</value>
+  </data>
+  <data name="lblNewsHead7.Text" xml:space="preserve">
+    <value>23/11/2009 De nouvelles traductions sont prévues</value>
+  </data>
+  <data name="lblNewsHead8.Text" xml:space="preserve">
+    <value>22/11/2009 Nouvelle conception</value>
+  </data>
+  <data name="lblNewsRow2.Text" xml:space="preserve">
+    <value>Nous envisageons d’agrandir notre réseau d’agents commerciaux, dès lors, nous sommes à la recherche de personnes souhaitant participer à la promotion et à la commercialisation de nos produits. Pour de plus amples informations, veuillez contacter le représentant local M. András Fuchs.</value>
+  </data>
+  <data name="lblNewsRow3.Text" xml:space="preserve">
+    <value>Nous avons ouvert un nouveau site partenaire où nous présentons différentes méthodes d’utilisation d'énergies renouvelables. Vous pouvez réaliser les économies en les mettant en œuvre vous-mêmes. Ces énergies renouvelables pourront fournir de l’énergie nécessaire pour un ménage ou, du moins, la compléter. Si vous êtes intéressé par de telles possibilités, veuillez vous rendre sur le site : http://www.szellovas.hu.</value>
+  </data>
+  <data name="lblNewsRow4.Text" xml:space="preserve">
+    <value>Nous avons le plaisir d’annoncer qu’une magnifique école maternelle a reçu notre donation grâce à notre cadre financier de 10 % destiné aux dons. L’école choisie est l’École Maternelle de Sajószentpéter (Sajószentpéteri Központi Napközi Otthonos Óvoda). Nous remercions nos clients d’avoir choisi notre société et d’avoir ainsi apporté leur soutien à cette institution.</value>
+  </data>
+  <data name="lblNewsRow5.Text" xml:space="preserve">
+    <value>Nous avons le plaisir d’annoncer que le gagnant de notre donation de 10 % de nos bénéfices de décembre est la Fondation pour les égalités des chances des autistes (Autisták Egyenlő Esélyeiért Alapítvány) (http://www.ask.ofm.hu). Nous remercions nos clients d’avoir choisi notre société et d’avoir ainsi apporté leur soutien à cette fondation.</value>
+  </data>
+  <data name="lblNewsRow6.Text" xml:space="preserve">
+    <value>À partir de décembre 2009, chaque mois, notre société offrira 10 % de ses bénéfices réalisés au cours du mois concerné à une institution recommandée par notre clientèle. Le représentant de l’institution choisie sera chargé de composer le cadeau à partir de nos produits à la hauteur de la valeur spécifique du mois. Veuillez nous contacter afin de recommander des fondations ou des entreprises sans but lucratif  qui, selon vous, servent l’intérêt général.</value>
+  </data>
+  <data name="lblNewsRow7.Text" xml:space="preserve">
+    <value>La traduction allemande de notre site arrive dans une semaine. Ensuite, d’après notre planning, les traductions française, espagnole et italienne seront également mises en ligne d’ici la fin du mois de décembre.  </value>
+  </data>
+  <data name="lblNewsRow8.Text" xml:space="preserve">
+    <value>Comme vous aviez pu constater, notre site Internet est doté d’un nouveau design et nous avons également élargi notre parc de serveurs. Nous espérons que grâce à ces changements, vous pourrez davantage profiter du temps passé sur notre site. </value>
+  </data>
+  <data name="lblShortDescription.Text" xml:space="preserve">
+    <value>Qu’est-ce que la lampe soleil ?</value>
+  </data>
+  <data name="lblShortDescriptionText.Text" xml:space="preserve">
+    <value>Grâce à une méthode médicale avérée, la lampe soleil est capable de créer une véritable lumière du jour dans votre maison ou votre bureau. Elle améliore la vie quotidienne de diverses manières en émettant une lumière du jour naturelle grâce à laquelle elle améliore votre bien-être et stimule votre productivité.</value>
+  </data>
+  <data name="page.Title" xml:space="preserve">
+    <value>Ampoules économes en énergie, à lumière du spectre complet, dotées d’un ioniseur – Lampe soleil</value>
+  </data>
+</root>

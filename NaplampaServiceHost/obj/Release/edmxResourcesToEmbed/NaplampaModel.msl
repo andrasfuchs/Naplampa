@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="NaplampaModelStoreContainer" CdmEntityContainer="NaplampaEntities">
+    <EntitySetMapping Name="Address">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Address)">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="AddressLine" ColumnName="AddressLine" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Country)">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="AvailablePaymentMethods" ColumnName="AvailablePaymentMethods" />
+          <ScalarProperty Name="PostalCodeSample" ColumnName="PostalCodeSample" />
+          <ScalarProperty Name="VATMultiplier" ColumnName="VATMultiplier" />
+          <ScalarProperty Name="AdditionalCultureNames" ColumnName="AdditionalCultureNames" />
+          <ScalarProperty Name="DefaultCultureName" ColumnName="DefaultCultureName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="ISO" ColumnName="ISO" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PostalCodeValidatorRegularExpression" ColumnName="PostalCodeValidatorRegularExpression" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currency">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Currency)">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="ISO" ColumnName="ISO" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Postfix" ColumnName="Postfix" />
+          <ScalarProperty Name="DefaultDecimalPlaces" ColumnName="DefaultDecimalPlaces" />
+          <ScalarProperty Name="ConversionToEur" ColumnName="ConversionToEur" />
+          <ScalarProperty Name="ConversionRatioDate" ColumnName="ConversionRatioDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discount">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Discount)">
+        <MappingFragment StoreEntitySet="Discount">
+          <ScalarProperty Name="MinimumQuantity" ColumnName="MinimumQuantity" />
+          <ScalarProperty Name="DiscountId" ColumnName="DiscountId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="MinimumPartnerRank" ColumnName="MinimumPartnerRank" />
+          <ScalarProperty Name="Multiplier" ColumnName="Multiplier" />
+          <ScalarProperty Name="ValidFrom" ColumnName="ValidFrom" />
+          <ScalarProperty Name="ValidUntil" ColumnName="ValidUntil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoice">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Invoice)">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+          <ScalarProperty Name="PassCode" ColumnName="PassCode" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="DateOfDelivery" ColumnName="DateOfDelivery" />
+          <ScalarProperty Name="DateOfInvoice" ColumnName="DateOfInvoice" />
+          <ScalarProperty Name="DeadlineOfPayment" ColumnName="DeadlineOfPayment" />
+          <ScalarProperty Name="Observation" ColumnName="Observation" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceLine">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.InvoiceLine)">
+        <MappingFragment StoreEntitySet="InvoiceLine">
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="InvoiceLineId" ColumnName="InvoiceLineId" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Log">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Log)">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LoggedInPersonId" ColumnName="LoggedInPersonId" />
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Order)">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="CouponDiscount" ColumnName="CouponDiscount" />
+          <ScalarProperty Name="Refund" ColumnName="Refund" />
+          <ScalarProperty Name="QuantityDiscount" ColumnName="QuantityDiscount" />
+          <ScalarProperty Name="PayPalToken" ColumnName="PayPalToken" />
+          <ScalarProperty Name="VATTotal" ColumnName="VATTotal" />
+          <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
+          <ScalarProperty Name="InsuranceCost" ColumnName="InsuranceCost" />
+          <ScalarProperty Name="ProductsCost" ColumnName="ProductsCost" />
+          <ScalarProperty Name="PassCode" ColumnName="PassCode" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="Referer" ColumnName="Referer" />
+          <ScalarProperty Name="EstimatedPackageWeight" ColumnName="EstimatedPackageWeight" />
+          <ScalarProperty Name="TransactionCost" ColumnName="TransactionCost" />
+          <ScalarProperty Name="PackageCost" ColumnName="PackageCost" />
+          <ScalarProperty Name="SendingCost" ColumnName="SendingCost" />
+          <ScalarProperty Name="SentOn" ColumnName="SentOn" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="TrackingNumber" />
+          <ScalarProperty Name="DeliveredOn" ColumnName="DeliveredOn" />
+          <ScalarProperty Name="SurveySentOn" ColumnName="SurveySentOn" />
+          <ScalarProperty Name="SurveyCompletedOn" ColumnName="SurveyCompletedOn" />
+          <ScalarProperty Name="DiscountCode" ColumnName="DiscountCode" />
+          <ScalarProperty Name="CommentBySeller" ColumnName="CommentBySeller" />
+          <ScalarProperty Name="CommentByBuyer" ColumnName="CommentByBuyer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProductXRef">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.OrderProductXRef)">
+        <MappingFragment StoreEntitySet="OrderProductXRef">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partner">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Partner)">
+        <MappingFragment StoreEntitySet="Partner">
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="RefererCode" ColumnName="RefererCode" />
+          <ScalarProperty Name="SWIFT" ColumnName="SWIFT" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Person)">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+          <ScalarProperty Name="PasswordExpiresOn" ColumnName="PasswordExpiresOn" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmationCode" ColumnName="EmailConfirmationCode" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Newsletter" ColumnName="Newsletter" />
+          <ScalarProperty Name="OpenIdUrl" ColumnName="OpenIdUrl" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Product)">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="BoxLength" ColumnName="BoxLength" />
+          <ScalarProperty Name="BoxHeight" ColumnName="BoxHeight" />
+          <ScalarProperty Name="BoxWidth" ColumnName="BoxWidth" />
+          <ScalarProperty Name="ThumbnailURI" ColumnName="ThumbnailURI" />
+          <ScalarProperty Name="ImageURI" ColumnName="ImageURI" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ListedFrom" ColumnName="ListedFrom" />
+          <ScalarProperty Name="ListedUntil" ColumnName="ListedUntil" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+          <ScalarProperty Name="ManufacturingCost" ColumnName="ManufacturingCost" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockItem">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.StockItem)">
+        <MappingFragment StoreEntitySet="StockItem">
+          <ScalarProperty Name="StockItemId" ColumnName="StockItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Survey">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Survey)">
+        <MappingFragment StoreEntitySet="Survey">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Expires" ColumnName="Expires" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SurveyResult">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.SurveyResult)">
+        <MappingFragment StoreEntitySet="SurveyResult">
+          <ScalarProperty Name="ResultFlags7" ColumnName="ResultFlags7" />
+          <ScalarProperty Name="ResultFlags6" ColumnName="ResultFlags6" />
+          <ScalarProperty Name="ResultFlags5" ColumnName="ResultFlags5" />
+          <ScalarProperty Name="ResultFlags4" ColumnName="ResultFlags4" />
+          <ScalarProperty Name="ResultFlags3" ColumnName="ResultFlags3" />
+          <ScalarProperty Name="ResultFlags2" ColumnName="ResultFlags2" />
+          <ScalarProperty Name="ResultFlags1" ColumnName="ResultFlags1" />
+          <ScalarProperty Name="ResultText7" ColumnName="ResultText7" />
+          <ScalarProperty Name="ResultText6" ColumnName="ResultText6" />
+          <ScalarProperty Name="ResultText5" ColumnName="ResultText5" />
+          <ScalarProperty Name="ResultText4" ColumnName="ResultText4" />
+          <ScalarProperty Name="ResultText3" ColumnName="ResultText3" />
+          <ScalarProperty Name="ResultText2" ColumnName="ResultText2" />
+          <ScalarProperty Name="ResultText1" ColumnName="ResultText1" />
+          <ScalarProperty Name="ResultValue7" ColumnName="ResultValue7" />
+          <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+          <ScalarProperty Name="SurveyQuestions" ColumnName="SurveyQuestions" />
+          <ScalarProperty Name="SurveyResultId" ColumnName="SurveyResultId" />
+          <ScalarProperty Name="ResultValue1" ColumnName="ResultValue1" />
+          <ScalarProperty Name="ResultValue2" ColumnName="ResultValue2" />
+          <ScalarProperty Name="ResultValue3" ColumnName="ResultValue3" />
+          <ScalarProperty Name="ResultValue4" ColumnName="ResultValue4" />
+          <ScalarProperty Name="ResultValue5" ColumnName="ResultValue5" />
+          <ScalarProperty Name="ResultValue6" ColumnName="ResultValue6" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transaction">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Transaction)">
+        <MappingFragment StoreEntitySet="Transaction">
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="Started" ColumnName="Started" />
+          <ScalarProperty Name="Ended" ColumnName="Ended" />
+          <ScalarProperty Name="EndedSuccessfully" ColumnName="EndedSuccessfully" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TransactionReference" ColumnName="TransactionReference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_Address_Country" TypeName="NaplampaModel.FK_Address_Country" StoreEntitySet="Address">
+      <EndProperty Name="Country">
+        <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+      </EndProperty>
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Address_Partner" TypeName="NaplampaModel.FK_Address_Partner" StoreEntitySet="Address">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_AddressBuyer" TypeName="NaplampaModel.FK_Invoice_AddressBuyer" StoreEntitySet="Invoice">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="BuyerBillingAddressId" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+      <Condition ColumnName="BuyerBillingAddressId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_AddressIssuer" TypeName="NaplampaModel.FK_Invoice_AddressIssuer" StoreEntitySet="Invoice">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="IssuerBillingAddressId" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+      <Condition ColumnName="IssuerBillingAddressId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_Address" TypeName="NaplampaModel.FK_Order_Address" StoreEntitySet="Order">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="DeliveryAddressId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Partner_AddressBilling" TypeName="NaplampaModel.FK_Partner_AddressBilling" StoreEntitySet="Partner">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="BillingAddressId" />
+      </EndProperty>
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <Condition ColumnName="BillingAddressId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Partner_AddressDelivery" TypeName="NaplampaModel.FK_Partner_AddressDelivery" StoreEntitySet="Partner">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="DeliveryAddressId" />
+      </EndProperty>
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <Condition ColumnName="DeliveryAddressId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockItem_Address" TypeName="NaplampaModel.FK_StockItem_Address" StoreEntitySet="StockItem">
+      <EndProperty Name="Address">
+        <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+      </EndProperty>
+      <EndProperty Name="StockItem">
+        <ScalarProperty Name="StockItemId" ColumnName="StockItemId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Country_Currency" TypeName="NaplampaModel.FK_Country_Currency" StoreEntitySet="Country">
+      <EndProperty Name="Currency">
+        <ScalarProperty Name="CurrencyId" ColumnName="DefaultCurrencyId" />
+      </EndProperty>
+      <EndProperty Name="Country">
+        <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_Currency" TypeName="NaplampaModel.FK_Invoice_Currency" StoreEntitySet="Invoice">
+      <EndProperty Name="Currency">
+        <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_Currency" TypeName="NaplampaModel.FK_Order_Currency" StoreEntitySet="Order">
+      <EndProperty Name="Currency">
+        <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Product_Currency" TypeName="NaplampaModel.FK_Product_Currency" StoreEntitySet="Product">
+      <EndProperty Name="Currency">
+        <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Transaction_Currency" TypeName="NaplampaModel.FK_Transaction_Currency" StoreEntitySet="Transaction">
+      <EndProperty Name="Currency">
+        <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+      </EndProperty>
+      <EndProperty Name="Transaction">
+        <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Discount_Product" TypeName="NaplampaModel.FK_Discount_Product" StoreEntitySet="Discount">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+      <EndProperty Name="Discount">
+        <ScalarProperty Name="DiscountId" ColumnName="DiscountId" />
+      </EndProperty>
+      <Condition ColumnName="ProductId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_Order" TypeName="NaplampaModel.FK_Invoice_Order" StoreEntitySet="Invoice">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_PartnerBuyer" TypeName="NaplampaModel.FK_Invoice_PartnerBuyer" StoreEntitySet="Invoice">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="BuyerPartnerId" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_PartnerIssuer" TypeName="NaplampaModel.FK_Invoice_PartnerIssuer" StoreEntitySet="Invoice">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="IssuerPartnerId" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_InvoiceLine_Invoice" TypeName="NaplampaModel.FK_InvoiceLine_Invoice" StoreEntitySet="InvoiceLine">
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+      </EndProperty>
+      <EndProperty Name="InvoiceLine">
+        <ScalarProperty Name="InvoiceLineId" ColumnName="InvoiceLineId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_InvoiceLine_Product" TypeName="NaplampaModel.FK_InvoiceLine_Product" StoreEntitySet="InvoiceLine">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+      <EndProperty Name="InvoiceLine">
+        <ScalarProperty Name="InvoiceLineId" ColumnName="InvoiceLineId" />
+      </EndProperty>
+      <Condition ColumnName="ProductId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Log_Order" TypeName="NaplampaModel.FK_Log_Order" StoreEntitySet="Log">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="Log">
+        <ScalarProperty Name="LogId" ColumnName="LogId" />
+      </EndProperty>
+      <Condition ColumnName="OrderId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Log_Partner" TypeName="NaplampaModel.FK_Log_Partner" StoreEntitySet="Log">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <EndProperty Name="Log">
+        <ScalarProperty Name="LogId" ColumnName="LogId" />
+      </EndProperty>
+      <Condition ColumnName="PartnerId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_Partner" TypeName="NaplampaModel.FK_Order_Partner" StoreEntitySet="Order">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_PersonSentBy" TypeName="NaplampaModel.FK_Order_PersonSentBy" StoreEntitySet="Order">
+      <EndProperty Name="Person">
+        <ScalarProperty Name="PersonId" ColumnName="SentByPersonId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <Condition ColumnName="SentByPersonId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Order_Survey" TypeName="NaplampaModel.FK_Order_Survey" StoreEntitySet="Order">
+      <EndProperty Name="Survey">
+        <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <Condition ColumnName="SurveyId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_OrderProductXRef_Order" TypeName="NaplampaModel.FK_OrderProductXRef_Order" StoreEntitySet="OrderProductXRef">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="OrderProductXRef">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SurveyResult_Order" TypeName="NaplampaModel.FK_SurveyResult_Order" StoreEntitySet="SurveyResult">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="SurveyResult">
+        <ScalarProperty Name="SurveyResultId" ColumnName="SurveyResultId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Transaction_Order" TypeName="NaplampaModel.FK_Transaction_Order" StoreEntitySet="Transaction">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <EndProperty Name="Transaction">
+        <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+      </EndProperty>
+      <Condition ColumnName="OrderId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_OrderProductXRef_Product" TypeName="NaplampaModel.FK_OrderProductXRef_Product" StoreEntitySet="OrderProductXRef">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+      <EndProperty Name="OrderProductXRef">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Partner_Person" TypeName="NaplampaModel.FK_Partner_Person" StoreEntitySet="Partner">
+      <EndProperty Name="Person">
+        <ScalarProperty Name="PersonId" ColumnName="ContactPersonId" />
+      </EndProperty>
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <Condition ColumnName="ContactPersonId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Person_Partner" TypeName="NaplampaModel.FK_Person_Partner" StoreEntitySet="Person">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <EndProperty Name="Person">
+        <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockItem_Partner" TypeName="NaplampaModel.FK_StockItem_Partner" StoreEntitySet="StockItem">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="OwnerPartnerId" />
+      </EndProperty>
+      <EndProperty Name="StockItem">
+        <ScalarProperty Name="StockItemId" ColumnName="StockItemId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Transaction_PartnerReceiver" TypeName="NaplampaModel.FK_Transaction_PartnerReceiver" StoreEntitySet="Transaction">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="ReceiverPartnerId" />
+      </EndProperty>
+      <EndProperty Name="Transaction">
+        <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Transaction_PartnerSender" TypeName="NaplampaModel.FK_Transaction_PartnerSender" StoreEntitySet="Transaction">
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="SenderPartnerId" />
+      </EndProperty>
+      <EndProperty Name="Transaction">
+        <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockItem_Product" TypeName="NaplampaModel.FK_StockItem_Product" StoreEntitySet="StockItem">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+      </EndProperty>
+      <EndProperty Name="StockItem">
+        <ScalarProperty Name="StockItemId" ColumnName="StockItemId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SurveyResult_Survey" TypeName="NaplampaModel.FK_SurveyResult_Survey" StoreEntitySet="SurveyResult">
+      <EndProperty Name="Survey">
+        <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+      </EndProperty>
+      <EndProperty Name="SurveyResult">
+        <ScalarProperty Name="SurveyResultId" ColumnName="SurveyResultId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Partner_Partner" TypeName="NaplampaModel.FK_Partner_Partner" StoreEntitySet="Partner">
+      <EndProperty Name="Partner1">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="ParentPartnerId" />
+      </EndProperty>
+      <Condition ColumnName="ParentPartnerId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Discount_Country" TypeName="NaplampaModel.FK_Discount_Country" StoreEntitySet="Discount">
+      <EndProperty Name="Discount">
+        <ScalarProperty Name="DiscountId" ColumnName="DiscountId" />
+      </EndProperty>
+      <EndProperty Name="Country">
+        <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+      </EndProperty>
+      <Condition ColumnName="CountryId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Country_Person" TypeName="NaplampaModel.FK_Country_Person" StoreEntitySet="Country">
+      <EndProperty Name="Country">
+        <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+      </EndProperty>
+      <EndProperty Name="Person">
+        <ScalarProperty Name="PersonId" ColumnName="RepresentativePersonId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="PartnerRight">
+      <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.PartnerRight)">
+        <MappingFragment StoreEntitySet="PartnerRight">
+          <ScalarProperty Name="RightParameter" ColumnName="RightParameter" />
+          <ScalarProperty Name="RightType" ColumnName="RightType" />
+          <ScalarProperty Name="PartnerRightId" ColumnName="PartnerRightId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_PartnerRight_Order" TypeName="NaplampaModel.FK_PartnerRight_Order" StoreEntitySet="PartnerRight">
+      <EndProperty Name="PartnerRight">
+        <ScalarProperty Name="PartnerRightId" ColumnName="PartnerRightId" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+      </EndProperty>
+      <Condition ColumnName="OrderId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PartnerRight_Partner" TypeName="NaplampaModel.FK_PartnerRight_Partner" StoreEntitySet="PartnerRight">
+      <EndProperty Name="PartnerRight">
+        <ScalarProperty Name="PartnerRightId" ColumnName="PartnerRightId" />
+      </EndProperty>
+      <EndProperty Name="Partner">
+        <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

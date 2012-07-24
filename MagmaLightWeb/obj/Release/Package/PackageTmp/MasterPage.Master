@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="MagmaLightWeb.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:addthis="http://www.addthis.com/help/api-spec" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head id="head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Andras Fuchs" />
+    <meta name="copyright" content="Copyright © 2009-2011 Andras Fuchs. All Rights Reserved." />
+    <meta name="verify-v1" content="1nE2pzilEuwMQfhhWcgQfKW1IGCyE77eIDf5MG2XM2s=" />
+    <title>MagmaLight.com</title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <link rel="stylesheet" title="CSS" type="text/css" href="styles/base.css" media="screen" />
+    <link rel="stylesheet" title="CSS" type="text/css" href="styles/form.css" media="screen" />
+    <link rel="icon" type="image/png" href="logoonly_32x32.png" />
+    <link rel="apple-touch-icon" type="image/png" href="logoonly_114x114.png" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <!-- Begin Masthead -->
+        <div class="masthead">
+            <asp:ImageButton ID="imgLogo" ImageUrl="images/Logo_MagmaLight.png" PostBackUrl="~/Index.aspx"
+                meta:resourceKey="imgLogo" runat="server" AlternateText="Logo" CssClass="" />
+            <div class="countrylist">
+                <div class="dropdown">
+                    <asp:DropDownList ID="ddlCountries" runat="server" Width="170px" AutoPostBack="true"
+                        DataValueField="CountryId" DataTextField="Name" OnSelectedIndexChanged="ddlCountries_SelectedIndexChanged" Enabled="false" />
+                </div>
+                <asp:HyperLink ID="lnkLang04" runat="server" CssClass="lang" Text="L1" NavigateUrl="#" />
+                <asp:HyperLink ID="lnkLang03" runat="server" CssClass="lang" Text="L2" NavigateUrl="#" />
+                <asp:HyperLink ID="lnkLang02" runat="server" CssClass="lang" Text="L3" NavigateUrl="#" />
+                <asp:HyperLink ID="lnkLang01" runat="server" CssClass="lang" Text="L4" NavigateUrl="#" />
+            </div>
+        </div>
+        <!-- End Masthead -->
+        <asp:Panel ID="pnlOldBrowser" runat="server" Visible="false">
+            <div class="work_frame">
+                <div class="top">
+                </div>
+                <div class="center">
+                    <asp:Label ID="lblOldBrowser" meta:resourceKey="lblOldBrowser" runat="server" CssClass="oldbrowser_warning" />
+                    <div style="clear: both;">
+                    </div>
+                </div>
+                <div class="foot">
+                </div>
+            </div>
+        </asp:Panel>
+        <asp:ContentPlaceHolder ID="LeftBox" runat="server" />
+        <asp:ContentPlaceHolder ID="RightBox" runat="server" />
+        <div style="clear:both;"></div>
+        <asp:ContentPlaceHolder ID="MiddleHeader" runat="server" />
+        <div class="work_frame">
+            <div class="top">
+            </div>
+            <div class="center">
+                <asp:ContentPlaceHolder ID="content" runat="server" />
+            </div>
+            <div class="foot">
+            </div>
+        </div>
+        
+        <asp:ContentPlaceHolder ID="MiddleFooter" runat="server" />
+        
+        <!-- Begin Footer Icons -->
+        <div class="icon_container">
+            <asp:HyperLink ID="lnkFeedback" meta:resourceKey="lnkFeedback" runat="server" NavigateUrl="~/feedback/feedback.aspx"
+                CssClass="icon" />
+            <asp:HyperLink ID="lnkContact" meta:resourceKey="lnkContact" runat="server" NavigateUrl="~/contact/contact.aspx"
+                CssClass="icon" />
+            <asp:HyperLink ID="lnkRecommend" meta:resourceKey="lnkRecommend" runat="server" NavigateUrl="~/recommend/recommend.aspx"
+                CssClass="icon" />
+            <asp:HyperLink ID="lnkPartners" meta:resourceKey="lnkPartners" runat="server" NavigateUrl="~/partners/partners.aspx"
+                CssClass="icon" />
+            <asp:HyperLink ID="lnkDownloads" meta:resourceKey="lnkDownloads" runat="server" NavigateUrl="~/downloads/downloads.aspx"
+                CssClass="icon" />
+            <asp:HyperLink ID="lnkLinks" meta:resourceKey="lnkLinks" runat="server" NavigateUrl="~/links/links.aspx"
+                CssClass="icon" />
+            <!--SZÜKSÉGES ROSSZ NE TÖRÖLD KI-->
+            <span style="clear: both; display: block; height: 0px"></span>
+            <!--SZÜKSÉGES ROSSZ NE TÖRÖLD KI-->
+        </div>
+        <!-- End Footer Icons -->
+
+<%--     
+        <script type="text/javascript">
+            var addthis_config = {
+                pubid: "ra-4e315fea4848f48b"
+            }
+        </script>
+   
+            <div class="addthis">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style" addthis:url="http://www.naplampa.hu" addthis:title="Hosszú élettartamú, energiatakarékos, teljes spektrumú, ionizátoros, izzók 1 év garanciával 3850 Ft-tól!">
+            <a class="addthis_button_facebook_like" <%="fb:like:layout" %>="button_count" <%="fb:like:href" %>="http://www.facebook.com/pages/naplampa/143574349058177"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_google_plusone"></a>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_stumbleupon"></a>
+            <a class="addthis_button_tumblr"></a>
+            <a class="addthis_button_linkedin"></a>
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_print"></a>
+            <a class="addthis_button_compact"></a>
+            </div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e315fea4848f48b"></script>
+            <!-- AddThis Button END -->
+        </div>
+--%>
+        <div class="copyright">
+            <asp:Label ID="lblCopyright" meta:resourceKey="lblCopyright" runat="server" />
+        </div>
+    </div>
+    <!-- End Container -->
+    <img src="~/images/icon01_h.png" style="display: none;" runat="server" alt="" />
+    <img src="~/images/icon02_h.png" style="display: none;" runat="server" alt="" />
+    <img src="~/images/icon03_h.png" style="display: none;" runat="server" alt="" />
+    <img src="~/images/icon04_h.png" style="display: none;" runat="server" alt="" />
+    <img src="~/images/icon05_h.png" style="display: none;" runat="server" alt="" />
+    <img src="~/images/icon06_h.png" style="display: none;" runat="server" alt="" />
+
+    <script type="text/javascript">
+        //////////////////////////////////////////////////////////////////
+        // get major Silverlight version
+        // Return values:
+        // 0 -> Silverlight not installed (at least not properly).
+        // 1 -> Silverlight 1 installed
+        // 2 -> Silverlight 2 installed
+        // 3 -> Silverlight 3 installed
+        //////////////////////////////////////////////////////////////////
+        function getSilverlightVersion() {
+            var SLVersion;
+            try {
+                try {
+                    var control = new ActiveXObject('AgControl.AgControl');
+                    if (control.IsVersionSupported("3.0"))
+                        SLVersion = 3;
+                    else
+                        if (control.IsVersionSupported("2.0"))
+                        SLVersion = 2;
+
+                    else
+                        SLVersion = 1;
+                    control = null;
+                }
+                catch (e) {
+                    var plugin = navigator.plugins["Silverlight Plug-In"];
+                    if (plugin) {
+                        if (plugin.description === "1.0.30226.2")
+                            SLVersion = 2;
+                        else
+                            SLVersion = parseInt(plugin.description[0]);
+                    }
+                    else
+                        SLVersion = 0;
+                }
+            }
+            catch (e) {
+                SLVersion = 0;
+            }
+            return SLVersion;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-2970401-1");
+        pageTracker._trackPageview();
+        pageTracker._setVar('SLVersion ' + getSilverlightVersion());
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="endOfPage" runat="server" />
+    </form>
+</body>
+<!-- #EndTemplate -->
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="75fbd3c4-3168-41ce-a1e1-e1e9dbfb693d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57500/NaplampaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NaplampaService.wsdl" MetadataType="Wsdl" ID="306b7692-7ec6-4681-ac5e-a436973c1719" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?wsdl" />
+    <MetadataFile FileName="NaplampaService.xsd" MetadataType="Schema" ID="66059b51-6faa-40fc-874e-12687de1fea9" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd3" />
+    <MetadataFile FileName="NaplampaService.disco" MetadataType="Disco" ID="b9b5e2ec-1e06-465f-81bd-0c1a211400f7" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?disco" />
+    <MetadataFile FileName="NaplampaService1.xsd" MetadataType="Schema" ID="c96f16f6-7c59-46bf-90c4-34d4ef494525" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd6" />
+    <MetadataFile FileName="NaplampaService2.xsd" MetadataType="Schema" ID="eb80603b-bf31-47fd-91cc-77d152c5ba28" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd5" />
+    <MetadataFile FileName="NaplampaService3.xsd" MetadataType="Schema" ID="e1388809-3c7a-4f75-9491-b2421d8f9fd6" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NaplampaService4.xsd" MetadataType="Schema" ID="52212ed3-4369-42fa-a1fb-aa6ce4c9bfcb" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NaplampaService5.xsd" MetadataType="Schema" ID="5fbb993b-f09b-4f95-bfbe-f61253d502e3" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NaplampaService6.xsd" MetadataType="Schema" ID="f4ee0b13-c5c6-48ab-99d8-23c8b097ead2" SourceId="1" SourceUrl="http://localhost:57500/NaplampaService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

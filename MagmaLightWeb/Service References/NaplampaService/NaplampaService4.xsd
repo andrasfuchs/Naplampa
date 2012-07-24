@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57500/NaplampaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" />
+  <xs:import schemaLocation="http://localhost:57500/NaplampaService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:57500/NaplampaService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" />
+  <xs:element name="GetInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="invoiceId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="GetInvoiceResult" nillable="true" type="q1:Invoice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceImage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="invoiceId" type="xs:int" />
+        <xs:element minOccurs="0" name="cultureName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInvoiceImageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInvoiceImageResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurvey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="surveyId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurveyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="GetSurveyResult" nillable="true" type="q2:Survey" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="GetPersonByIdResult" nillable="true" type="q3:Person" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendSurveyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="surveyId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListSurveys">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validOnly" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListSurveysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="ListSurveysResult" nillable="true" type="q4:ArrayOfSurvey" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveSurveyResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="surveyId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="cultureName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="surveyQuestions" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultValue1" type="xs:int" />
+        <xs:element minOccurs="0" name="resultValue2" type="xs:int" />
+        <xs:element minOccurs="0" name="resultValue3" type="xs:int" />
+        <xs:element minOccurs="0" name="resultValue4" type="xs:int" />
+        <xs:element minOccurs="0" name="resultValue5" type="xs:int" />
+        <xs:element minOccurs="0" name="resultValue6" type="xs:int" />
+        <xs:element minOccurs="0" name="resultValue7" type="xs:int" />
+        <xs:element minOccurs="0" name="resultText1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultText2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultText3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultText4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultText5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultText6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultText7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultFlags1" type="xs:int" />
+        <xs:element minOccurs="0" name="resultFlags2" type="xs:int" />
+        <xs:element minOccurs="0" name="resultFlags3" type="xs:int" />
+        <xs:element minOccurs="0" name="resultFlags4" type="xs:int" />
+        <xs:element minOccurs="0" name="resultFlags5" type="xs:int" />
+        <xs:element minOccurs="0" name="resultFlags6" type="xs:int" />
+        <xs:element minOccurs="0" name="resultFlags7" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendRecommendation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:int" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="recipients" nillable="true" type="q5:ArrayOfstring" />
+        <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="keyword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="minimumRank" type="xs:int" />
+        <xs:element minOccurs="0" name="minimumOrder" type="xs:decimal" />
+        <xs:element minOccurs="0" name="minimumOrderCurrencyId" type="xs:int" />
+        <xs:element minOccurs="0" name="showDeleted" type="xs:boolean" />
+        <xs:element minOccurs="0" name="newsletter" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="SearchOrdersResult" nillable="true" type="q6:ArrayOfOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newsletter" type="xs:boolean" />
+        <xs:element minOccurs="0" name="cultureName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+        <xs:element minOccurs="0" name="province" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="town" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="postalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="addressLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paymentMethod" type="xs:short" />
+        <xs:element minOccurs="0" name="referer" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="basket" nillable="true" type="q7:ArrayOfProductQuantity" />
+        <xs:element minOccurs="0" name="invoiceCurrencyId" type="xs:int" />
+        <xs:element minOccurs="0" name="invoiceCountryId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="invoiceProvince" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceTown" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoicePostalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceAddressLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceFullName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="ValidateOrderResult" nillable="true" type="q8:ArrayOfValidationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personId" type="xs:int" />
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fax" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newsletter" type="xs:boolean" />
+        <xs:element minOccurs="0" name="cultureName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserPreferencesResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendNewsletter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="recipientPersonIds" nillable="true" type="q9:ArrayOfint" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parameters" nillable="true" type="q10:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendNewsletterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendNewsletterResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnableEmailService">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisableEmailService">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsEmailServiceDisabled">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsEmailServiceDisabledResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsEmailServiceDisabledResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personId" type="xs:int" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="LoginResult" nillable="true" type="q11:Person" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="confirmationCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmEmailResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="partnerPhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactPersonTitle" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactPersonFirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactPersonLastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactPersonEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contactPersonNewsletter" type="xs:boolean" />
+        <xs:element minOccurs="0" name="contactPersonCultureName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateNewPartnerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+        <xs:element minOccurs="0" name="province" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="town" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="postalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="addressLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateNewAddressResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewOrderWithoutLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newsletter" type="xs:boolean" />
+        <xs:element minOccurs="0" name="cultureName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+        <xs:element minOccurs="0" name="province" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="town" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="postalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="addressLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paymentMethod" type="xs:short" />
+        <xs:element minOccurs="0" name="referer" nillable="true" type="xs:string" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="basket" nillable="true" type="q12:ArrayOfProductQuantity" />
+        <xs:element minOccurs="0" name="invoiceCurrencyId" type="xs:int" />
+        <xs:element minOccurs="0" name="invoiceCountryId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="invoiceProvince" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceTown" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoicePostalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceAddressLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="invoiceFullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="initialStatus" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="couponCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewOrderWithoutLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateNewOrderWithoutLoginResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewOrderForPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerId" type="xs:int" />
+        <xs:element minOccurs="0" name="deliveryAddressId" type="xs:int" />
+        <xs:element minOccurs="0" name="paymentMethod" type="xs:short" />
+        <xs:element minOccurs="0" name="referer" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="basket" nillable="true" type="q13:ArrayOfProductQuantity" />
+        <xs:element minOccurs="0" name="invoiceCurrencyId" type="xs:int" />
+        <xs:element minOccurs="0" name="couponCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewOrderForPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateNewOrderForPartnerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateWarrantyOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="originalOrderId" type="xs:int" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="basket" nillable="true" type="q14:ArrayOfProductQuantity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateWarrantyOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateWarrantyOrderResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateOrderCosts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="parnerId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+        <xs:element minOccurs="0" name="paymentMethod" type="xs:short" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="basket" nillable="true" type="q15:ArrayOfProductQuantity" />
+        <xs:element minOccurs="0" name="invoiceCurrencyId" type="xs:int" />
+        <xs:element minOccurs="0" name="couponCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateOrderCostsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="CalculateOrderCostsResult" nillable="true" type="q16:OrderCosts" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="GetOrderResult" nillable="true" type="q17:Order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderReview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="payPalToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderReviewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="GetOrderReviewResult" nillable="true" type="q18:OrderReview" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="payPalToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="payPalPayerId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmOrderResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="from" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="ListOrdersResult" nillable="true" type="q19:ArrayOfOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrderStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="status" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderPackageSent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="sentByPersonId" type="xs:int" />
+        <xs:element minOccurs="0" name="sentOn" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="trackingNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDelivered">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="deliveredOn" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderReturned">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderResendPaymentRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderPaymentRequestSent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderPaymentReceived">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="payPalToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRefund">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="refundAmount" type="xs:decimal" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="productsReturned" nillable="true" type="q20:ArrayOfProductQuantity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrderSellerComment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="comment" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrderBuyerComment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderId" type="xs:int" />
+        <xs:element minOccurs="0" name="comment" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cultureName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recipientEmail" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parameters" nillable="true" type="q21:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCountries">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCountriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="ListCountriesResult" nillable="true" type="q22:ArrayOfCountry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCurrencies">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCurrenciesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="ListCurrenciesResult" nillable="true" type="q23:ArrayOfCurrency" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEffectiveProductPrices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="products" nillable="true" type="q24:ArrayOfProduct" />
+        <xs:element minOccurs="0" name="currencyId" type="xs:int" />
+        <xs:element minOccurs="0" name="partnerId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="countryId" type="xs:int" />
+        <xs:element minOccurs="0" name="dateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEffectiveProductPricesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" minOccurs="0" name="GetEffectiveProductPricesResult" nillable="true" type="q25:ArrayOfProductDiscountPrice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="ListProductsResult" nillable="true" type="q26:ArrayOfProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

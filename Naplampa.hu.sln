@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaplampaServiceHost", "NaplampaServiceHost\NaplampaServiceHost.csproj", "{E8D28BDC-E11E-4B86-B819-F717BE26B85C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaplampaAdmin", "NaplampaAdmin\NaplampaAdmin.csproj", "{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C} = {E8D28BDC-E11E-4B86-B819-F717BE26B85C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagmaLightWeb", "MagmaLightWeb\MagmaLightWeb.csproj", "{BC1F25C9-0ABA-427C-8650-54407190DFB1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C} = {E8D28BDC-E11E-4B86-B819-F717BE26B85C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release with Code Analysis|Any CPU = Release with Code Analysis|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D28BDC-E11E-4B86-B819-F717BE26B85C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1F25C9-0ABA-427C-8650-54407190DFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1F25C9-0ABA-427C-8650-54407190DFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1F25C9-0ABA-427C-8650-54407190DFB1}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1F25C9-0ABA-427C-8650-54407190DFB1}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{BC1F25C9-0ABA-427C-8650-54407190DFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1F25C9-0ABA-427C-8650-54407190DFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<Window x:Class="NaplampaAdmin.WarrantyWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WarrantyWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Name="orderIdLabel">Order ID</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Height="23" Name="orderIdTextBox" IsReadOnly="True"/>
+        <Label Grid.Row="1" Grid.Column="0" Name="nameLabel">Name</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="23" Name="nameTextBox" IsReadOnly="True"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Name="napsugarLabel">Napsugar</Label>
+        <Slider Grid.Column="1" Grid.Row="3" Margin="5" Name="napsugarSlider" TickPlacement="BottomRight" SmallChange="1" Maximum="5" IsMoveToPointEnabled="False" IsSnapToTickEnabled="True" />
+        <Label Grid.Row="4" Grid.Column="0" Name="kristalysugarLabel">Kristalysugar</Label>
+        <Slider Grid.Column="1" Grid.Row="4" Margin="5" Name="kristalysugarSlider" TickPlacement="BottomRight" SmallChange="1" Maximum="5" IsSnapToTickEnabled="True" />
+        <Label Grid.Row="5" Grid.Column="0" Name="kristalysugarE14Label">Kristalysugar E14</Label>
+        <Slider Grid.Column="1" Grid.Row="5" Margin="5" Name="kristalysugarE14Slider" TickPlacement="BottomRight" SmallChange="1" Maximum="5" IsSnapToTickEnabled="True" />
+
+        <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Center" Name="okButton" Width="100" Click="OKButton_Click">OK</Button>
+    </Grid>
+</Window>

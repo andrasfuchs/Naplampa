@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblProductPrice.Text" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;Adesso:</value>
+  </data>
+  <data name="lblMSRPPrice.Text" xml:space="preserve">
+    <value>Prima:</value>
+  </data>
+  <data name="page.Title" xml:space="preserve">
+    <value>Prodotti - MagmaLight</value>
+  </data>
+  <data name="lnkOrder.Text" xml:space="preserve">
+    <value>Ordine</value>
+  </data>
+  <data name="lblSaleRemaining.Text" xml:space="preserve">
+    <value>!! L'offerta e' valida solo per {0} giorni !!&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</value>
+  </data>
+  <data name="lblDetailedDescription.Text" xml:space="preserve">
+    <value>Informazioni dettagliati</value>
+  </data>
+  <data name="lblDetails.Text" xml:space="preserve">
+    <value>Clicca qua per i dettagli!</value>
+  </data>
+  <data name="lblGuarantee.Text" xml:space="preserve">
+    <value>&lt;span&gt;1&lt;/span&gt;
+          &lt;p&gt;anno di garanzia dal&lt;br /&gt;produttore e 30 giorni&lt;br /&gt;
+          &lt;strong&gt;di garanzia&lt;br /&gt;rimborso&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="lblOtherProducts.Text" xml:space="preserve">
+    <value>Altri prodotti</value>
+  </data>
+  <data name="lblProperties.Text" xml:space="preserve">
+    <value>Caratteristiche</value>
+  </data>
+  <data name="lblDepressionHeader.Text" xml:space="preserve">
+    <value>Depressione</value>
+  </data>
+  <data name="lblDepressionText.Text" xml:space="preserve">
+    <value>&lt;p&gt;La luce e' una terapia cosí efficace come le medicine, anzí meglio. L'esempio migliore per attestare questo fatto che la luce e' un efficace antidepressivo per quelli che soffrono in depressione invernale, SAD (Disturbo Affettivo Stagionale) &lt;/p&gt;
+
+&lt;p&gt;Kripke ha assomigliato le terapie di luce e e quelle di medicine nello suo studio di depressione. Afferma che dovremmo usare la terapia di luce nella lotta contro depressione almeno come complemento alla terapia farmacologica. &lt;/p&gt;
+
+&lt;p&gt;Per quanto riguarda il sistema ormonale il basso livello di serotonina e' associato con la depressione e SAD (depressione invernale). Ricerche attestano quando siamo alla luce del sole, il livello di serotonina di nostro cervello si aumenta. Comunque la terapia di luce viene verificata dalla biologia stessa.&lt;/p&gt;</value>
+  </data>
+  <data name="lblEconomyHeader.Text" xml:space="preserve">
+    <value>Efficienza</value>
+  </data>
+  <data name="lblEconomyText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Fra i nostri prodotti trovera' lampadine con consumo diversi, ma ogni tipo ha un funzionamento lungo e sono tipi a risparmio energetico. &lt;/p&gt;
+
+&lt;p&gt;Cioe' mentre una lampadina tradizionale consuma 85W, quelle che possono comprare da noi consumano solo 13W. Se supponiamo che queste lampadine hanno lo stesso valore di funzionamento cioe' 8,000 ore, allora consumano totalmente 680 kWh (quella tradizionale) e 104 kWh (quella a risparmio energetico). Cio' significa con i prezzi attuali (calcolando con 0.15 EUR/kWh) EUR 97 e EUR 14.85. &lt;/p&gt;
+
+&lt;p&gt;Se consideriamo il fatto che il funzionamento di lampadine tradizionali e' significativamente piu' breve (solo 1,000 ore invece di 8,000 ore ), si puo' notare che una lampadina comprata da noi sarebbe uguale con 8 lampadine tradizionali. Contando in fiorini, possiamo comprare 8 lampadine tradizionali con consumo 85W per cca. EUR 22.85. Da noi una lampadina con lo stesso consumo, di spettro completo si puo' comprare gia' per EUR 14.30 (naturalmente dipende anche dal tipo). &lt;/p&gt;</value>
+  </data>
+  <data name="lblFullSpectrumHeader.Text" xml:space="preserve">
+    <value>Luce di spettro completo</value>
+  </data>
+  <data name="lblFullSpectrumText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Lo spettro della luce ci da' informazioni sulla quantita' di radiazioni misurata in diverse regioni spettrali.  Se analizziamo lo spettro della luce del sole, si scoprira' che il sole irradia non solo nella regione di spettro visibile ma anche nella regione infrarossa e ultravioletta.&lt;/p&gt;
+
+&lt;p&gt;La qualita' di luce di una lampadina puo' essere misurata quanta sia simile alla luce del sole. Le lampadine tradizionali a risparmio energetico hanno un indice di 20-30% siccome quelle irradiano solo nelle regioni di spettro visibile. Le lampadine vendute qua corrispondono alla luce del sole in 80-95% che risulta un'assomiglianza particolare al sole e un livello alto di resa dei colori. &lt;/p&gt;
+
+&lt;p&gt;Il numero di misurare la resa dei colori e' CRI (Indice di Resa dei Colori). Tutti i nostri prodotti hanno un indice CRI di 80% e cosí possono essere utilizzati in ambiente professionale di grafica o stampa.&lt;/p&gt;
+
+&lt;p&gt;La copertura del spettro completo ha un altro vantaggio enorme che ha un effetto estremamente positivo per gli esseri viventi (come la luce naturale del sole). Con l'aiuto delle lampadine su fotosintesi, accelerano i processi di crescita' e trasformazione di nutrienti.  L'uso di lampadine e' molto consigliato in caso di avere piante, animali, acquari o uccelli ornamentali. Ha un effetto piacevole anche per la gente cosí e' consigliato di utilizzarlo in camere spesso usate.&lt;/p&gt;</value>
+  </data>
+  <data name="lblHealthHeader.Text" xml:space="preserve">
+    <value>Salute, disturbi del sonno</value>
+  </data>
+  <data name="lblHealthText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Alcuni decenni fa ci siamo alzati e siamo andati a letto con il Sole, e abbiamo passato piu' tempo all'aria aperta che nei giorni nostri. &lt;/p&gt;
+
+&lt;p&gt;Senza la luce appropriata di mattina il nostro orologio biologico non comincia a produrre gli ormoni necessari alla sveglia attiva e fresca. Se non otteniamo abbastanza luce durante il giorno, molliamo e diventiamo meno capaci di lavorare. In aggiunta, alle sere siamo svegli anche molte ore dopo che facesse buoio che puo' portare a sbalzi d'umore e disturbi del sonno. Il nostro orario biologico regola come dormiamo, come siamo attivi e come e' il nostro umore. &lt;/p&gt;
+
+&lt;p&gt;Il ritmo di veglia-sonno, regolato dal nostro orologio biologico, chiamiamo il bioritmo. Se il segno esterno non arriva all'orologio biologico - come luce a mattina o buoio a notte -, il ritmo cambia, e il nostro corpo comincia a produrre gli ormoni in tempi sbagliati oppure la loro quantita' non sara' sufficiente.&lt;/p&gt;
+
+&lt;p&gt;Riviste mediche affermano che per la maggior parte di problemi di benessere e disordini del sonno e' responsabile il disturbo bioritmico. &lt;/p&gt;
+
+&lt;p&gt;Studi hanno dimostrato, per esempio, che ora otteniamo una media di cca. 21 minuti di luce del sole che molto meno rispetto alla media di pochi decenni fa. Forse questo fatto e' uno dei motivi per cui il numero della depressione e malattie simili sono raddoppiati negli ultimi 50 anni, e nello stesso periodo il numero di disturbi del sonno e' aumentato tre volte piu' grande. &lt;/p&gt;</value>
+  </data>
+  <data name="lblIonizerHeader.Text" xml:space="preserve">
+    <value>L'allergia, il fumo, l'asma</value>
+  </data>
+  <data name="lblIonizerText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Le particelle piccole, che sono in capacita' di volare e cosí le respiriamo, sono i colpevoli per i sintomi d'allergia, per l'odore sgradevole del fumo di sigaretta e per attachi d'asma. Come mai non esistevano cosí tante malattie 50 anni fa? E' difficile da credere, ma la risposta e' semplice: ricerche attestano che in aria possiamo trovare mescolate particelle positive e negative. Invece la loro proporzione  influenza significativamente la capacita' di volo nel caso di particelle piu' grandi. In aree urbane la proporzione di particelle positive e' particolarmente elevato, per cui le particelle non desiderate volano facilmente in aria. Per fortuna esiste una soluzione: il generatore di ioni negativi.&lt;/p&gt;
+
+&lt;p&gt;Gli ioni negativi non sono nocivi nemmeno in concentrazione alta, anzí al contrario! &lt;/p&gt;
+
+&lt;p&gt;Concentrazione di ioni negativi in ambienti diversi&lt;/p&gt;
+&lt;p&gt;
+   &lt;table&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;
+                &lt;strong&gt;
+                    Ambiente
+                &lt;/strong&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+
+                &lt;strong&gt;
+                    Concentrazione (-ion/cm3)&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Cascata
+            &lt;/td&gt;
+
+            &lt;td&gt;
+                95,000 – 450,000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Monte, spiaggia di mare, foresta
+            &lt;/td&gt;
+            &lt;td&gt;
+
+                50,000 – 100,000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Campo in campagna
+            &lt;/td&gt;
+            &lt;td&gt;
+                5,000 – 50,000
+            &lt;/td&gt;
+
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Citta'
+            &lt;/td&gt;
+            &lt;td&gt;
+                100 – 2000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;
+                Camera od ufficio
+            &lt;/td&gt;
+            &lt;td&gt;
+                40 – 100
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+
+            &lt;td&gt;
+                Camera con aria condizionata
+            &lt;/td&gt;
+            &lt;td&gt;
+                0 – 20
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Gli effetti salutari dei numeri elevati di ioni negativi&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Benessere migliorato&lt;/li&gt;
+&lt;li&gt;Crescita piu' rapida in caso di animali e piante&lt;/li&gt;
+&lt;li&gt;Migliora il funzionamento di ciglia in polmoni&lt;/li&gt;
+&lt;li&gt;Riposo (e sentimento di meno preoccupazione)&lt;/li&gt;
+&lt;li&gt;Temperatura corporea piu' bassa&lt;/li&gt;
+&lt;li&gt;Pulsante a riposo piu' basso&lt;/li&gt;
+&lt;li&gt;Meno batteri e virus in aria&lt;/li&gt;
+&lt;li&gt;Apprendimento piu' veloce dai mammiferi&lt;/li&gt;
+&lt;li&gt;Sollievo di sintomi di ulcera allo stomaco&lt;/li&gt;
+&lt;li&gt;Riduzione dei sintomi di allergia alla polvere&lt;/li&gt;
+&lt;li&gt;Riduzione di sintomi di allergia ai pollini (erbe e polvere di fiori)&lt;/li&gt;
+&lt;li&gt;Riduzione di sintomi d'allergia agli acari della polvere &lt;/li&gt;
+&lt;li&gt;Riduzione di sintomi di allergia al pelo animale&lt;/li&gt;
+&lt;li&gt;Riduzione di sintomi di allergia alle spore della muffa&lt;/li&gt;
+&lt;li&gt;Riduzione di sintomi di raffreddore da fieno&lt;/li&gt;
+&lt;li&gt;Riduzione di sintomi d'asma&lt;/li&gt;
+&lt;li&gt;Depurazione&lt;/li&gt;
+&lt;li&gt;Neutralizzazione di fumo&lt;/li&gt;
+&lt;li&gt;Riduzione di SAD (Disordine Affettivo Stagionale cio' depressione invernale)&lt;/li&gt;
+&lt;li&gt;Riduzione della depressione&lt;/li&gt;
+&lt;li&gt;Riduzione dell'affaticamento cronico&lt;/li&gt;
+&lt;li&gt;Riduzione di odori (meno efficace che p.es. ozono)&lt;/li&gt;
+&lt;li&gt;Aiuta a prevenire i problemi di respirazione&lt;/li&gt;
+&lt;li&gt;Aiuta in prevenzione di emicrania&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;La maggior concentrazione di ioni negativi e' riconosciuta ampiamente per molti aspetti favorevoli alla gente, come p.es: maggior rilassamento, meno stanchezza, meno stress, meno eccitazione, depressione e tensione.&lt;/p&gt;
+
+
+&lt;p&gt;L'ionizzatore e' un'asta in mezzo della lampadina circondato da un tubo fluorescente. Il funzionamento e' semplice: il dispositivo elettronico emette una carica negativa in aereo. Siccome le particelle di polvere, polline, le molecole d'odori, batteri e altri contaminanti piccoli possino operare solo su ioni positivi, dopo la collisione con carica negativa, perdono la capacita' di volare e cadono a terra. In questo modo l'aria sara' notevolmente piu' pulita e priva di odore, e non respiriamo niente nocivo.&lt;/p&gt;
+
+&lt;p&gt;Tecnicamente lo ionizzatore e' un apparecchio di 6-7KV che consuma cca. 2-3W. Durante il funzionamento non produce ozono. &lt;/p&gt;
+
+&lt;p&gt;E' importante di sapere del funzionamento dell'ionizzatore che la sua efficienza puo' ridurre significativamente in paralume di forma chiusa. La riduzione dell'emissione e' in proporzione allo spessore del paralume, cosí si raccomanda di usare in una lampada di paralume aperta.&lt;/p&gt;</value>
+  </data>
+  <data name="lnkLinks.Text" xml:space="preserve">
+    <value>Non sono convinto, mi faccia vedere le materie originali della ricerca!</value>
+  </data>
+</root>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblHeader.Text" xml:space="preserve">
+    <value>Híreink</value>
+  </data>
+  <data name="lblNewsHead2.Text" xml:space="preserve">
+    <value>2010.05.19. Ügynököket keresünk!</value>
+  </data>
+  <data name="lblNewsHead3.Text" xml:space="preserve">
+    <value>2010.05.18. Társoldalunk nyílt</value>
+  </data>
+  <data name="lblNewsHead4.Text" xml:space="preserve">
+    <value>2010.03.10. 2010 januári és februári adományozottunk</value>
+  </data>
+  <data name="lblNewsHead5.Text" xml:space="preserve">
+    <value>2010.01.18. 2009 decemberi adományozottunk</value>
+  </data>
+  <data name="lblNewsHead6.Text" xml:space="preserve">
+    <value>2009.12.09. Társadalmi szerepvállalásunk</value>
+  </data>
+  <data name="lblNewsHead7.Text" xml:space="preserve">
+    <value>2009.11.23. Újabb fordítások várhatók</value>
+  </data>
+  <data name="lblNewsHead8.Text" xml:space="preserve">
+    <value>2009.11.22. Megújult design</value>
+  </data>
+  <data name="lblNewsRow2.Text" xml:space="preserve">
+    <value>Ügynökhálózatunkat szeretnénk bővíteni, ezért várjuk azok jelentkezését, akik szívesen részt vennének termékeink terjesztésében és értékesítésében. Részletekért keressék Fuchs András területi képviselő Urat.</value>
+  </data>
+  <data name="lblNewsRow3.Text" xml:space="preserve">
+    <value>Májusban megnyitottuk egyik társoldalunkat, ahol a megújuló energiaforrások hasznosításának azon módjait próbáljuk feltárni, amik olcsón, sajátkezűleg megvalósíhatóak és egy-egy háztartást képesek eltartani vagy legalább kiegészíteni. Ha Ön is érdeklődik az ilyen lehetőségek iránt, kérem látogasson el a &lt;a href="http://www.szellovas.hu"&gt;SzélLovas&lt;/a&gt; oldalra.</value>
+  </data>
+  <data name="lblNewsRow4.Text" xml:space="preserve">
+    <value>Nagy örömünkre szolgál, hogy egy csodálatos óvodát tudtunk megajándékozni, a januári és februári 10%-os adomány-keretünkből! Ez az óvoda pedig &lt;a href="http://www.sajoszentpeter.hu/hu/intezmeny.php?k_adat=226&amp;cim=Int%E9zm%E9nyek&amp;cimke=%D3vod%E1k&amp;int_kat=2"&gt;Sajószentpéteri Központi Napközi Otthonos Óvoda&lt;/a&gt;. Köszönjük ügyfeleinknek, hogy nálunk vásároltak, és így támogatták az intézményt!</value>
+  </data>
+  <data name="lblNewsRow5.Text" xml:space="preserve">
+    <value>Örömmel értesítjük Önöket, hogy a 2009 decemberi 10% adomány nyertese a &lt;a href="http://www.ask.ofm.hu"&gt;Autisták Egyenlő Esélyeiért Alapítvány&lt;/a&gt;. Köszönjük ügyfeleinknek, hogy nálunk vásároltak, és így támogatták e csodálatos alapítványt!</value>
+  </data>
+  <data name="lblNewsRow6.Text" xml:space="preserve">
+    <value>2009. decemberétől minden hónapban a NapLámpa felajánlja az adott hónap profitjának 10%-át, egy Önök által ajánlott intézménynek. Az ajándék-csomagot a jutalmazott intézmény képviselője állíthatja össze termékeinkből, a felajánlott összeghatárig. Kérjük írjanak nekünk, ha van kedvenc alapítványuk, vagy bámilyen egyéb non-profit vállalkozásuk, amely Önök szerint a közjót szolgája!</value>
+  </data>
+  <data name="lblNewsRow7.Text" xml:space="preserve">
+    <value>1 héten belül érkezik a teljes német fordítás, majd az ütemtervünk szerint december végéig a francia, spanyol és olasz.</value>
+  </data>
+  <data name="lblNewsRow8.Text" xml:space="preserve">
+    <value>Amint azt Önök is láthatják, új design-t kapott oldalunk, bővítettük szerver parkunkat, így remélhetőleg Önök is jobban élvezik majd a nálunk töltött időt!</value>
+  </data>
+  <data name="lblShortDescription.Text" xml:space="preserve">
+    <value>Mi is az a Naplámpa?</value>
+  </data>
+  <data name="lblShortDescriptionText.Text" xml:space="preserve">
+    <value>A naplámpa egy orvosilag igazolt módszerrel képes a valódi napfényt imitálni otthonában vagy irodájában. A mindennapi életét képes sokféle módon javítani azáltal, hogy természetes napfényt varázsol maga köré, amivel javítja az Ön közérzetét és produktivitását.</value>
+  </data>
+  <data name="page.Title" xml:space="preserve">
+    <value>Energia takarékos, teljes spektrumú, ionizátoros izzók - NapLámpa</value>
+  </data>
+</root>

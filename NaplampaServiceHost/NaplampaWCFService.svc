@@ -1,0 +1,1 @@
+<% @ServiceHost Factory="NaplampaService.MyServiceHostFactory" Service="NaplampaService.NaplampaService" %>

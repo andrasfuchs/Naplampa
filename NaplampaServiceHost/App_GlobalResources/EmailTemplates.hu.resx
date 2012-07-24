@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CHRISTMAS2009_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mindjárt itt a karácsony, de mi nem tudunk addig várni, ezért úgy döntöttünk, hogy most azonnal megajándékozzuk Önt! Kérem fogadja el a december 1. és 25. között használható 5%-os extra kedvezményt nyújtó kuponunkat!&lt;br/&gt;
+A kupon kódja 'MLCH09'. (A rendelés első lépésénél kell megadni.)&lt;br /&gt;
+&lt;br /&gt;
+Nézze meg termékeinket &lt;a href="http://www.naplampa.hu/Products/Products.aspx"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+A saját adatait módosíthatja &lt;a href="http://www.naplampa.hu/Admin/UserPreferences.aspx?PersonId={3}&amp;ConfirmationCode={2}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="CHRISTMAS2009_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Karacsonyi Kupon Onnek!</value>
+  </data>
+  <data name="CONFIRMEMAIL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Önnek meg kell erosítenie az e-mail címét rendszerünkben, hogy biztonságosabbá tehessük a kommunikációt és hozzáférhessen a oldalunk speciális funkcióihoz. Kérem kattintson az alábbi linkre.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://www.naplampa.hu/Admin/ConfirmEmail.aspx?Email={1}&amp;ConfirmationCode={2}"&gt;E-mail  megerosítés ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+A saját adatait módosíthatja &lt;a href="http://www.naplampa.hu/Admin/UserPreferences.aspx?PersonId={3}&amp;ConfirmationCode={2}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="CONFIRMEMAIL_SUBJECT" xml:space="preserve">
+    <value>NapLampa - E-mail megerosites</value>
+  </data>
+  <data name="DEFAULT_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendszeruzenet</value>
+  </data>
+  <data name="ERRORREPORT_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Kedves Rendszergazda!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Valami nem stimmel a rendszerrel!
+&lt;br /&gt;&lt;br /&gt;
+{0}&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+{1}&lt;br /&gt;&lt;br /&gt;
+{2}&lt;br /&gt;&lt;br /&gt;
+{3}&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ERRORREPORT_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Hiba</value>
+  </data>
+  <data name="ORDERNOTPAID_BANKTRANSFER_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Ön rendelésekor a banki átutalással történo fizetési módot választotta, azonban sem a visszaigazolás, sem a pénz nem jutott el hozzánk. Kérem ellenorizze, hogy a tranzakció sikeres volt-e, és ha esetleg nem, próbálja újra a következo adatokkal:&lt;br /&gt;
+Összeg: {2}&lt;br /&gt;
+BIC/SWIFT Code: OKHB HUHB (Magyarországon belüli utaláshoz nem szükséges.)&lt;br /&gt;
+IBAN: HU96 1040 2506 8675 5490 8378 1009 (Magyarországon belüli utaláshoz az első 4 karakter nem szükséges.)&lt;br /&gt;
+A kedvezményezett neve: Fuchs Róbert&lt;br/&gt;
+Az Ön rendelési száma: {0}. &lt;br /&gt;&lt;br /&gt;
+Ha teheti, az utalásról készült visszaigazolást küldje el válaszként a gyorsabb ügyintézés érdekében.&lt;br /&gt;
+&lt;br /&gt;
+Amint a pénz vagy az átutalási visszaigazolás megérkezett, csomagját postára adjuk, és arról értesítést küldünk.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit és státuszát megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERNOTPAID_BANKTRANSFER_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendeles {0} - Ismetelt fizetesi felkeres</value>
+  </data>
+  <data name="ORDERNOTPAID_PAYPAL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Ön a bankkártyás vagy PayPal fizetési módot választott rendelésekor, azonban a kifizetés még nem történt meg. Kérem ellenorizze, hogy minden rendben ment-e. Ha esetleg nem,akkor újra megpróbálhatja &lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&amp;token={4}"&gt;ITT&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+Amint sikerült a tranzakció, csomagját feladjuk, és errol értesítést küldünk.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit és státuszát megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERNOTPAID_PAYPAL_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendeles {0} - Ismetelt fizetesi felkeres</value>
+  </data>
+  <data name="ORDERPLACED_BANKTRANSFER_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Köszönöm megrendelését! Az Ön megrendelési száma {0}.&lt;br /&gt;
+&lt;br /&gt;
+Kérem utalja a {2}-ot a következo számlára:&lt;br/&gt;
+&lt;br /&gt;
+BIC/SWIFT Code: OKHB HUHB (Magyarországon belüli utaláshoz nem szükséges.)&lt;br /&gt;
+IBAN: HU96 1040 2506 8675 5490 8378 1009 (Magyarországon belüli utaláshoz az első 4 karakter nem szükséges.)&lt;br /&gt;
+A kedvezményezett neve: Fuchs Róbert&lt;br/&gt;
+&lt;br /&gt;
+Kérem ne felejtse feltüntetni az Ön rendelési számát sem: {0}. Ha teheti, az utalásról készült visszaigazolást küldje el válaszként a gyorsabb ügyintézés érdekében.&lt;br /&gt;
+&lt;br /&gt;
+Amint a pénz vagy az átutalási visszaigazolás megérkezett, csomagját postára adjuk, és arról értesítést küldünk.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit és státuszát megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_BANKTRANSFER_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendeles {0}</value>
+  </data>
+  <data name="ORDERPLACED_PAYPAL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Köszönöm megrendelését! Az Ön megrendelési száma {0}.&lt;br /&gt;
+&lt;br /&gt;
+Mivel Ön a bankkártyás vagy PayPal fizetési módot választotta, ezért átirányítottuk Önt a fizetési oldalra. Remélhetoleg a kifizetés sikeresen megtörtént, de ha mégsem, újra megpróbálhatja &lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&amp;token={4}"&gt;ITT&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+Amint sikerült a tranzakció, csomagját feladjuk, és errol értesítést küldünk.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit és státuszát megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_PAYPAL_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendeles {0}</value>
+  </data>
+  <data name="ORDERPLACED_POST_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Köszönöm megrendelését! Az Ön megrendelési száma {0}.&lt;br /&gt;
+&lt;br /&gt;
+Amint csomagja feladásra került, értesítem. Eloreláthatólag ez 2-3 munkanapon belül megtörténik.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit és státuszát megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_POST_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendeles {0}</value>
+  </data>
+  <data name="PACKAGESENT_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Az Ön csomagja feladásra került. Várhatóan 1-2 munkanapon belül megérkezik.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit, státuszát és a SZÁMLÁT megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;. (Nyomtatás a Ctrl+P billentyűkombinációval)&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Köszönjük a vásárlást!&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="PACKAGESENT_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Rendeles {0} - Csomag feladasra kerult</value>
+  </data>
+  <data name="PASSWORDRESET_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Az Ön jelszava megváltozott. Az ideiglenes új jelszó '{1}'.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="PASSWORDRESET_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Jelszo valtoztatas</value>
+  </data>
+  <data name="RECOMMENDATION_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt Rendszergazda!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+A(z) {0} sorszamu rendeles megrendeloje ajánlást küldött a következo barátainak:&lt;br /&gt;
+{1}&lt;br /&gt;
+&lt;br /&gt;
+Az üzenet szövege a következo: &lt;br /&gt;
+{2}&lt;br /&gt;
+&lt;br /&gt;
+Fontos tudnod, hogy az üzenet továbbítása a címzetteknek jelenleg manuális!
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="RECOMMENDATION_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Ajanlas</value>
+  </data>
+  <data name="SURVEYREQUEST_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Reméljük már megkapta termékeinket és örömmel használja oket! Nagy segítségünkre lenne, ha kitöltené az 1 percet igénybe vevo elégedettségi kérdoívünket, hogy szolgátatásunkat még magasabb szintre emelhessük!&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://www.naplampa.hu/Admin/ShowSurvey.aspx?OrderID={0}&amp;ConfirmationCode={2}&amp;SurveyID={3}"&gt;Kérem kattintson ide a megjelenítéshez!&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Köszönjük a segítséget!&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="SURVEYREQUEST_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Velemenykeres</value>
+  </data>
+  <data name="UNKNOWNSTATUSCHANGE_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt Rendszergazda!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+A(z) {0} sorszamu rendeles statusza a megszokottol elteroen valtozott a(z) {1} ertekrol a(z) {2} ertekre.&lt;br /&gt;
+&lt;br /&gt;
+A rendelés részleteit és státuszát megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br /&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="UNKNOWNSTATUSCHANGE_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Statuszvaltas</value>
+  </data>
+  <data name="WEBMAIL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="hu"&gt;
+&lt;/head&gt;
+
+&lt;body lang="hu"&gt;
+
+Tisztelt Rendszergazda!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+{2}-kor levelet küldött valaki a weboldalon keresztül. E-mail címként a '{0}'-et adta meg, és az üzenet a következo:&lt;br /&gt;
+&lt;br /&gt;
+{1}&lt;br/&gt;
+&lt;br/&gt;
+&lt;br /&gt;
+Üdvözlettel,&lt;br/&gt;
+NapLámpa&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="WEBMAIL_SUBJECT" xml:space="preserve">
+    <value>NapLampa - Webmail</value>
+  </data>
+</root>

@@ -1,0 +1,118 @@
+﻿<Window x:Class="NaplampaAdmin.NewOrder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="NewOrder" Height="660" Width="582">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="125"/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Új rendelés" HorizontalAlignment="Center"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="Keresztnév: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="2" Content="Vezetéknév: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="3" Content="E-mail: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="4" Content="Telefonszám: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="5" Content="Postai Cím" HorizontalAlignment="Right"/>
+
+            <Grid Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Content="Ország: " HorizontalAlignment="Right"/>
+                <Label Grid.Column="0" Grid.Row="1" Content="Utca és házszám: " HorizontalAlignment="Right"/>
+                <Label Grid.Column="0" Grid.Row="2" Content="Település: " HorizontalAlignment="Right"/>
+                <Label Grid.Column="0" Grid.Row="3" Content="Irányítószám: " HorizontalAlignment="Right"/>
+
+                <ComboBox Grid.Column="1" Grid.Row="0" Name="CountryComboBox" Width="200" HorizontalAlignment="Left" DisplayMemberPath="Name" SelectedValuePath="CountryId"/>
+                <TextBox Grid.Column="1" Grid.Row="1" Name="AddressLineTextBox" Width="200" HorizontalAlignment="Left"/>
+                <TextBox Grid.Column="1" Grid.Row="2" Name="TownTextBox" Width="200" HorizontalAlignment="Left"/>
+                <TextBox Grid.Column="1" Grid.Row="3" Name="PostalCodeTextBox" Width="200" HorizontalAlignment="Left"/>
+        </Grid>
+
+        <Label Grid.Column="0" Grid.Row="7" Content="Céges számlázási információk (nem kötelező)" HorizontalAlignment="Right"/>
+        <Grid Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Megnevezés: " HorizontalAlignment="Right"/>
+            <Label Grid.Column="0" Grid.Row="1" Content="Ország: " HorizontalAlignment="Right"/>
+            <Label Grid.Column="0" Grid.Row="2" Content="Utca és házszám: " HorizontalAlignment="Right"/>
+            <Label Grid.Column="0" Grid.Row="3" Content="Település: " HorizontalAlignment="Right"/>
+            <Label Grid.Column="0" Grid.Row="4" Content="Irányítószám: " HorizontalAlignment="Right"/>
+
+            <TextBox Grid.Column="1" Grid.Row="0" Name="InvoiceNameTextBox" Width="200" HorizontalAlignment="Left"/>
+            <ComboBox Grid.Column="1" Grid.Row="1" Name="InvoiceCountryComboBox" Width="200" HorizontalAlignment="Left" DisplayMemberPath="Name" SelectedValuePath="CountryId"/>
+            <TextBox Grid.Column="1" Grid.Row="2" Name="InvoiceAddressLineTextBox" Width="200" HorizontalAlignment="Left"/>
+            <TextBox Grid.Column="1" Grid.Row="3" Name="InvoiceTownTextBox" Width="200" HorizontalAlignment="Left"/>
+            <TextBox Grid.Column="1" Grid.Row="4" Name="InvoicePostalCodeTextBox" Width="200" HorizontalAlignment="Left"/>
+        </Grid>
+
+
+        <Label Grid.Column="0" Grid.Row="9" Content="Kitől hallott rólunk? " HorizontalAlignment="Right"/>
+        <CheckBox Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" Name="NewsletterCheckBox" Content="Hozzájárulok, hogy a NapLampa.hu e-mailben értesítsen új termékeiről és aktuális ajánlatairól" HorizontalAlignment="Center" VerticalContentAlignment="Top" VerticalAlignment="Center" />
+        <Label Grid.Column="0" Grid.Row="11" Content="Napsugár izzó: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="12" Content="Kristálysugár izzó: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="13" Content="Kristálysugár izzó E14: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="14" Content="Pénznem: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="15" Content="Fizetési mód: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="16" Content="Státusz: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="17" Content="Kupon: " HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="18" Content="Költségek: " HorizontalAlignment="Right"/>
+
+        <TextBox Grid.Column="1" Grid.Row="1" Name="FirstNameTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Name="LastNameTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="3" Name="EmailTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="4" Name="PhoneTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="9" Name="RefererTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="11" Name="SunBeamTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="12" Name="CrystalBeamTextBox" Width="200" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="13" Name="CrystalBeamE14TextBox" Width="200" HorizontalAlignment="Left"/>
+        
+        <ComboBox Grid.Column="1" Grid.Row="14" Name="CurrencyComboBox" Width="200" HorizontalAlignment="Left" DisplayMemberPath="Name" SelectedValuePath="CurrencyId"/>
+        <ComboBox Grid.Column="1" Grid.Row="15" Name="PaymentMethodComboBox" Width="200" HorizontalAlignment="Left" DisplayMemberPath="Value" SelectedValuePath="Key"/>
+        
+        <CheckBox Grid.Column="1" Grid.Row="16" Name="PromoCheckBox" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Promo"/>
+        <TextBox Grid.Column="1" Grid.Row="17" Name="CouponTextBox" Width="200" HorizontalAlignment="Left"/>
+        
+        <Button Grid.Column="0" Grid.Row="19" Grid.ColumnSpan="2" Content="Rögzít" HorizontalAlignment="Center" Width="100" Click="Button_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+c:\Work\Naplampa.hu\MagmaLightWeb\bin\MagmaLightWeb.dll
+c:\Work\Naplampa.hu\MagmaLightWeb\bin\MagmaLightWeb.pdb
+c:\Work\Naplampa.hu\MagmaLightWeb\obj\Release\ResolveAssemblyReference.cache
+c:\Work\Naplampa.hu\MagmaLightWeb\obj\Release\MagmaLightWeb.dll
+c:\Work\Naplampa.hu\MagmaLightWeb\obj\Release\MagmaLightWeb.pdb

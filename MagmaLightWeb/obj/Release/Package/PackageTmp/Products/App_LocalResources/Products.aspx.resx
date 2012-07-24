@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblProductPrice.Text" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;Now:</value>
+  </data>
+  <data name="lblMSRPPrice.Text" xml:space="preserve">
+    <value>MSRP:</value>
+  </data>
+  <data name="page.Title" xml:space="preserve">
+    <value>Products - MagmaLight</value>
+  </data>
+  <data name="lnkOrder.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="lblSaleRemaining.Text" xml:space="preserve">
+    <value>!! Sale ends in {0} day(s) !!&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</value>
+  </data>
+  <data name="lblDetailedDescription.Text" xml:space="preserve">
+    <value>Detailed information</value>
+  </data>
+  <data name="lblDetails.Text" xml:space="preserve">
+    <value>Click here for details!</value>
+  </data>
+  <data name="lblGuarantee.Text" xml:space="preserve">
+    <value>&lt;span&gt;1&lt;/span&gt;
+          &lt;p&gt;year factory&lt;br /&gt;and 30 day&lt;br /&gt;
+          &lt;strong&gt;moneyback&lt;br /&gt;guarantee&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="lblOtherProducts.Text" xml:space="preserve">
+    <value>Other products</value>
+  </data>
+  <data name="lblProperties.Text" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="lblDepressionHeader.Text" xml:space="preserve">
+    <value>Depression</value>
+  </data>
+  <data name="lblDepressionText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Light is at least as good medication as pills – most likely even better. The best example: people suffering from SAD (Seasonal Affective Disorder), Sunlight is a very effective antidepressant.&lt;/p&gt;
+
+&lt;p&gt;In his in-depth research on depression, Kripke compared light and medication based therapies systematically. He firmly stated that light therapy should be used for treating depression at least parallel with drug-based medication, even before clinic tests .&lt;/p&gt;
+
+&lt;p&gt;Sunlight therapy is proven by biology itself. With regard to hormones, depression and SAD are associated with low serotonin levels, while it is proven by research that when exposed to bright sunlight, the brain’s serotonin level increases.&lt;/p&gt;</value>
+  </data>
+  <data name="lblEconomyHeader.Text" xml:space="preserve">
+    <value>Sustainable and economic</value>
+  </data>
+  <data name="lblEconomyText.Text" xml:space="preserve">
+    <value>&lt;p&gt;There are different levels of power consumption among our products, all of them are energy-saving and have a very long lifespan.&lt;/p&gt;
+
+&lt;p&gt;The same light power that a regular 85W bulb produces is made by a 13W full spectrum energy saver bulb. If we suppose that they both will work for 8,000 hours, then during their lifespan they will use use 680kWhs (regular) and 104kWhs of energy. That means that the consumption ratio is 1 to 6.5!&lt;/p&gt; 
+
+&lt;p&gt;Don't forget that lifespan of the regular bulbs are much less then our products': they have only 1,000 hours compared to 8,000 of our full spectrum bulbs.&lt;/p&gt;</value>
+  </data>
+  <data name="lblFullSpectrumHeader.Text" xml:space="preserve">
+    <value>Full spectrum light</value>
+  </data>
+  <data name="lblFullSpectrumText.Text" xml:space="preserve">
+    <value>&lt;p&gt;The spectrum analysis can hold useful information about the measurable amount of light in the different light-frequency ranges. If you investigate the spectrum of the natural sun-light, you can observe that the Sun emits light not only in the visible ranges. &lt;/p&gt;
+
+&lt;p&gt;The quality of a bulb's light can be judged by its similarity to sunlight. The commonly used energy saving bulbs have an 20%-30% similarity index, because they produce light only in the visible range. All the products you can find on this site have at least 80% similarity index, which means that the light is amazingly similar to the Sun's light, and it has a high color rendering index.&lt;/p&gt;
+
+&lt;p&gt;The CRI (Color Rendering Index) defines the quality of the light. The higher the value the higher quality the source is. Because we have 80%+ products, they are qualified to be used in professional photo and printing environment as well.&lt;/p&gt;
+
+&lt;p&gt;The other major benefit of having a full-spectrum light is that it has a very positive effect on all living beings (in the same way as the Sun does). With these bulbs you can catalyze the photosynthesis, the growing and nutriment processing procedures are getting faster. Plant cultivation, pet keeping, aquarium lighting, bird farms are especially good applications. We humans benefit also from the good impacts of the natural light sources, so it is advisable to use them everywhere you spend time.&lt;/p&gt;</value>
+  </data>
+  <data name="lblHealthHeader.Text" xml:space="preserve">
+    <value>Health and sleeping disorders</value>
+  </data>
+  <data name="lblHealthText.Text" xml:space="preserve">
+    <value>&lt;p&gt;A few decades earlier we lived with and in the Sun spending a lot more time outdoors than today.&lt;/p&gt;
+
+&lt;p&gt;Without the morning Sunlight our biological clock fails to properly start producing the hormones needed for a fresh and active wake-up. If we do not get enough Sunlight in the daytime, we easily lose enthusiasm for work. At night we are often awake longer which may cause negative mood changes and sleep disorder. How well we sleep, how active we are and the way we feel in general are all defined by our inside biological clock.&lt;/p&gt;
+
+&lt;p&gt;The rhythm of being asleep and awake is called biorhythm. If this clock does not receive its natural impulses from the environment – like morning sunlight and later the sunset – this rhythm disorientates and hormones are not produced with a proper timing and quantity.&lt;/p&gt;
+
+&lt;p&gt;Most mood-change and sleep disorders are caused by bio-rhythmic imbalance – according to medical study papers.&lt;/p&gt;
+
+&lt;p&gt;Research has shown that nowadays people get an average of 21 minutes in Sunlight every day, which is a lot less then the measured average a few decades before. This may be one cause for depression and depression-related cases have doubled in numbers, and sleep disorders have grown triple over the past 50 years.&lt;/p&gt;</value>
+  </data>
+  <data name="lblIonizerHeader.Text" xml:space="preserve">
+    <value>Allergy, smoking, asthma</value>
+  </data>
+  <data name="lblIonizerText.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;div style="text-align: center"&gt;&lt;iframe width="640" height="510" src="http://www.youtube.com/embed/YcAWKWcPwsc?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;Tiny particles floating and flying in the air that we breathe in cause allergic symptoms, asthma and the unpleasant smell of cigarette smoke for example. But why weren’t there so many related cases 50 years before than nowadays? The answer is quite simple: there is a mix of positive and negative molecular parts floating in the air, and this balance defines how much are parts able to float at all. As You will see below, in city areas the ratio of positive charged parts is extremely high – causing unhealthy moleculas to be around in larger numbers. One solution is the negative ion generator…&lt;/p&gt;
+
+&lt;p&gt;Negative ions turned out to have a general good effect for the body.&lt;/p&gt;
+
+&lt;p&gt;Density of negative ions in the air - in different environments&lt;/p&gt;
+&lt;p&gt;
+    &lt;table&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+            &lt;td&gt;
+                &lt;strong&gt;
+                    Environment
+                &lt;/strong&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+
+                &lt;strong&gt;
+                    Density (-ion/cm3)&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Waterfall
+            &lt;/td&gt;
+
+            &lt;td&gt;
+                95,000 – 450,000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Mountain, beach, forest
+            &lt;/td&gt;
+            &lt;td&gt;
+
+                50,000 – 100,000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Countryside field
+            &lt;/td&gt;
+            &lt;td&gt;
+                5,000 – 50,000
+            &lt;/td&gt;
+
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                City
+            &lt;/td&gt;
+            &lt;td&gt;
+                100 – 2000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;
+                Room or office
+            &lt;/td&gt;
+            &lt;td&gt;
+                40 – 100
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+
+            &lt;td&gt;
+                Air-conditioned room
+            &lt;/td&gt;
+            &lt;td&gt;
+                0 – 20
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;&lt;/table&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The positive effects of high ion density&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Better general well-being&lt;/li&gt;
+&lt;li&gt;Faster growth in the cases of plants and animals&lt;/li&gt;
+&lt;li&gt;Increasing cilium ‘performance’ in the lungs&lt;/li&gt;
+&lt;li&gt;More effective relaxation (less worries in general)&lt;/li&gt;
+&lt;li&gt;Lower body temperature&lt;/li&gt;
+&lt;li&gt;Lower relaxed-state heart pulse rate&lt;/li&gt;
+&lt;li&gt;Lower ratio of viruses and bacteria in the air&lt;/li&gt;
+&lt;li&gt;Faster learning in the cases of mammals&lt;/li&gt;
+&lt;li&gt;Ease of gastric ulcer symptoms&lt;/li&gt;
+&lt;li&gt;Eased symptoms of dust allergy&lt;/li&gt;
+&lt;li&gt;Ease of pollen allergy symptom&lt;/li&gt;
+&lt;li&gt;Ease of dust mite allergy symptoms&lt;/li&gt;
+&lt;li&gt;Ease of allergies caused by animal hair&lt;/li&gt;
+&lt;li&gt;Ease of mildew spore allergy symptoms&lt;/li&gt;
+&lt;li&gt;Ease symptoms of hay fever&lt;/li&gt;
+&lt;li&gt;Ease asthma symptoms&lt;/li&gt;
+&lt;li&gt;Clean air&lt;/li&gt;
+&lt;li&gt;Dissolve smoke&lt;/li&gt;
+&lt;li&gt;Ease of SAD – Seasonal Affective Disorder&lt;/li&gt;
+&lt;li&gt;Ease of depression&lt;/li&gt;
+&lt;li&gt;Ease of chronic tiredness&lt;/li&gt;
+&lt;li&gt;Smell reduction (not as effective as ozone though)&lt;/li&gt;
+&lt;li&gt;Helps to avoid breathing disorders&lt;/li&gt;
+&lt;li&gt;Helps to avoid migraine and headaches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;Increased negative ion density in the air is well known to be generally good for health. Changes include better relaxations, less feeling of tiredness, and less stress, discomfort, tension and depression.&lt;/p&gt;
+
+
+&lt;p&gt;The ionizer is the small bar at the center of the light bulb, surrounded by the lighting pipe. The process is simple: the electric device pushes negatively charged ions in the air. All the dust, pollen, smoke, smell molecules and bacteria need positively charged ions to travel in the air. When the negative and pozitive particles collide, the positive loses its charge, so the 'traveler' falls to the ground. The air becomes significantly cleaner, loses its odor and we are not going to inhale the dangerous materials.&lt;/p&gt;
+
+&lt;p&gt;Technically speaking the ionizer is a 6-7KV device, which consumes approximately 2-3 Watts. During its functioning ozone will not be produced.&lt;/p&gt;
+
+&lt;p&gt;It's important to know about the ionizer that its efficiency could decrease if you use it with a closed lamp-shell.&lt;/p&gt;</value>
+  </data>
+  <data name="lnkLinks.Text" xml:space="preserve">
+    <value>I am not convinced, show me research material!</value>
+  </data>
+</root>

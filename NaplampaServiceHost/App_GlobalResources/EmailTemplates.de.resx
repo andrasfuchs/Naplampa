@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CHRISTMAS2009_BODY" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CHRISTMAS2009_SUBJECT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CONFIRMEMAIL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Sie müssen ihre E-Mail Adresse in unserem System bestätigen, um die Kommunikation sicherer machen zu können und um zu den speziellen Funktionen unserer Seite Zugang zu haben. Bitte klicken Sie den nachstehenden Link an.&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;br /&gt;
+Sie können Ihre eigenen Daten ändern &lt;a href="http://www.magmalight.com/Admin/UserPreferences.aspx?PersonId={3}&amp;ConfirmationCode={2}"&gt;ITT&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="CONFIRMEMAIL_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - E-Mail Bestätigung</value>
+  </data>
+  <data name="DEFAULT_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Systemmeldung</value>
+  </data>
+  <data name="ERRORREPORT_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrter Administrator!&lt;br /&gt;
+&lt;br /&gt;
+
+Etwas stimmt nicht mit dem System!
+&lt;br /&gt;&lt;br /&gt;
+{0}&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+{1}&lt;br /&gt;&lt;br /&gt;
+{2}&lt;br /&gt;&lt;br /&gt;
+{3}&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ERRORREPORT_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Fehler</value>
+  </data>
+  <data name="ORDERNOTPAID_BANKTRANSFER_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Sie haben bei Ihrer Bestellung die Zahlung per Banküberweisung gewählt, wir haben jedoch weder die Bestätigung, noch das Geld erhalten. Bitte prüfen Sie, ob die Transaktion erfolgreich war, und wenn eventuell nicht, versuchen Sie bitte noch einmal mit den folgenden Daten:&lt;br /&gt;
+Betrag: {2}&lt;br /&gt;
+BIC/SWIFT Code: CIBH HUHB HU88&lt;br /&gt;
+IBAN: HU88 1070 0103 5256 7595 5110 0005.&lt;br /&gt;
+Name des Begünstigten: András Fuchs&lt;br /&gt;
+Ihre Bestellungsnummer: {0}. &lt;br /&gt;&lt;br /&gt;
+Falls möglich, schicken Sie uns die Bestätigung der Überweisung als Antwort zu, um die Bearbeitung zu beschleunigen.&lt;br /&gt;
+&lt;br /&gt;
+Sobald das Geld oder die Bestätigung der Überweisung eingetroffen ist, senden wir Ihr Paket per Post zu und schicken darüber eine Nachricht.&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen &lt;a href="http://www.magmalight.com/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;HIER&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERNOTPAID_BANKTRANSFER_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Bestellung {0} - Wiederholte Zahlungserinnerung</value>
+  </data>
+  <data name="ORDERNOTPAID_PAYPAL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Sie haben bei Ihrer Bestellung die Zahlung mit Bankkarte oder PayPal gewählt, die Zahlungs ist jedoch noch nicht erfolgt. Bitte prüfen Sie, ob alles gut gelaufen ist. Wenn eventuell nicht, können Sie es erneut versuchen &lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&amp;token={4}"&gt;ITT&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+Sobald die Transaktion erfolgreich abgeschlossen ist, senden wir Ihnen Ihr Paket zu und schicken darüber eine Nachricht&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen &lt;a href="http://www.magmalight.com/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;HIER&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERNOTPAID_PAYPAL_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Bestellung {0} - Wiederholte Zahlungserinnerung</value>
+  </data>
+  <data name="ORDERPLACED_BANKTRANSFER_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Wert {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Danke für ihre Bestellung! Ihre Bestellungsnummer {0}.&lt;br /&gt;
+&lt;br /&gt;
+Übeweisen Sie bitte {2} auf das folgende Konto:&lt;br/&gt;
+BIC/SWIFT Code: OKHB HUHB&lt;br /&gt;
+IBAN: HU96 1040 2506 8675 5490 8378 1009.&lt;br /&gt;
+Name des Begünstigten: Róbert Fuchs&lt;br/&gt;
+Bitte vergessen Sie nicht Ihre Bestellungsnummer anzugeben: {0}. Falls möglich, schicken Sie uns die Bestätigung der überweisung zu, um die Bearbeitung zu beschleunigen.&lt;br /&gt;
+&lt;br /&gt;
+Sobald das Geld oder die Bestätigung der Überweisung eingetroffen ist, senden wir Ihr Paket per Post zu und schicken darüber eine Nachricht.&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen &lt;a href="http://www.magmalight.com/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;HIER&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_BANKTRANSFER_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Bestellung {0}</value>
+  </data>
+  <data name="ORDERPLACED_PAYPAL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Danke für ihre Bestellung! Ihre Bestellungsnummer {0}.&lt;br /&gt;
+&lt;br /&gt;
+Da Sie die Zahlung mit Bankkarte oder PayPal gewählt haben, haben wir Sie deshalb zur Seite Zahlung weitergeschickt. Wir hoffen, dass die Zahlung erfolgreich war, wenn doch nicht, können Sie es erneut versuchen &lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&amp;token={4}"&gt;HIER&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+Sobald die Transaktion erfolgreich abgeschlossen ist, senden wir Ihnen Ihr Paket zu und schicken darüber eine Nachricht&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen &lt;a href="http://www.magmalight.com/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;HIER&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_PAYPAL_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Bestellung {0}</value>
+  </data>
+  <data name="ORDERPLACED_POST_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Danke für Ihre Bestellung! Ihre Bestellungsnummer {0}.&lt;br /&gt;
+&lt;br /&gt;
+Sobald Ihr Paket gesendet wurde, werde ich Sie benachrichtigen. Es ist voraussichtlich in 2-3 Arbeitstagen zu erwarten.&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen &lt;a href="http://www.magmalight.com/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;HIER&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="ORDERPLACED_POST_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Bestellung {0}</value>
+  </data>
+  <data name="PACKAGESENT_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Ihr Paket wurde abgeschickt. Es kommt voraussichtlich in 1-2 Arbeitstagen an.&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen &lt;a href="http://www.magmalight.com/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;HIER&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Wir danken für den Kauf!&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="PACKAGESENT_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Bestellung {0} - Paket wurde abgeschickt</value>
+  </data>
+  <data name="PASSWORDRESET_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {0}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Ihr Passwort wurde geändert. Das vorübergehende neue Passwort '{1}'.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="PASSWORDRESET_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Passwort ändern</value>
+  </data>
+  <data name="RECOMMENDATION_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrter Administrator!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Der Auftraggeber mit der Bestellung Nummer {0} hat eine Emfpehlung an folgende Freunde geschickt:&lt;br /&gt;
+{1}&lt;br /&gt;
+&lt;br /&gt;
+Die Nachricht lautet wie folgt: &lt;br /&gt;
+{2}&lt;br /&gt;
+&lt;br /&gt;
+Es ist wichtig zu wissen, dass die Weiterleitung der Nachricht an die Adressaten zur Zeit manuell erfolgt!
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="RECOMMENDATION_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Empfehlung</value>
+  </data>
+  <data name="SURVEYREQUEST_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) {1}!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Wir hoffen, dass Sie unsere Produkte bereits erhalten haben und mit Freude benutzen! Es wäre uns eine große Hilfe, wenn Sie diese Umfrage zur Kundenzufriedenheit ausfüllen könnten, die nur 1 Minute in Anspruch nimmt, damit wir das Niveau unserer Dienstleistungen noch mehr steigern können.&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+Wir danken für Ihre Hilfe!&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="SURVEYREQUEST_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Meinungsumfrage</value>
+  </data>
+  <data name="UNKNOWNSTATUSCHANGE_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+
+
+&lt;/head&gt;
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) Administrator!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Der Status der Bestellung Nummer {0} wurde ungewöhnlich vom Wert {1} auf Wert {2} geändert.&lt;br /&gt;
+&lt;br /&gt;
+Die Einzelheiten und den Status der Bestellung können Sie hier sehen
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="UNKNOWNSTATUSCHANGE_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Statusänderung</value>
+  </data>
+  <data name="WEBMAIL_BODY" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv=Content-Type content="text/html; charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Language" content="de"&gt;
+
+
+&lt;body lang="de"&gt;
+
+Sehr geehrte(r) Administrator!&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Um {2} hat jemand eine Mail durch die Website geschickt. Als E-Mail Adresse wurde'{0}' angegeben, und die Nachricht lautet wie folgt:&lt;br /&gt;
+{1}&lt;br/&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Mit freundlichen Grüssen,&lt;br /&gt;
+MagmaLight&lt;br /&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="WEBMAIL_SUBJECT" xml:space="preserve">
+    <value>MagmaLight - Webmail</value>
+  </data>
+</root>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="79cd5482-b088-46e4-a605-906493d27e37" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="c:\Work\RedeemForAll\PayPal_WSDL\Live\PayPalSvc.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PayPalSvc.wsdl" MetadataType="Wsdl" ID="d59e5d20-b91d-47de-8f64-dc3c5a46952b" SourceId="1" SourceUrl="file:///c:/Work/RedeemForAll/PayPal_WSDL/Live/PayPalSvc.wsdl" />
+    <MetadataFile FileName="eBLBaseComponents.xsd" MetadataType="Schema" ID="67b23386-1708-4a40-8fe4-33ed21b6727d" SourceId="1" SourceUrl="file:///c:/Work/RedeemForAll/PayPal_WSDL/Live/eBLBaseComponents.xsd" />
+    <MetadataFile FileName="CoreComponentTypes.xsd" MetadataType="Schema" ID="67d386f6-56e4-4398-b406-cda6c0b5513b" SourceId="1" SourceUrl="file:///c:/Work/RedeemForAll/PayPal_WSDL/Live/CoreComponentTypes.xsd" />
+    <MetadataFile FileName="EnhancedDataTypes.xsd" MetadataType="Schema" ID="df609e6e-2a72-44d3-aa5d-6235f2f8e611" SourceId="1" SourceUrl="file:///c:/Work/RedeemForAll/PayPal_WSDL/Live/EnhancedDataTypes.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

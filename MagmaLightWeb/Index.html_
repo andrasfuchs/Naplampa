@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Full spectrum bulbs with ionizer - MagmaLight" />
+    <meta name="keywords" content="napfény,napfeny,depresszió,depresszio,teljes spektrum,full spectrum,ionizátor,ionizer,izzó,izzo,bulb,light bulb,kellék,accesories,NapLámpa,naplampa,lampa,nap,feny,fény,energy saver,energia takarékos,energiatakarékos,takarekos,egészség,egeszseg,depression,health,wellness,napfeny izzo,napfény izzó" />
+    <meta name="author" content="Andras Fuchs" />
+    <meta name="copyright" content="Copyright © 2009 Andras Fuchs. All Rights Reserved." />
+    <meta name="language" content="English" />
+    <meta name="verify-v1" content="1nE2pzilEuwMQfhhWcgQfKW1IGCyE77eIDf5MG2XM2s=" />
+    <title>Loading - MagmaLight</title>
+    <link rel="stylesheet" title="CSS" type="text/css" href="./styles/base.css" media="screen" />
+    <link rel="stylesheet" title="CSS" type="text/css" href="./styles/form.css" media="screen" />
+    <meta http-equiv="Refresh" content="0; URL=index.aspx" />
+</head>
+<body>
+    <div class="container">
+        <!-- Begin Masthead -->
+        <div class="masthead">
+            <input type="image" name="ctl00$imgLogo" id="ctl00_imgLogo" src="./images/Logo_MagmaLight.png"
+                alt="Logo" style="border-width: 0px;" />
+        </div>
+        <div class="work_frame">
+            <div class="top">
+            </div>
+            <div class="center">
+                <!--BELSO OLDALAKON HASZNÁLATOS KERET KEZD-->
+                <div class="insideframe">
+                    <!--oldalfejlec KEZD-->
+                    <div class="header">
+                        <span id="ctl00_content_lblOrder">Loading</span>
+                    </div>
+                    <p>
+                        Please wait...</p>
+                    <br />
+                    <p>
+                        Bitte warten...</p>
+                    <br />
+                    <p>
+                        S'il vous plais, attendez...</p>
+                    <br />
+                    <p>
+                        Espere por favor...</p>
+                    <br />
+                    <p>
+                        Si prega di attendere…</p>
+                    <br />
+                    <p>
+                        Kérem várjon...</p>
+                </div>
+            </div>
+            <div class="foot">
+            </div>
+        </div>
+        <div class="copyright">
+            <span id="ctl00_lblCopyright">Copyright © 2009. All Rights Reserved</span>
+        </div>
+    </div>
+    <!-- End Container -->
+    <img src="./images/icon01_h.png" style="display: none;" />
+    <img src="./images/icon02_h.png" style="display: none;" />
+    <img src="./images/icon03_h.png" style="display: none;" />
+    <img src="./images/icon04_h.png" style="display: none;" />
+    <img src="./images/icon05_h.png" style="display: none;" />
+    <img src="./images/icon06_h.png" style="display: none;" />
+</body>
+<!-- #EndTemplate -->
+</html>

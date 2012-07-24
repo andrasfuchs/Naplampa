@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="page.Title" xml:space="preserve">
+    <value>Produits - Lampe soleil</value>
+  </data>
+  <data name="lnkOrder.Text" xml:space="preserve">
+    <value>Commande</value>
+  </data>
+  <data name="lblDepressionHeader.Text" xml:space="preserve">
+    <value>Dépression</value>
+  </data>
+  <data name="lblDepressionText.Text" xml:space="preserve">
+    <value>&lt;p&gt;La lumière représente un remède au moins aussi – si non plus – efficace que les médicaments. La preuve la plus évidente en est que la lumière constitue un antidépresseur hautement efficace pour les malades souffrant de troubles affectifs saisonniers (SAD – Seasonal Affective Disorder, soit dépression hivernale). &lt;/p&gt;
+ 
+&lt;p&gt;Dans son étude élaborée sur la dépression majeure, le Docteur Daniel F. Kripke a systématiquement comparé les traitements médicamenteux avec les traitements luminothérapiques. Il affirme que, dans la lutte contre la dépression, la luminothérapie devrait être appliquée au moins en tant que traitement complémentaire à la thérapie médicamenteuse. &lt;/p&gt;
+ 
+&lt;p&gt;En ce qui concerne l’équilibre hormonal, le taux bas de sérotonine est pointé du doigt comme principal déclencheur de la dépression et des troubles affectifs saisonniers (Seasonal Affective Disorder, c’est-à-dire dépression hivernale). Des recherches démontrent que l’exposition à un flux intense de lumière du jour engendre l’augmentation du taux de sérotonine du cerveau. Cette évidence laisse supposer que c’est précisément la biologique qui justifie la luminothérapie. &lt;/p&gt;
+</value>
+  </data>
+  <data name="lblDetailedDescription.Text" xml:space="preserve">
+    <value>Informations détaillées</value>
+  </data>
+  <data name="lblEconomyHeader.Text" xml:space="preserve">
+    <value>Faible intensité énergétique</value>
+  </data>
+  <data name="lblEconomyText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Au nombre de nos produits, vous trouvez des ampoules de diverses consommations. Néanmoins, elles ont toutes une durée de fonctionnement prolongée et sont toutes économes en énergie. &lt;/p&gt;
+ 
+&lt;p&gt;Ainsi, la performance offerte par une ampoule traditionnelle d'une consommation de 85W peut être procurée par nos ampoules d'une consommation de 13W. Supposant que ces deux types d’ampoules ont – toutes deux – une durée de vie de 8 000 heures, alors au cours de leur fonctionnement, elles consomment respectivement 680kWh (ampoule traditionnelle) et 104kWh (ampoule à faible intensité énergétique) d’énergie. Aux prix énergétiques actuels (15 cents (40 forints) le kilowattheure), cela équivaut respectivement à 100 euros (27 200 forints) et 15 euros (4 160 forints). &lt;/p&gt;
+
+&lt;p&gt;Si on prend également en considération le fait que la durée de vie des ampoules traditionnelles est nettement plus courte (1 000 heures seulement, au lieu de 8 000), il se révèle que durant le temps d’utilisation des ampoules commercialisées par notre société, il serait nécessaire d'acheter huit ampoules traditionnelles. Si on traduit cette dépense en euros, on peut dire que le prix de huit ampoules traditionnelles de 85W s’élève à 23 euros (6 400 forints) tandis que chez nous, vous pouvez acheter une ampoule de cette capacité – en fonction du type – déjà à 15 euros (4 000 forints). &lt;/p&gt;
+</value>
+  </data>
+  <data name="lblFullSpectrumHeader.Text" xml:space="preserve">
+    <value>Lumière à spectre complet</value>
+  </data>
+  <data name="lblFullSpectrumText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Le spectre de la lumière indique l’intensité du rayonnement dans de divers domaines de la lumière. En examinant le spectre de la lumière du jour, on découvre que le soleil rayonne non seulement dans le domaine visible mais également dans les domaines infrarouge et ultraviolet. &lt;/p&gt; 
+
+&lt;p&gt;La qualité d’une ampoule se détermine par la ressemblance de sa lueur à la lumière du jour. L’indice des ampoules commercialisées en tant qu’ampoules traditionnelles économes en énergie oscille entre 20 et 30 % étant donné que ces ampoules émettent de la lumière se trouvant uniquement dans le domaine de la lumière visible. Les ampoules commercialisées par notre société produisent une lumière à 80-95 % équivalente au spectre de la lumière du jour, ce qui provoque une ressemblance extraordinaire et une fidélité de couleurs de haut niveau. &lt;/p&gt;
+ 
+&lt;p&gt;L’IRC est l’indice utilisé pour mesurer la fidélité des couleurs (CRI : Color Rendering Index –indice de rendu des couleurs). L’indice IRC de tous nos produits est supérieur à 80 % permettant ainsi d’utiliser nos ampoules dans un environnement professionnel, tel que les ateliers de graphiste ou les imprimeries. &lt;/p&gt;
+
+&lt;p&gt;Un avantage supplémentaire du spectre complet est qu’il exerce un effet positif extraordinaire sur tous les êtres vivants (tout comme la lumière naturelle). Les ampoules favorisent la photosynthèse, accélèrent les processus de croissance et le processus nutritionnel. D’excellents domaines d’utilisation sont notamment la culture de plantes, l’élevage d’animaux, l’éclairage d’aquariums ou encore l’élevage d’oiseaux domestiques. Elles exercent aussi un effet bénéfique sur les êtres humains, dès lors, il est conseillé d’illuminer les pièces les plus utilisées de la maison avec cette lampe.&lt;/p&gt;
+</value>
+  </data>
+  <data name="lblGuarantee.Text" xml:space="preserve">
+    <value>      &lt;span&gt;1&lt;/span&gt;
+          &lt;p&gt;an de garantie de fabrication&lt;br /&gt;et 30 jours de&lt;br /&gt;
+          &lt;strong&gt;garantie&lt;br 
+/&gt;de remboursement&lt;/strong&gt;&lt;/p&gt;
+</value>
+  </data>
+  <data name="lblHealthHeader.Text" xml:space="preserve">
+    <value>Santé, troubles du sommeil</value>
+  </data>
+  <data name="lblHealthText.Text" xml:space="preserve">
+    <value>&lt;p&gt;Voici quelques dizaines d’années, l’homme se levait et se couchait encore avec le soleil. De plus, il passait beaucoup plus de temps dans la nature que de nos jours. &lt;/p&gt;
+
+&lt;p&gt;Sans la lumière matinale convenable, notre horloge biologique n’entame pas la production des hormones indispensables au réveil actif et frais. Dans le cas où nous ne pouvons même pas bénéficier de la lumière du jour au cours de la journée, nous avons tendance à devenir langoureux et moins susceptibles de travailler. Qui plus est, le soir, nous avons tendance à rester actif durant de nombreuses heures après la tombée du jour, ce qui engendre une humeur lunatique ainsi que des troubles du sommeil. La qualité de notre sommeil et notre dynamisme comme notre humeur sont tous déterminés par notre horloge biologique. &lt;/p&gt;
+
+&lt;p&gt;Le rythme veille-sommeil déterminé par notre horloge biologique est appelé le rythme biologique. Dans le cas où cette horloge biologique n’obtient pas le signe convenable de l’environnement, telle la lumière du jour le matin ou l’obscurité à la tombée du jour, le rythme biologique se décalera et par conséquent, notre organisme commencera la production des hormones à un mauvais moment, ou la quantité de celles-ci ne sera pas suffisante. &lt;/p&gt;
+
+&lt;p&gt;D’après certaines revues médicales, la plupart des fluctuations de l’humeur et des anomalies du sommeil sont provoquées par le trouble du rythme biologique. &lt;/p&gt;
+
+&lt;p&gt;Des études ont démontré que de nos jours, une personne bénéficie en moyenne, quotidiennement de 21 minutes de lumière naturelle. Une durée d'exposition qui est nettement inférieure à la moyenne d’il y a quelques dizaines d’années. Il est donc fort probable, que ce phénomène est une des raisons pour laquelle le nombre de personnes souffrant de dépression et de maladies liées à celle-ci ait doublé et que le nombre des patients touchés par des troubles du sommeil ait triplé au cours des 50 dernières années. &lt;/p&gt;
+</value>
+  </data>
+  <data name="lblIonizerHeader.Text" xml:space="preserve">
+    <value>Allergie, tabagisme, asthme</value>
+  </data>
+  <data name="lblIonizerText.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;div style="text-align: center"&gt;&lt;iframe width="640" height="510" src="http://www.youtube.com/embed/yLncM8JhAHw?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;Les microparticules présentes dans l’air peuvent  être considérées comme responsables des symptômes d’allergies, de l’odeur désagréable de fumée de la cigarette ainsi que des crises d’asthme. En effet, ces particules volent dans l’air et sont ainsi inhalées par l’homme. Comment peut-on expliquer alors que depuis 50 ans, l'homme n’a jamais connu autant de maladies atteignant les voies respiratoires ? Curieusement, la réponse est très simple. Des recherches démontrent en effet que des particules chargées positivement ainsi que celles chargées négativement, d’une taille d’un grain de poussière, sont toutes deux présentes dans l’air. En revanche, leur proportion influence considérablement leur disposition pour voler. Dans les régions urbaines, la concentration des particules chargées positivement est exceptionnellement élevée, dont une des conséquences est que les particules non désirables se propagent facilement dans l’atmosphère. Heureusement, il existe un remède : le générateur d’ions négatifs. &lt;/p&gt;
+
+&lt;p&gt;Même en forte concentration, les ions négatifs ne représentent aucune nocivité. Au contraire ! &lt;/p&gt;
+
+&lt;p&gt;La concentration des ions négatifs dans de différents environnements &lt;/p&gt;
+&lt;p&gt;
+    &lt;table&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;
+                &lt;strong&gt;
+                    Environnement
+                &lt;/strong&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+
+                &lt;strong&gt;
+                    Concentration (-ion/cm3)&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Chute d'eau
+            &lt;/td&gt;
+
+            &lt;td&gt;
+                95,000 – 450,000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Montagne, bord de mer, forêt
+            &lt;/td&gt;
+            &lt;td&gt;
+
+                50,000 – 100,000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Champ en zone rurale
+            &lt;/td&gt;
+            &lt;td&gt;
+                5,000 – 50,000
+            &lt;/td&gt;
+
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                Ville
+            &lt;/td&gt;
+            &lt;td&gt;
+                100 – 2000
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;
+                Chambre ou bureau
+            &lt;/td&gt;
+            &lt;td&gt;
+                40 – 100
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+
+            &lt;td&gt;
+                Chambre équipée d’un climatiseur
+            &lt;/td&gt;
+            &lt;td&gt;
+                0 – 20
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Les effets bénéfiques de la forte concentration des ions négatifs&lt;/p&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;Un sentiment de bonheur plus marqué&lt;/li&gt;
+&lt;li&gt;Dans le cas d’animaux et de plantes, une croissance plus importante&lt;/li&gt;
+&lt;li&gt;Meilleur fonctionnement des alvéoles pulmonaires&lt;/li&gt;
+&lt;li&gt;Effet reposant (diminution de l’inquiétude)&lt;/li&gt;
+&lt;li&gt;Une température corporelle plus basse&lt;/li&gt;
+&lt;li&gt;Une fréquence cardiaque au repos plus basse&lt;/li&gt;
+&lt;li&gt;Une présence moins importante de bactéries et de virus dans l’air&lt;/li&gt;
+&lt;li&gt;Un apprentissage plus rapide chez les mammifères&lt;/li&gt;
+&lt;li&gt;L’atténuation de l’ulcère de l’estomac&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes de l’allergie aux poussières&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes de l’allergie aux pollens (herbes, pollens de fleurs)&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes de l’allergie aux acariens&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes de l’allergie aux poils d’animaux&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes de l’allergie aux moisissures&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes du rhume des foins&lt;/li&gt;
+&lt;li&gt;L’atténuation des symptômes de l’asthme&lt;/li&gt;
+&lt;li&gt;Purification de l’air&lt;/li&gt;
+&lt;li&gt;Neutralisation des fumées&lt;/li&gt;
+&lt;li&gt;L’atténuation des troubles affectifs saisonniers (SAD – Seasonal Affective Disorder, soit dépression hivernale)&lt;/li&gt;
+&lt;li&gt;Diminution de la dépression&lt;/li&gt;
+&lt;li&gt;Diminution de la fatigue chronique&lt;/li&gt;
+&lt;li&gt;Neutralisation des odeurs (moins efficace que l’ozone par exemple)&lt;/li&gt;
+&lt;li&gt;Permet d’éviter l’apparition de problèmes respiratoires&lt;/li&gt;
+&lt;li&gt;Permet d’éviter les migraines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;Il est généralement admis que la concentration accrue d’ions négatifs est bénéfique à l’être humain pour de diverses raisons : elle garantit une sensation de repos plus importante et une sensation de fatigue moins marquée, moins de stress, d’anxiété, de dépression et de tension. &lt;/p&gt;
+
+
+&lt;p&gt;L’ioniseur est la petite barre entourée du tube lumineux qui se situe dans la partie centrale de l’ampoule. Son fonctionnement est simple : cet appareil électronique diffuse des ions négatifs dans l’air. Étant donné que les poussières, les pollens, les molécules d’odeurs, les bactéries et d’autres substances polluantes ne peuvent circuler que sur les ions positifs, ils perdent leur capacité de voler à la suite des collisions avec des ions négatifs et tombent à terre. Ainsi, l’air devient nettement plus pur et exempt de toute odeur, et dès lors, nous n’inhalons pas les substances nuisibles à notre santé. &lt;/p&gt;
+
+&lt;p&gt;Techniquement, l’ioniseur est un appareil de 6 à 7 KV, dont la consommation est de 2 à 3 W. Il ne génère pas d’ozone lors de l’utilisation. &lt;/p&gt;
+
+&lt;p&gt;Il importe de savoir sur le fonctionnement de l’ioniseur que son utilisation dans une enveloppe fermée est susceptible de diminuer considérablement son efficacité. La baisse d’efficacité est proportionnelle à l’épaisseur de l’enveloppe. Dès lors, nous vous conseillons de l’utiliser, de préférence, avec un luminaire ouvert. &lt;/p&gt;</value>
+  </data>
+  <data name="lblMSRPPrice.Text" xml:space="preserve">
+    <value>Prix jusque là</value>
+  </data>
+  <data name="lblProductPrice.Text" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;Maintenant :</value>
+  </data>
+  <data name="lblProperties.Text" xml:space="preserve">
+    <value>Caractéristiques</value>
+  </data>
+  <data name="lblSaleRemaining.Text" xml:space="preserve">
+    <value>!! Notre promotion s’achève dans {0} jours !!&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</value>
+  </data>
+  <data name="lnkLinks.Text" xml:space="preserve">
+    <value>D'autres produits</value>
+  </data>
+  <data name="lblDetails.Text" xml:space="preserve">
+    <value>Cliquez ici pour voir.</value>
+  </data>
+</root>

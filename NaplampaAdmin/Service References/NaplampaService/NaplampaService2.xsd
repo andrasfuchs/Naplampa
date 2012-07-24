@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" />
+  <xs:complexType name="ArrayOfProductQuantity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductQuantity" nillable="true" type="tns:ProductQuantity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductQuantity" nillable="true" type="tns:ArrayOfProductQuantity" />
+  <xs:complexType name="ProductQuantity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductQuantity" nillable="true" type="tns:ProductQuantity" />
+  <xs:complexType name="ArrayOfValidationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ValidationResult" nillable="true" type="tns:ValidationResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValidationResult" nillable="true" type="tns:ArrayOfValidationResult" />
+  <xs:complexType name="ValidationResult">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Parameters" nillable="true" type="q1:ArrayOfanyType" />
+      <xs:element minOccurs="0" name="PropertyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultType" type="tns:ValidationResultType" />
+      <xs:element minOccurs="0" name="Type" type="tns:ValidationType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationResult" nillable="true" type="tns:ValidationResult" />
+  <xs:simpleType name="ValidationResultType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Pass" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Error">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ValidationResultType" nillable="true" type="tns:ValidationResultType" />
+  <xs:simpleType name="ValidationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="RequiredField" />
+      <xs:enumeration value="RegularExpression" />
+      <xs:enumeration value="IntegerRange">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="StringLength">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Custom">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ValidationType" nillable="true" type="tns:ValidationType" />
+  <xs:complexType name="OrderCosts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CouponDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CurrencyId" type="xs:int" />
+      <xs:element minOccurs="0" name="InsuranceCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PackageCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProductCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="QuantityDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendingCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalWeight" type="xs:int" />
+      <xs:element minOccurs="0" name="TransactionCost" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderCosts" nillable="true" type="tns:OrderCosts" />
+  <xs:complexType name="OrderReview">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="Order" nillable="true" type="q2:Order" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="Payer" nillable="true" type="q3:Person" />
+      <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderReview" nillable="true" type="tns:OrderReview" />
+  <xs:complexType name="ArrayOfProductDiscountPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductDiscountPrice" nillable="true" type="tns:ProductDiscountPrice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductDiscountPrice" nillable="true" type="tns:ArrayOfProductDiscountPrice" />
+  <xs:complexType name="ProductDiscountPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyId" type="xs:int" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="Discount" nillable="true" type="q4:Discount" />
+      <xs:element minOccurs="0" name="MSRP" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" minOccurs="0" name="Product" nillable="true" type="q5:Product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductDiscountPrice" nillable="true" type="tns:ProductDiscountPrice" />
+</xs:schema>

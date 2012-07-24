@@ -1,0 +1,1266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC1F25C9-0ABA-427C-8650-54407190DFB1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MagmaLightWeb</RootNamespace>
+    <AssemblyName>MagmaLightWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\OrderInfo.aspx" />
+    <Content Include="Billing\ShowInvoice.aspx" />
+    <Content Include="Contact\Contact.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\icon01.png" />
+    <Content Include="images\icon01_h.png" />
+    <Content Include="images\icon02.png" />
+    <Content Include="images\icon02_h.png" />
+    <Content Include="images\icon03.png" />
+    <Content Include="images\icon03_h.png" />
+    <Content Include="images\icon04.png" />
+    <Content Include="images\icon04_h.png" />
+    <Content Include="images\icon05.png" />
+    <Content Include="images\icon05_h.png" />
+    <Content Include="images\icon06.png" />
+    <Content Include="images\icon06_h.png" />
+    <Content Include="images\product_es002.jpg" />
+    <Content Include="images\product_es015.jpg" />
+    <Content Include="images\description_foot.png" />
+    <Content Include="images\Pic_Default.jpg" />
+    <Content Include="images\product_es004.jpg" />
+    <Content Include="images\help_bg.jpg" />
+    <Content Include="images\work_bg_center.png" />
+    <Content Include="images\work_bg_foot.png" />
+    <Content Include="images\work_bg_top.png" />
+    <Content Include="Links\Links.aspx" />
+    <Content Include="LogoOnly_114x114.png" />
+    <Content Include="LogoOnly_32x32.png" />
+    <Content Include="Order\OrderCompleted.aspx" />
+    <Content Include="Order\OrderReview.aspx" />
+    <Content Include="Order\Order_step1.aspx" />
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Country.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Currency.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Invoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Order.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.OrderCosts.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.OrderReview.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Person.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.ProductDiscountPrice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Survey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.ValidationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NaplampaService\NaplampaService.disco" />
+    <None Include="Service References\NaplampaService\configuration91.svcinfo" />
+    <None Include="Service References\NaplampaService\configuration.svcinfo" />
+    <None Include="Service References\NaplampaService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Order\Order_step2.aspx" />
+    <Content Include="styles\base.css" />
+    <Content Include="styles\form.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\NaplampaService\NaplampaService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NaplampaService\NaplampaService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NaplampaService\NaplampaService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NaplampaService\NaplampaService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NaplampaService\NaplampaService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NaplampaService\NaplampaService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ConfirmEmail.aspx.cs">
+      <DependentUpon>ConfirmEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ConfirmEmail.aspx.designer.cs">
+      <DependentUpon>ConfirmEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserPreferences.aspx.cs">
+      <DependentUpon>UserPreferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserPreferences.aspx.designer.cs">
+      <DependentUpon>UserPreferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShowSurvey.aspx.cs">
+      <DependentUpon>ShowSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShowSurvey.aspx.designer.cs">
+      <DependentUpon>ShowSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.designer.cs">
+      <DependentUpon>Common.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.de.designer.cs">
+      <DependentUpon>Common.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.fr.designer.cs">
+      <DependentUpon>Common.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.it.designer.cs">
+      <DependentUpon>Common.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.es.designer.cs">
+      <DependentUpon>Common.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Surveys.es.designer.cs">
+      <DependentUpon>Surveys.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Products.es.designer.cs">
+      <DependentUpon>Products.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PaymentMethods.es.designer.cs">
+      <DependentUpon>PaymentMethods.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderStatuses.es.designer.cs">
+      <DependentUpon>OrderStatuses.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.es.designer.cs">
+      <DependentUpon>Languages.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Currencies.es.designer.cs">
+      <DependentUpon>Currencies.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.es.designer.cs">
+      <DependentUpon>Countries.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PaymentMethods.fr.designer.cs">
+      <DependentUpon>PaymentMethods.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PaymentMethods.it.designer.cs">
+      <DependentUpon>PaymentMethods.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Surveys.it.designer.cs">
+      <DependentUpon>Surveys.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Products.it.designer.cs">
+      <DependentUpon>Products.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderStatuses.it.designer.cs">
+      <DependentUpon>OrderStatuses.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.it.designer.cs">
+      <DependentUpon>Languages.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Currencies.it.designer.cs">
+      <DependentUpon>Currencies.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.it.designer.cs">
+      <DependentUpon>Countries.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Surveys.fr.designer.cs">
+      <DependentUpon>Surveys.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Products.fr.designer.cs">
+      <DependentUpon>Products.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderStatuses.fr.designer.cs">
+      <DependentUpon>OrderStatuses.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.fr.designer.cs">
+      <DependentUpon>Languages.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Currencies.fr.designer.cs">
+      <DependentUpon>Currencies.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.fr.designer.cs">
+      <DependentUpon>Countries.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.de.designer.cs">
+      <DependentUpon>Languages.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Surveys.de.designer.cs">
+      <DependentUpon>Surveys.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Products.de.designer.cs">
+      <DependentUpon>Products.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PaymentMethods.de.designer.cs">
+      <DependentUpon>PaymentMethods.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderStatuses.de.designer.cs">
+      <DependentUpon>OrderStatuses.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Currencies.de.designer.cs">
+      <DependentUpon>Currencies.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.de.designer.cs">
+      <DependentUpon>Countries.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.designer.cs">
+      <DependentUpon>Languages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Countries.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Countries.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Countries.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Currencies.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Currencies.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Currencies.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Currencies.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Languages.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Languages.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderStatuses.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStatuses.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderStatuses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderStatuses.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PaymentMethods.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentMethods.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PaymentMethods.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentMethods.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Products.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Products.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Products.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Products.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Surveys.hu.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Surveys.hu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Surveys.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Surveys.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\OrderInfo.aspx.cs">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Billing\OrderInfo.aspx.designer.cs">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\ShowInvoice.aspx.cs">
+      <DependentUpon>ShowInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Billing\ShowInvoice.aspx.designer.cs">
+      <DependentUpon>ShowInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CacheManager.cs" />
+    <Compile Include="Common\Cloner.cs" />
+    <Compile Include="Common\CultureInitializer.cs" />
+    <Compile Include="Common\PriceFormatter.cs" />
+    <Compile Include="Common\ProductPanel.ascx.cs">
+      <DependentUpon>ProductPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ProductPanel.ascx.designer.cs">
+      <DependentUpon>ProductPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ResourceManagerAdapter.cs" />
+    <Compile Include="Common\ServiceManager.cs" />
+    <Compile Include="Contact\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CV\CV_format.aspx.cs">
+      <DependentUpon>CV_format.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CV\CV_format.aspx.designer.cs">
+      <DependentUpon>CV_format.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAR\DAR.aspx.cs">
+      <DependentUpon>DAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DAR\DAR.aspx.designer.cs">
+      <DependentUpon>DAR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Downloads\Downloads.aspx.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downloads\Downloads.aspx.designer.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Links\Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\OrderCompleted.aspx.cs">
+      <DependentUpon>OrderCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\OrderCompleted.aspx.designer.cs">
+      <DependentUpon>OrderCompleted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\OrderReview.aspx.cs">
+      <DependentUpon>OrderReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\OrderReview.aspx.designer.cs">
+      <DependentUpon>OrderReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_step1.aspx.cs">
+      <DependentUpon>Order_step1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order_step1.aspx.designer.cs">
+      <DependentUpon>Order_step1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_step2.aspx.cs">
+      <DependentUpon>Order_step2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order_step2.aspx.designer.cs">
+      <DependentUpon>Order_step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Partners\Partners.aspx.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Partners\Partners.aspx.designer.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recommend\Recommend.aspx.cs">
+      <DependentUpon>Recommend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recommend\Recommend.aspx.designer.cs">
+      <DependentUpon>Recommend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Research\Research.aspx.cs">
+      <DependentUpon>Research.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Research\Research.aspx.designer.cs">
+      <DependentUpon>Research.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NaplampaService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ConfirmEmail.aspx" />
+    <Content Include="Admin\ShowSurvey.aspx" />
+    <Content Include="App_LocalResources\Index.aspx.de.resx" />
+    <Content Include="App_LocalResources\Index.aspx.resx" />
+    <Content Include="App_LocalResources\Index.aspx.hu.resx" />
+    <Content Include="App_LocalResources\MasterPage.master.resx" />
+    <Content Include="App_LocalResources\MasterPage.master.hu.resx" />
+    <Content Include="Billing\App_LocalResources\OrderInfo.aspx.resx" />
+    <Content Include="Billing\App_LocalResources\OrderInfo.aspx.hu.resx" />
+    <Content Include="Billing\App_LocalResources\ShowInvoice.aspx.resx" />
+    <Content Include="Billing\App_LocalResources\ShowInvoice.aspx.hu.resx" />
+    <Content Include="Links\App_LocalResources\Links.aspx.resx" />
+    <Content Include="Links\App_LocalResources\Links.aspx.hu.resx" />
+    <Content Include="Order\App_LocalResources\OrderCompleted.aspx.resx" />
+    <Content Include="Order\App_LocalResources\OrderCompleted.aspx.hu.resx" />
+    <Content Include="Order\App_LocalResources\Order_step2.aspx.resx" />
+    <Content Include="Order\App_LocalResources\Order_step2.aspx.hu.resx" />
+    <Content Include="Order\App_LocalResources\Order_step1.aspx.resx" />
+    <Content Include="Order\App_LocalResources\Order_step1.aspx.hu.resx" />
+    <Content Include="Products\App_LocalResources\Products.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Products\App_LocalResources\Products.aspx.hu.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Downloads\Kristalysugar_E27_EU_certificate_redist.pdf" />
+    <None Include="Downloads\NaplampaKatalogus2008web.pdf" />
+    <None Include="Downloads\SGS-Antibacterial_Report_for_AG400.pdf" />
+    <None Include="Downloads\SzakInfo_Naplampa_cikk.pdf" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\NaplampaService\NaplampaService.wsdl" />
+    <None Include="Service References\NaplampaService\NaplampaService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ConfirmEmail.aspx.resx" />
+    <Content Include="Admin\App_LocalResources\ConfirmEmail.aspx.hu.resx" />
+    <Content Include="Recommend\App_LocalResources\Recommend.aspx.resx" />
+    <Content Include="Recommend\App_LocalResources\Recommend.aspx.hu.resx" />
+    <Content Include="Admin\App_LocalResources\ShowSurvey.aspx.resx" />
+    <Content Include="Admin\App_LocalResources\ShowSurvey.aspx.hu.resx" />
+    <Content Include="error.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.hu.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Currencies.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Currencies.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Currencies.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Currencies.hu.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrderStatuses.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderStatuses.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrderStatuses.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderStatuses.hu.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PaymentMethods.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PaymentMethods.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PaymentMethods.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PaymentMethods.hu.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Products.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Products.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.hu.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Surveys.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Surveys.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Surveys.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Surveys.hu.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Downloads\Downloads.aspx" />
+    <Content Include="Feedback\Feedback.aspx" />
+    <Content Include="images\country_bg.png" />
+    <Content Include="images\Pic_Landing.png" />
+    <Content Include="images\lang_bg.png" />
+    <Content Include="images\Logo_MagmaLight.png" />
+    <Content Include="images\Logo_Naplampa.png" />
+    <Content Include="images\product_es002_mini.png" />
+    <Content Include="images\product_es004_mini.png" />
+    <Content Include="images\product_es015_mini.png" />
+    <None Include="Index.html_" />
+    <Content Include="Partners\Partners.aspx" />
+    <Content Include="Products\Products.aspx" />
+    <Content Include="Recommend\Recommend.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Downloads\App_LocalResources\Downloads.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Downloads\App_LocalResources\Downloads.aspx.hu.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Partners\App_LocalResources\Partners.aspx.hu.resx">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact\App_LocalResources\Contact.aspx.hu.resx">
+    </Content>
+    <Content Include="images\Logos_MagyarPosta.png" />
+    <Content Include="images\Logos_MasterCard.png" />
+    <Content Include="images\Logos_PayPal.png" />
+    <Content Include="images\Logos_VISA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback\App_LocalResources\Feedback.aspx.hu.resx">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.hu.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Common\ProductPanel.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\App_LocalResources\ProductPanel.ascx.hu.resx">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\App_LocalResources\ProductPanel.ascx.resx" />
+    <Content Include="images\small_box_bg_center.png" />
+    <Content Include="images\small_box_bg_foot.png" />
+    <Content Include="images\small_box_bg_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact\App_LocalResources\Contact.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback\App_LocalResources\Feedback.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Partners\App_LocalResources\Partners.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\UserPreferences.aspx" />
+    <Content Include="App_GlobalResources\Common.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="images\pic_Landing_deu.png" />
+    <Content Include="images\pic_Landing_eng.png" />
+    <Content Include="images\pic_Landing_hun.png" />
+    <Content Include="images\product_ES002_120x40.png" />
+    <Content Include="images\product_ES004_120x40.png" />
+    <Content Include="images\product_ES015_120x40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.hu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.hu.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\UserPreferences.aspx.hu.resx">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\UserPreferences.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="images\Web.config" />
+    <Content Include="styles\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Currencies.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Currencies.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\OrderStatuses.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderStatuses.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\PaymentMethods.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PaymentMethods.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Products.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Surveys.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Surveys.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MasterPage.master.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ConfirmEmail.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ShowSurvey.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\OrderInfo.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recommend\App_LocalResources\Recommend.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\ShowInvoice.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Links\App_LocalResources\Links.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Downloads\App_LocalResources\Downloads.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step2.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step1.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\OrderCompleted.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CV\CV_Andras_Fuchs_eng.htm" />
+    <Content Include="CV\CV_Andras_Fuchs_eng_files\colorschememapping.xml" />
+    <Content Include="CV\CV_Andras_Fuchs_eng_files\filelist.xml" />
+    <Content Include="CV\CV_Andras_Fuchs_eng_files\header.htm" />
+    <Content Include="CV\CV_Andras_Fuchs_eng_files\item0001.xml" />
+    <Content Include="CV\CV_Andras_Fuchs_eng_files\props0002.xml" />
+    <Content Include="CV\CV_format.aspx" />
+    <Content Include="CV\Icons\ie7.png" />
+    <Content Include="CV\Icons\pdf.png" />
+    <Content Include="CV\Icons\word.png" />
+    <Content Include="Products\App_LocalResources\Products.aspx.de.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="CV\CV_Andras_Fuchs_eng.doc" />
+    <None Include="CV\CV_Andras_Fuchs_eng.pdf" />
+    <None Include="CV\CV_Andras_Fuchs_eng_files\preview.wmf" />
+    <None Include="CV\CV_Andras_Fuchs_eng_files\themedata.thmx" />
+    <None Include="CV\Fuchs_Andras_-_Kodvisszafejtes_NET_platformon_%282005%29.doc" />
+    <None Include="CV\Fuchs_Andras_-_Kodvisszafejtes_NET_platformon_%282005%29.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.de.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\UserPreferences.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\App_LocalResources\ProductPanel.ascx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact\App_LocalResources\Contact.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback\App_LocalResources\Feedback.aspx.de.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\data_bg.gif" />
+    <Content Include="images\icon_order.png" />
+    <Content Include="images\icon_order_h.png" />
+    <Content Include="Order\Order.aspx" />
+    <Content Include="Partners\App_LocalResources\Partners.aspx.de.resx" />
+    <Content Include="Research\Research.aspx" />
+    <None Include="DAR\Digitalis_Allamreform_1resz.pdf" />
+    <None Include="DAR\Digitalis_Allamreform_2resz.pdf" />
+    <None Include="DAR\Digitalis_Allamreform_3resz.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Currencies.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Currencies.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\OrderStatuses.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderStatuses.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Products.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Surveys.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Surveys.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Index.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MasterPage.master.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ConfirmEmail.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ShowSurvey.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\UserPreferences.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\OrderInfo.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\ShowInvoice.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\App_LocalResources\ProductPanel.ascx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact\App_LocalResources\Contact.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Downloads\App_LocalResources\Downloads.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback\App_LocalResources\Feedback.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Links\App_LocalResources\Links.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step1.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step2.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\OrderCompleted.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Partners\App_LocalResources\Partners.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recommend\App_LocalResources\Recommend.aspx.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Products\App_LocalResources\Products.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Currencies.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Currencies.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\OrderStatuses.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderStatuses.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Products.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Surveys.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Surveys.it.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Index.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MasterPage.master.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ConfirmEmail.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ShowSurvey.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\UserPreferences.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\OrderInfo.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\ShowInvoice.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\App_LocalResources\ProductPanel.ascx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact\App_LocalResources\Contact.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Downloads\App_LocalResources\Downloads.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback\App_LocalResources\Feedback.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Links\App_LocalResources\Links.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step1.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step2.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\OrderCompleted.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Partners\App_LocalResources\Partners.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Products\App_LocalResources\Products.aspx.it.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recommend\App_LocalResources\Recommend.aspx.it.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\PaymentMethods.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PaymentMethods.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\PaymentMethods.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PaymentMethods.it.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="images\description_foot_blank.png" />
+    <Content Include="images\order_button.png" />
+    <Content Include="images\pic_Landing_fra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Countries.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Countries.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Common.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Currencies.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Currencies.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Languages.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Languages.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\OrderStatuses.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderStatuses.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\PaymentMethods.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PaymentMethods.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Products.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Surveys.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Surveys.es.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Index.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MasterPage.master.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\OrderInfo.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ConfirmEmail.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\ShowSurvey.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\App_LocalResources\UserPreferences.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Billing\App_LocalResources\ShowInvoice.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\App_LocalResources\ProductPanel.ascx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact\App_LocalResources\Contact.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Downloads\App_LocalResources\Downloads.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback\App_LocalResources\Feedback.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Links\App_LocalResources\Links.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step1.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\Order_step2.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Order\App_LocalResources\OrderCompleted.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Partners\App_LocalResources\Partners.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Products\App_LocalResources\Products.aspx.es.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAR\DAR.aspx" />
+    <Content Include="ExcludeMe.htm" />
+    <Content Include="Recommend\App_LocalResources\Recommend.aspx.es.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Order\obj\Debug\TempPE\" />
+    <Folder Include="Order\obj\Release\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NaplampaService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49700</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/MagmaLightWeb</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

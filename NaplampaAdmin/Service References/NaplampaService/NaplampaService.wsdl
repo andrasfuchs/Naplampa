@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="NaplampaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_INaplampaService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NaplampaWcfHost" />
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://thunder/NaplampaService/NaplampaService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/NaplampaWcfHost.DataContract" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INaplampaService_SendSurveyRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSurveyRequest" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListSurveys_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListSurveys" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListSurveys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListSurveysResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SaveSurveyResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSurveyResult" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SendRecommendation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendRecommendation" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SearchOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchOrders" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SearchOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ValidateOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateOrder" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ValidateOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_UpdateUserPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserPreferences" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_UpdateUserPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SendNewsletter_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendNewsletter" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SendNewsletter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendNewsletterResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_EnableEmailService_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnableEmailService" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_DisableEmailService_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisableEmailService" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_IsEmailServiceDisabled_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsEmailServiceDisabled" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_IsEmailServiceDisabled_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsEmailServiceDisabledResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ResetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPassword" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ConfirmEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmEmail" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ConfirmEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewPartner" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewAddress" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewOrderWithoutLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewOrderWithoutLogin" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewOrderWithoutLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewOrderWithoutLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewOrderForPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewOrderForPartner" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateNewOrderForPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewOrderForPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateWarrantyOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateWarrantyOrder" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CreateWarrantyOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateWarrantyOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CalculateOrderCosts_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateOrderCosts" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_CalculateOrderCosts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateOrderCostsResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetOrderReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderReview" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetOrderReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ConfirmOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmOrder" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ConfirmOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListOrders" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_DeleteOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrder" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SetOrderStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderStatus" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderPackageSent_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderPackageSent" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderDelivered_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDelivered" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderReturned_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderReturned" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderResendPaymentRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderResendPaymentRequest" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderPaymentRequestSent_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderPaymentRequestSent" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderPaymentReceived_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderPaymentReceived" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_OrderRefund_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRefund" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SetOrderSellerComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderSellerComment" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SetOrderBuyerComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderBuyerComment" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_SendEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListCountries" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListCurrencies_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListCurrencies" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListCurrencies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListCurrenciesResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetEffectiveProductPrices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEffectiveProductPrices" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetEffectiveProductPrices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEffectiveProductPricesResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListProducts" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_ListProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetInvoiceImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceImage" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetInvoiceImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurvey" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetPersonById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonById" />
+  </wsdl:message>
+  <wsdl:message name="INaplampaService_GetPersonById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="INaplampaService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendSurveyRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SendSurveyRequest" message="tns:INaplampaService_SendSurveyRequest_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListSurveys">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ListSurveys" message="tns:INaplampaService_ListSurveys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ListSurveysResponse" message="tns:INaplampaService_ListSurveys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SaveSurveyResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SaveSurveyResult" message="tns:INaplampaService_SaveSurveyResult_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendRecommendation">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SendRecommendation" message="tns:INaplampaService_SendRecommendation_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SearchOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SearchOrders" message="tns:INaplampaService_SearchOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/SearchOrdersResponse" message="tns:INaplampaService_SearchOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ValidateOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ValidateOrder" message="tns:INaplampaService_ValidateOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ValidateOrderResponse" message="tns:INaplampaService_ValidateOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UpdateUserPreferences">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/UpdateUserPreferences" message="tns:INaplampaService_UpdateUserPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/UpdateUserPreferencesResponse" message="tns:INaplampaService_UpdateUserPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendNewsletter">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SendNewsletter" message="tns:INaplampaService_SendNewsletter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/SendNewsletterResponse" message="tns:INaplampaService_SendNewsletter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="EnableEmailService">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/EnableEmailService" message="tns:INaplampaService_EnableEmailService_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DisableEmailService">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/DisableEmailService" message="tns:INaplampaService_DisableEmailService_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="IsEmailServiceDisabled">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/IsEmailServiceDisabled" message="tns:INaplampaService_IsEmailServiceDisabled_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/IsEmailServiceDisabledResponse" message="tns:INaplampaService_IsEmailServiceDisabled_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/Login" message="tns:INaplampaService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/LoginResponse" message="tns:INaplampaService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ResetPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ResetPassword" message="tns:INaplampaService_ResetPassword_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ConfirmEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ConfirmEmail" message="tns:INaplampaService_ConfirmEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ConfirmEmailResponse" message="tns:INaplampaService_ConfirmEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/CreateNewPartner" message="tns:INaplampaService_CreateNewPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/CreateNewPartnerResponse" message="tns:INaplampaService_CreateNewPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/CreateNewAddress" message="tns:INaplampaService_CreateNewAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/CreateNewAddressResponse" message="tns:INaplampaService_CreateNewAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewOrderWithoutLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/CreateNewOrderWithoutLogin" message="tns:INaplampaService_CreateNewOrderWithoutLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/CreateNewOrderWithoutLoginResponse" message="tns:INaplampaService_CreateNewOrderWithoutLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateNewOrderForPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/CreateNewOrderForPartner" message="tns:INaplampaService_CreateNewOrderForPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/CreateNewOrderForPartnerResponse" message="tns:INaplampaService_CreateNewOrderForPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CreateWarrantyOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/CreateWarrantyOrder" message="tns:INaplampaService_CreateWarrantyOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/CreateWarrantyOrderResponse" message="tns:INaplampaService_CreateWarrantyOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CalculateOrderCosts">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/CalculateOrderCosts" message="tns:INaplampaService_CalculateOrderCosts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/CalculateOrderCostsResponse" message="tns:INaplampaService_CalculateOrderCosts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetOrder" message="tns:INaplampaService_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetOrderResponse" message="tns:INaplampaService_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetOrderReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetOrderReview" message="tns:INaplampaService_GetOrderReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetOrderReviewResponse" message="tns:INaplampaService_GetOrderReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ConfirmOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ConfirmOrder" message="tns:INaplampaService_ConfirmOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ConfirmOrderResponse" message="tns:INaplampaService_ConfirmOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ListOrders" message="tns:INaplampaService_ListOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ListOrdersResponse" message="tns:INaplampaService_ListOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DeleteOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/DeleteOrder" message="tns:INaplampaService_DeleteOrder_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SetOrderStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SetOrderStatus" message="tns:INaplampaService_SetOrderStatus_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderPackageSent">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderPackageSent" message="tns:INaplampaService_OrderPackageSent_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderDelivered">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderDelivered" message="tns:INaplampaService_OrderDelivered_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderReturned">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderReturned" message="tns:INaplampaService_OrderReturned_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderResendPaymentRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderResendPaymentRequest" message="tns:INaplampaService_OrderResendPaymentRequest_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderPaymentRequestSent">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderPaymentRequestSent" message="tns:INaplampaService_OrderPaymentRequestSent_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderPaymentReceived">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderPaymentReceived" message="tns:INaplampaService_OrderPaymentReceived_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="OrderRefund">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/OrderRefund" message="tns:INaplampaService_OrderRefund_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SetOrderSellerComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SetOrderSellerComment" message="tns:INaplampaService_SetOrderSellerComment_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SetOrderBuyerComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SetOrderBuyerComment" message="tns:INaplampaService_SetOrderBuyerComment_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/SendEmail" message="tns:INaplampaService_SendEmail_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListCountries">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ListCountries" message="tns:INaplampaService_ListCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ListCountriesResponse" message="tns:INaplampaService_ListCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListCurrencies">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ListCurrencies" message="tns:INaplampaService_ListCurrencies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ListCurrenciesResponse" message="tns:INaplampaService_ListCurrencies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetEffectiveProductPrices">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetEffectiveProductPrices" message="tns:INaplampaService_GetEffectiveProductPrices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetEffectiveProductPricesResponse" message="tns:INaplampaService_GetEffectiveProductPrices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ListProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/ListProducts" message="tns:INaplampaService_ListProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/ListProductsResponse" message="tns:INaplampaService_ListProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetInvoice" message="tns:INaplampaService_GetInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetInvoiceResponse" message="tns:INaplampaService_GetInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetInvoiceImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetInvoiceImage" message="tns:INaplampaService_GetInvoiceImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetInvoiceImageResponse" message="tns:INaplampaService_GetInvoiceImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetSurvey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetSurvey" message="tns:INaplampaService_GetSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetSurveyResponse" message="tns:INaplampaService_GetSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetPersonById">
+      <wsdl:input wsaw:Action="http://tempuri.org/INaplampaService/GetPersonById" message="tns:INaplampaService_GetPersonById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INaplampaService/GetPersonByIdResponse" message="tns:INaplampaService_GetPersonById_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_INaplampaService" type="tns:INaplampaService">
+    <wsp:PolicyReference URI="#WSHttpBinding_INaplampaService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSurveyRequest">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SendSurveyRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ListSurveys">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ListSurveys" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSurveyResult">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SaveSurveyResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SendRecommendation">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SendRecommendation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOrders">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SearchOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateOrder">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ValidateOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserPreferences">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/UpdateUserPreferences" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendNewsletter">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SendNewsletter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnableEmailService">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/EnableEmailService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="DisableEmailService">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/DisableEmailService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailServiceDisabled">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/IsEmailServiceDisabled" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetPassword">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ResetPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmEmail">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ConfirmEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewPartner">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/CreateNewPartner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewAddress">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/CreateNewAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOrderWithoutLogin">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/CreateNewOrderWithoutLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOrderForPartner">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/CreateNewOrderForPartner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateWarrantyOrder">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/CreateWarrantyOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateOrderCosts">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/CalculateOrderCosts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderReview">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetOrderReview" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmOrder">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ConfirmOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListOrders">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ListOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrder">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/DeleteOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderStatus">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SetOrderStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderPackageSent">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderPackageSent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDelivered">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderDelivered" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderReturned">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderReturned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderResendPaymentRequest">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderResendPaymentRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderPaymentRequestSent">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderPaymentRequestSent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderPaymentReceived">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderPaymentReceived" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRefund">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/OrderRefund" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderSellerComment">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SetOrderSellerComment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderBuyerComment">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SetOrderBuyerComment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/SendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ListCountries">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ListCountries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCurrencies">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ListCurrencies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEffectiveProductPrices">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetEffectiveProductPrices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProducts">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/ListProducts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoiceImage">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetInvoiceImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurvey">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetSurvey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonById">
+      <soap12:operation soapAction="http://tempuri.org/INaplampaService/GetPersonById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NaplampaService">
+    <wsdl:port name="WSHttpBinding_INaplampaService" binding="tns:WSHttpBinding_INaplampaService">
+      <soap12:address location="http://thunder/NaplampaService/NaplampaService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://thunder/NaplampaService/NaplampaService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
