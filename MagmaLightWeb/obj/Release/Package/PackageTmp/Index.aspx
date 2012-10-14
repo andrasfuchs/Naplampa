@@ -69,10 +69,6 @@
                 <asp:Label ID="lblNewsHead7" meta:resourceKey="lblNewsHead7" runat="server" /></div>
             <div class="form_row">
                 <asp:Label ID="lblNewsRow7" meta:resourceKey="lblNewsRow7" runat="server" /></div>
-            <div class="form_container_header">
-                <asp:Label ID="lblNewsHead8" meta:resourceKey="lblNewsHead8" runat="server" /></div>
-            <div class="form_row">
-                <asp:Label ID="lblNewsRow8" meta:resourceKey="lblNewsRow8" runat="server" /></div>
         </div>
         <div style="clear: both;">
         </div>

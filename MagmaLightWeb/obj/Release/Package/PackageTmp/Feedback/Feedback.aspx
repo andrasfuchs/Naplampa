@@ -50,6 +50,8 @@
                 <asp:Label ID="lblQuote2" meta:resourceKey="lblQuote2" runat="server" /></div>
             <div class="form_row">
                 <asp:Label ID="lblQuote3" meta:resourceKey="lblQuote3" runat="server" /></div>
+            <div class="form_row">
+                <asp:Label ID="lblQuote4" meta:resourceKey="lblQuote4" runat="server" /></div>
         </div>
         <div style="clear: both;">
         </div>        

@@ -138,6 +138,9 @@
   <data name="lblQuote3.Text" xml:space="preserve">
     <value>"You're very kind, and ready to help!"</value>
   </data>
+  <data name="lblQuote4.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblQuotes.Text" xml:space="preserve">
     <value>You've said</value>
   </data>

@@ -1,5 +1,4 @@
 c:\Work\Naplampa.hu\NaplampaServiceHost\bin\NaplampaWcfHost.dll
 c:\Work\Naplampa.hu\NaplampaServiceHost\bin\NaplampaWcfHost.pdb
-c:\Work\Naplampa.hu\NaplampaServiceHost\obj\Release\ResolveAssemblyReference.cache
 c:\Work\Naplampa.hu\NaplampaServiceHost\obj\Release\NaplampaWcfHost.dll
 c:\Work\Naplampa.hu\NaplampaServiceHost\obj\Release\NaplampaWcfHost.pdb

@@ -39,8 +39,8 @@ namespace MagmaLightWeb.Order
             Address deliveryAddress = new Address() { Name = fullname, AddressLine = txtAddressLine.Text, Province = "", Town = txtTown.Text, PostalCode = txtPostalCode.Text };
             int deliveryCountryId = Int32.Parse(ddlCountry.SelectedValue);
 
-            Address invoiceAddress = new Address() { Name = txtInvoiceName.Text, AddressLine = txtInvoiceAddressLine.Text, Province = "", Town = txtInvoiceTown.Text, PostalCode = txtInvoicePostalCode.Text };
-            int? invoiceCountryId = Int32.Parse(ddlInvoiceCountry.SelectedValue);
+            Address invoiceAddress = null; //new Address() { Name = txtInvoiceName.Text, AddressLine = txtInvoiceAddressLine.Text, Province = "", Town = txtInvoiceTown.Text, PostalCode = txtInvoicePostalCode.Text };
+            int? invoiceCountryId = null; // Int32.Parse(ddlInvoiceCountry.SelectedValue);
 
             CacheManager cm = new CacheManager(this.Cache, this.Session);
             Country[] countryList = cm.CheckAndLoadCountries();
@@ -183,8 +183,8 @@ namespace MagmaLightWeb.Order
                 ddlCountry.DataBind();
                 ddlCountry.SelectedValue = ((Country)Session["DeliveryCountry"]).CountryId.ToString();
                 ddlCountry.Enabled = false;
-                ddlInvoiceCountry.DataSource = ddlCountry.DataSource;
-                ddlInvoiceCountry.DataBind();
+                //ddlInvoiceCountry.DataSource = ddlCountry.DataSource;
+                //ddlInvoiceCountry.DataBind();
             }
 
             ((MasterPage)this.Master).DisableCountryDropDown();

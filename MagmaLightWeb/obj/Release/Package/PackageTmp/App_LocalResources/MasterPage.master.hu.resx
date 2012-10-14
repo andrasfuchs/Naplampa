@@ -121,7 +121,7 @@
     <value>images/Logo_Naplampa.png</value>
   </data>
   <data name="lblCopyright.Text" xml:space="preserve">
-    <value>Copyright © 2011. Minden Jog Fenntartva</value>
+    <value>Copyright © 2012. Minden Jog Fenntartva</value>
   </data>
   <data name="lblOldBrowser.Text" xml:space="preserve">
     <value>Ön {0}-t használ, ami egy elavult verzió. Az oldal nem fog tökéletesen megjelenni. Kérem frissítse böngészőjét &lt;a href="{1}"&gt;ITT&lt;/a&gt;!</value>

@@ -65,7 +65,9 @@
                         Width="255px" CssClass="textinput"/></div>
                 <div class="form_help" ID="divAddressLine_Error" runat="server" visible="false">
                     <asp:Label ID="lblAddressLine_Error" meta:resourceKey="lblAddressLine_Error" runat="server"/></div>                        
-                <div class="form_container_header">
+                
+
+                <%--<div class="form_container_header">
                     <asp:Label ID="lblInvoice" meta:resourceKey="lblInvoice" runat="server" /></div>
                 <div class="form_cell">
                     <asp:Label ID="lblInvoiceName" meta:resourceKey="lblInvoiceName" runat="server" /></div>
@@ -104,7 +106,7 @@
                         TextMode="MultiLine" Width="255px" CssClass="textinput" />
                 </div>
                 <div class="form_help" ID="divInvoiceAddressLine_Error" runat="server" visible="false">
-                    <asp:Label ID="lblInvoiceAddressLine_Error" meta:resourceKey="lblInvoiceAddressLine_Error" runat="server"/></div>                                        
+                    <asp:Label ID="lblInvoiceAddressLine_Error" meta:resourceKey="lblInvoiceAddressLine_Error" runat="server"/></div>--%>                                        
                 <div class="form_separator">
                     &nbsp;</div>
                 <div class="form_cell">

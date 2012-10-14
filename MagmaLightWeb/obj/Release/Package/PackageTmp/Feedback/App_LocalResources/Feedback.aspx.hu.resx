@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblCurrentStatistics.Text" xml:space="preserve">
-    <value>Elégedettségi mutatóink (2009. november)</value>
+    <value>Elégedettségi mutatóink (2012. szeptember)</value>
   </data>
   <data name="lblHeader.Text" xml:space="preserve">
     <value>Vélemények</value>
@@ -127,16 +127,19 @@
     <value>Termékeink</value>
   </data>
   <data name="lblProductSatisfactionText.Text" xml:space="preserve">
-    <value>93%</value>
+    <value>96.5%</value>
   </data>
   <data name="lblQuote1.Text" xml:space="preserve">
-    <value>"Köszönöm a megértésüket a cserével kapcsolatban, egy pillanatra nyugaton éreztem magam :)"</value>
+    <value>"Minden kérdésemre még aznap kimerítő választ kaptam, és a csomagom is villámgyorsan megérkezett. Köszönöm!"</value>
   </data>
   <data name="lblQuote2.Text" xml:space="preserve">
-    <value>"Nálunk egy szobában világít 3 izzójuk, ez a fő világítás és úgy érzem, hogy jobb ott lenni, mint a hagyományos világítású helységekben."</value>
+    <value>"Nálunk egy szobában világít 3 izzójuk, ez a fő világítás és úgy érzem, hogy jobb ott lenni, mint a hagyományos világítású helységekben. A kisfiam ide hordja az összes játékát, mert szerinte itt jobb a 'napfény'!"</value>
   </data>
   <data name="lblQuote3.Text" xml:space="preserve">
-    <value>"Nagyon kedvesek Önök, és készséggel intézkedtek!"</value>
+    <value>"Végre egy olyan internetes cég, akiben megbízhatok! Gyors válaszok, tiszteletteljes hangnem, profi kiszolgálás."</value>
+  </data>
+  <data name="lblQuote4.Text" xml:space="preserve">
+    <value>"A leírások alapján még nem voltam teljesen meggyőzve, de nagyon örülök, hogy végül rászántam magam. Úgy voltam vele, egy fene, ha nem tetszik visszaküldöm. Hát nem küldtem! Sőt, a férjem javaslatára még rendeltünk 6-ot!"</value>
   </data>
   <data name="lblQuotes.Text" xml:space="preserve">
     <value>Önök mondták</value>
@@ -145,22 +148,22 @@
     <value>Szolgátatásunk</value>
   </data>
   <data name="lblServiceSatisfactionText.Text" xml:space="preserve">
-    <value>97%</value>
+    <value>97.2%</value>
   </data>
   <data name="lblSpeedSatisfaction.Text" xml:space="preserve">
     <value>Válaszaink és házhozszállítás gyorsasága</value>
   </data>
   <data name="lblSpeedSatisfactionText.Text" xml:space="preserve">
-    <value>100%</value>
+    <value>99.3%</value>
   </data>
   <data name="lblSummary.Text" xml:space="preserve">
-    <value>Nekünk rendkívül fontos vásárlóink elégedettsége, ezért az Önök visszajelzései a mi legjobb minőségi mutatóink. Lentebb láthatja az időnként frissítésre kerülő elégedettségi statisztikáinkat. Ha Ön is szeretné megosztani velünk véleményét, kérem írjon nekünk a Kapcsolat oldalon.</value>
+    <value>Nekünk rendkívül fontos vásárlóink elégedettsége, ezért az Önök visszajelzései a mi legjobb minőségi mutatóink. Lentebb láthatja az időnként frissítésre kerülő elégedettségi statisztikáinkat, amelyeket a vásárlóknak küldött kérdőívek alapján készítünk. Ha Ön is szeretné megosztani velünk véleményét, kérem írjon nekünk a Kapcsolat oldalon.</value>
   </data>
   <data name="lblWebSiteSatisfaction.Text" xml:space="preserve">
     <value>A web oldalunk tartalma és designja</value>
   </data>
   <data name="lblWebSiteSatisfactionText.Text" xml:space="preserve">
-    <value>92% (októberi design)</value>
+    <value>91.1%</value>
   </data>
   <data name="page.Title" xml:space="preserve">
     <value>Vélemények - NapLámpa</value>
