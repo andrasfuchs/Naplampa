@@ -58,7 +58,7 @@ namespace MagmaLightWeb.Order
             string invoiceAddressLine = null;
             string invoiceFullName = null;
 
-            if (!String.IsNullOrEmpty(invoiceAddress.AddressLine))
+            if ((invoiceAddress != null) && (!String.IsNullOrEmpty(invoiceAddress.AddressLine)))
             {
                 invoiceProvince = invoiceAddress.Province;
                 invoiceTown = invoiceAddress.Town;

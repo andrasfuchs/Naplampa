@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="robots" content="all" />
     <meta name="author" content="Andras Fuchs" />
-    <meta name="copyright" content="Copyright © 2009-2011 Andras Fuchs. All Rights Reserved." />
+    <meta name="copyright" content="Copyright © 2009-2012 Andras Fuchs. All Rights Reserved." />
     <meta name="verify-v1" content="1nE2pzilEuwMQfhhWcgQfKW1IGCyE77eIDf5MG2XM2s=" />
     <title>MagmaLight.com</title>
     <asp:ContentPlaceHolder ID="head" runat="server" />

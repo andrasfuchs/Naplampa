@@ -2,3 +2,4 @@ c:\Work\Naplampa.hu\NaplampaServiceHost\bin\NaplampaWcfHost.dll
 c:\Work\Naplampa.hu\NaplampaServiceHost\bin\NaplampaWcfHost.pdb
 c:\Work\Naplampa.hu\NaplampaServiceHost\obj\Release\NaplampaWcfHost.dll
 c:\Work\Naplampa.hu\NaplampaServiceHost\obj\Release\NaplampaWcfHost.pdb
+C:\Work\Naplampa.hu\NaplampaServiceHost\obj\Release\NaplampaServiceHost.csprojResolveAssemblyReference.cache
