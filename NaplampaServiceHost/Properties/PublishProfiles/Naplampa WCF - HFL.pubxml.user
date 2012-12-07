@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQGpeLGJqekaRL2tRfzD1CQAAAAACAAAAAAAQZgAAAAEAACAAAABJDKQ7tyLpSJ2BSEODlNsJoCXx5DbRzSeOZUCe9lP6pAAAAAAOgAAAAAIAACAAAABw2Vu/d7bqxk1yDOO0ygagZR0F/cowO4dTz7swjr7oPiAAAAAcyXt963jiqWwAbY0uQkrtUm3D2BxL9H3zW2V4EPApGkAAAABw6JWHw+4MKVryOCkZaTJvKb7duLqbA/1tx9ud5Qwb08AIBgxnnFYhqfJf2Y+Trgch8/zww5RF4TsEV5VSvHXT</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_GlobalResources/Countries.de.resx">
+      <publishTime>11/22/2009 19:20:26</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.es.resx">
+      <publishTime>01/07/2010 16:07:29</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.fr.resx">
+      <publishTime>09/18/2011 17:23:36</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.hu.resx">
+      <publishTime>03/20/2010 10:22:29</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.it.resx">
+      <publishTime>12/11/2009 12:51:51</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.resx">
+      <publishTime>03/20/2010 10:22:15</publishTime>
+    </File>
+    <File Include="App_GlobalResources/EmailTemplates.de.resx">
+      <publishTime>10/30/2010 11:18:18</publishTime>
+    </File>
+    <File Include="App_GlobalResources/EmailTemplates.es.resx">
+      <publishTime>10/30/2010 11:18:02</publishTime>
+    </File>
+    <File Include="App_GlobalResources/EmailTemplates.fr.resx">
+      <publishTime>11/23/2011 11:52:19</publishTime>
+    </File>
+    <File Include="App_GlobalResources/EmailTemplates.hu.resx">
+      <publishTime>11/13/2012 15:19:34</publishTime>
+    </File>
+    <File Include="App_GlobalResources/EmailTemplates.it.resx">
+      <publishTime>10/30/2010 11:16:35</publishTime>
+    </File>
+    <File Include="App_GlobalResources/EmailTemplates.resx">
+      <publishTime>10/30/2010 11:16:54</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Invoice.de.resx">
+      <publishTime>12/05/2009 12:08:09</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Invoice.es.resx">
+      <publishTime>01/07/2010 16:07:59</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Invoice.fr.resx">
+      <publishTime>11/23/2011 11:52:21</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Invoice.hu.resx">
+      <publishTime>09/07/2009 15:05:06</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Invoice.it.resx">
+      <publishTime>12/11/2009 12:52:37</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Invoice.resx">
+      <publishTime>11/20/2009 15:28:21</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.de.resx">
+      <publishTime>09/27/2011 14:59:41</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.es.resx">
+      <publishTime>09/27/2011 14:59:40</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.fr.resx">
+      <publishTime>10/09/2011 11:14:51</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.hu.resx">
+      <publishTime>09/27/2011 15:00:52</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.it.resx">
+      <publishTime>09/27/2011 14:59:31</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.resx">
+      <publishTime>09/27/2011 14:54:44</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.de.resx">
+      <publishTime>11/22/2009 21:14:48</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.es.resx">
+      <publishTime>01/07/2010 16:10:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.fr.resx">
+      <publishTime>10/09/2011 12:09:42</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.hu.resx">
+      <publishTime>09/23/2011 15:20:57</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.it.resx">
+      <publishTime>12/11/2009 12:53:51</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.resx">
+      <publishTime>09/23/2011 15:19:34</publishTime>
+    </File>
+    <File Include="bin/NaplampaWcfHost.dll">
+      <publishTime>12/07/2012 10:40:26</publishTime>
+    </File>
+    <File Include="bin/NaplampaWcfHost.pdb">
+      <publishTime>12/06/2012 16:21:21</publishTime>
+    </File>
+    <File Include="clientaccesspolicy.xml">
+      <publishTime>04/02/2009 17:15:58</publishTime>
+    </File>
+    <File Include="Invoice_Template.jpg">
+      <publishTime>09/07/2009 15:40:21</publishTime>
+    </File>
+    <File Include="NaplampaService.svc">
+      <publishTime>04/02/2009 17:23:41</publishTime>
+    </File>
+    <File Include="NaplampaWCFService.svc">
+      <publishTime>08/26/2009 19:05:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/07/2012 10:38:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

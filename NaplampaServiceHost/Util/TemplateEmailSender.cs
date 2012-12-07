@@ -35,7 +35,8 @@ namespace NaplampaService.Util
 
             SmtpClient smtpClient = new SmtpClient(ConfigurationManager.AppSettings["SMTPServer"], Int32.Parse(ConfigurationManager.AppSettings["SMTPPort"]));
             smtpClient.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["SMTPUsername"], ConfigurationManager.AppSettings["SMTPPassword"]);
-            smtpClient.EnableSsl = false;
+            smtpClient.EnableSsl = true;
+            smtpClient.Timeout = 10000;
 
             MailMessage emailMessage = new MailMessage();
             emailMessage.BodyEncoding = Encoding.UTF8;

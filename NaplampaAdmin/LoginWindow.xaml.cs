@@ -24,10 +24,10 @@ namespace NaplampaAdmin
         {
             InitializeComponent();
 
-#if DEBUG
+//#if DEBUG
             UsernameTextBox.Text = "19000000";
             PasswordBox.Password = "JlG9OpM7";
-#endif
+//#endif
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)

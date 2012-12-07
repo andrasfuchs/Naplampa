@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2012-10-17T18:17:23.9571975+02:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHZxEDLkd7Uq3LQJXF7OFRAAAAAACAAAAAAADZgAAqAAAABAAAADS/qbbsPFDQO+gxP2bZ+zzAAAAAASAAACgAAAAEAAAAJSb6iMzmupkNJAotWA1SHcYAAAAt0lyNeRbo3FWH1JlXNpip6TxYTihgLwaFAAAAJhaRPN6j4Nfd5Cyedf44er+5Tig</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/App_LocalResources/ConfirmEmail.aspx.de.resx">
+      <publishTime>11/22/2009 18:50:06</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ConfirmEmail.aspx.es.resx">
+      <publishTime>01/07/2010 16:32:13</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ConfirmEmail.aspx.fr.resx">
+      <publishTime>10/09/2011 10:13:16</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ConfirmEmail.aspx.hu.resx">
+      <publishTime>11/17/2009 14:04:02</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ConfirmEmail.aspx.it.resx">
+      <publishTime>12/11/2009 13:01:42</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ConfirmEmail.aspx.resx">
+      <publishTime>11/22/2009 18:49:57</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ShowSurvey.aspx.de.resx">
+      <publishTime>11/22/2009 18:50:59</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ShowSurvey.aspx.es.resx">
+      <publishTime>01/07/2010 16:32:33</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ShowSurvey.aspx.fr.resx">
+      <publishTime>10/09/2011 12:12:00</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ShowSurvey.aspx.hu.resx">
+      <publishTime>11/17/2009 16:31:59</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ShowSurvey.aspx.it.resx">
+      <publishTime>12/11/2009 13:16:21</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/ShowSurvey.aspx.resx">
+      <publishTime>11/17/2009 16:31:43</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/UserPreferences.aspx.de.resx">
+      <publishTime>11/27/2009 21:28:12</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/UserPreferences.aspx.es.resx">
+      <publishTime>01/07/2010 16:33:04</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/UserPreferences.aspx.fr.resx">
+      <publishTime>10/09/2011 13:04:28</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/UserPreferences.aspx.hu.resx">
+      <publishTime>12/03/2009 18:59:53</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/UserPreferences.aspx.it.resx">
+      <publishTime>12/11/2009 13:16:46</publishTime>
+    </File>
+    <File Include="Admin/App_LocalResources/UserPreferences.aspx.resx">
+      <publishTime>12/03/2009 18:54:52</publishTime>
+    </File>
+    <File Include="Admin/ConfirmEmail.aspx">
+      <publishTime>11/16/2009 15:06:45</publishTime>
+    </File>
+    <File Include="Admin/ShowSurvey.aspx">
+      <publishTime>11/17/2009 16:47:44</publishTime>
+    </File>
+    <File Include="Admin/UserPreferences.aspx">
+      <publishTime>12/03/2009 18:48:37</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Common.de.resx">
+      <publishTime>11/27/2009 22:06:16</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Common.es.resx">
+      <publishTime>01/07/2010 16:11:06</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Common.fr.resx">
+      <publishTime>09/17/2011 20:34:03</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Common.hu.resx">
+      <publishTime>11/20/2009 15:39:24</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Common.it.resx">
+      <publishTime>12/11/2009 12:54:27</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Common.resx">
+      <publishTime>11/27/2009 22:06:14</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.de.resx">
+      <publishTime>11/22/2009 18:27:23</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.es.resx">
+      <publishTime>01/07/2010 16:06:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.fr.resx">
+      <publishTime>09/18/2011 17:23:36</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.hu.resx">
+      <publishTime>03/20/2010 10:21:17</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.it.resx">
+      <publishTime>12/11/2009 12:54:04</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Countries.resx">
+      <publishTime>03/20/2010 10:21:21</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Currencies.de.resx">
+      <publishTime>11/22/2009 18:28:00</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Currencies.es.resx">
+      <publishTime>01/07/2010 16:11:37</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Currencies.fr.resx">
+      <publishTime>09/18/2011 08:31:17</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Currencies.hu.resx">
+      <publishTime>09/02/2009 17:06:09</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Currencies.it.resx">
+      <publishTime>12/11/2009 12:54:53</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Currencies.resx">
+      <publishTime>09/03/2009 12:28:14</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Languages.de.resx">
+      <publishTime>01/07/2010 16:13:55</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Languages.es.resx">
+      <publishTime>01/07/2010 16:12:33</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Languages.fr.resx">
+      <publishTime>09/18/2011 17:46:01</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Languages.hu.resx">
+      <publishTime>01/07/2010 16:13:23</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Languages.it.resx">
+      <publishTime>01/07/2010 16:13:04</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Languages.resx">
+      <publishTime>01/07/2010 16:12:49</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OrderStatuses.de.resx">
+      <publishTime>11/22/2009 18:29:55</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OrderStatuses.es.resx">
+      <publishTime>01/07/2010 16:14:27</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OrderStatuses.fr.resx">
+      <publishTime>10/09/2011 11:13:00</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OrderStatuses.hu.resx">
+      <publishTime>10/16/2009 16:58:28</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OrderStatuses.it.resx">
+      <publishTime>12/11/2009 12:56:23</publishTime>
+    </File>
+    <File Include="App_GlobalResources/OrderStatuses.resx">
+      <publishTime>12/16/2009 13:59:25</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.de.resx">
+      <publishTime>11/22/2009 18:30:41</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.es.resx">
+      <publishTime>09/27/2011 14:59:40</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.fr.resx">
+      <publishTime>10/09/2011 11:14:51</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.hu.resx">
+      <publishTime>09/27/2011 15:01:12</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.it.resx">
+      <publishTime>12/11/2009 19:52:31</publishTime>
+    </File>
+    <File Include="App_GlobalResources/PaymentMethods.resx">
+      <publishTime>09/27/2011 15:01:18</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.de.resx">
+      <publishTime>11/23/2009 15:19:08</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.es.resx">
+      <publishTime>01/07/2010 17:21:14</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.fr.resx">
+      <publishTime>10/09/2011 12:09:42</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.hu.resx">
+      <publishTime>09/23/2011 17:01:24</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.it.resx">
+      <publishTime>12/11/2009 15:28:35</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Products.resx">
+      <publishTime>09/23/2011 16:54:20</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Surveys.de.resx">
+      <publishTime>11/22/2009 18:42:54</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Surveys.es.resx">
+      <publishTime>01/07/2010 16:18:11</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Surveys.fr.resx">
+      <publishTime>10/09/2011 12:54:40</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Surveys.hu.resx">
+      <publishTime>11/02/2009 10:46:41</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Surveys.it.resx">
+      <publishTime>12/11/2009 12:58:36</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Surveys.resx">
+      <publishTime>11/17/2009 16:33:32</publishTime>
+    </File>
+    <File Include="App_LocalResources/Index.aspx.de.resx">
+      <publishTime>11/27/2009 21:26:55</publishTime>
+    </File>
+    <File Include="App_LocalResources/Index.aspx.es.resx">
+      <publishTime>01/07/2010 16:19:42</publishTime>
+    </File>
+    <File Include="App_LocalResources/Index.aspx.fr.resx">
+      <publishTime>10/09/2011 10:58:33</publishTime>
+    </File>
+    <File Include="App_LocalResources/Index.aspx.hu.resx">
+      <publishTime>08/19/2012 12:12:17</publishTime>
+    </File>
+    <File Include="App_LocalResources/Index.aspx.it.resx">
+      <publishTime>12/11/2009 12:59:54</publishTime>
+    </File>
+    <File Include="App_LocalResources/Index.aspx.resx">
+      <publishTime>05/19/2010 20:57:06</publishTime>
+    </File>
+    <File Include="App_LocalResources/MasterPage.master.de.resx">
+      <publishTime>11/27/2009 22:04:48</publishTime>
+    </File>
+    <File Include="App_LocalResources/MasterPage.master.es.resx">
+      <publishTime>01/07/2010 16:21:25</publishTime>
+    </File>
+    <File Include="App_LocalResources/MasterPage.master.fr.resx">
+      <publishTime>09/18/2011 17:53:05</publishTime>
+    </File>
+    <File Include="App_LocalResources/MasterPage.master.hu.resx">
+      <publishTime>10/12/2012 15:21:27</publishTime>
+    </File>
+    <File Include="App_LocalResources/MasterPage.master.it.resx">
+      <publishTime>12/11/2009 15:03:56</publishTime>
+    </File>
+    <File Include="App_LocalResources/MasterPage.master.resx">
+      <publishTime>07/28/2011 16:52:28</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/OrderInfo.aspx.de.resx">
+      <publishTime>11/27/2009 22:01:22</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/OrderInfo.aspx.es.resx">
+      <publishTime>01/07/2010 16:33:35</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/OrderInfo.aspx.fr.resx">
+      <publishTime>10/09/2011 11:11:55</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/OrderInfo.aspx.hu.resx">
+      <publishTime>11/25/2009 17:55:33</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/OrderInfo.aspx.it.resx">
+      <publishTime>12/11/2009 13:17:26</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/OrderInfo.aspx.resx">
+      <publishTime>11/25/2009 17:54:59</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/ShowInvoice.aspx.de.resx">
+      <publishTime>11/22/2009 19:17:12</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/ShowInvoice.aspx.es.resx">
+      <publishTime>01/07/2010 16:34:23</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/ShowInvoice.aspx.fr.resx">
+      <publishTime>09/25/2011 17:21:04</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/ShowInvoice.aspx.hu.resx">
+      <publishTime>11/17/2009 14:04:02</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/ShowInvoice.aspx.it.resx">
+      <publishTime>12/11/2009 13:17:53</publishTime>
+    </File>
+    <File Include="Billing/App_LocalResources/ShowInvoice.aspx.resx">
+      <publishTime>11/17/2009 14:04:49</publishTime>
+    </File>
+    <File Include="Billing/OrderInfo.aspx">
+      <publishTime>06/15/2012 13:18:13</publishTime>
+    </File>
+    <File Include="Billing/ShowInvoice.aspx">
+      <publishTime>11/17/2009 14:04:02</publishTime>
+    </File>
+    <File Include="bin/MagmaLightWeb.dll">
+      <publishTime>10/17/2012 18:16:48</publishTime>
+    </File>
+    <File Include="bin/MagmaLightWeb.pdb">
+      <publishTime>10/17/2012 18:16:48</publishTime>
+    </File>
+    <File Include="Common/App_LocalResources/ProductPanel.ascx.de.resx">
+      <publishTime>11/27/2009 22:13:05</publishTime>
+    </File>
+    <File Include="Common/App_LocalResources/ProductPanel.ascx.es.resx">
+      <publishTime>01/07/2010 16:35:53</publishTime>
+    </File>
+    <File Include="Common/App_LocalResources/ProductPanel.ascx.fr.resx">
+      <publishTime>10/09/2011 11:15:07</publishTime>
+    </File>
+    <File Include="Common/App_LocalResources/ProductPanel.ascx.hu.resx">
+      <publishTime>11/17/2009 11:18:40</publishTime>
+    </File>
+    <File Include="Common/App_LocalResources/ProductPanel.ascx.it.resx">
+      <publishTime>12/11/2009 13:18:21</publishTime>
+    </File>
+    <File Include="Common/App_LocalResources/ProductPanel.ascx.resx">
+      <publishTime>11/17/2009 12:15:02</publishTime>
+    </File>
+    <File Include="Common/ProductPanel.ascx">
+      <publishTime>11/17/2009 11:12:58</publishTime>
+    </File>
+    <File Include="Contact/App_LocalResources/Contact.aspx.de.resx">
+      <publishTime>11/27/2009 21:31:30</publishTime>
+    </File>
+    <File Include="Contact/App_LocalResources/Contact.aspx.es.resx">
+      <publishTime>01/07/2010 16:37:54</publishTime>
+    </File>
+    <File Include="Contact/App_LocalResources/Contact.aspx.fr.resx">
+      <publishTime>10/09/2011 10:26:13</publishTime>
+    </File>
+    <File Include="Contact/App_LocalResources/Contact.aspx.hu.resx">
+      <publishTime>11/17/2009 16:54:19</publishTime>
+    </File>
+    <File Include="Contact/App_LocalResources/Contact.aspx.it.resx">
+      <publishTime>12/11/2009 13:19:39</publishTime>
+    </File>
+    <File Include="Contact/App_LocalResources/Contact.aspx.resx">
+      <publishTime>11/17/2009 16:55:02</publishTime>
+    </File>
+    <File Include="Contact/Contact.aspx">
+      <publishTime>06/15/2012 13:15:34</publishTime>
+    </File>
+    <File Include="CV/CV_Andras_Fuchs_eng.htm">
+      <publishTime>08/16/2010 16:20:29</publishTime>
+    </File>
+    <File Include="CV/CV_Andras_Fuchs_eng_files/colorschememapping.xml">
+      <publishTime>12/01/2008 16:35:23</publishTime>
+    </File>
+    <File Include="CV/CV_Andras_Fuchs_eng_files/filelist.xml">
+      <publishTime>12/01/2008 16:35:23</publishTime>
+    </File>
+    <File Include="CV/CV_Andras_Fuchs_eng_files/header.htm">
+      <publishTime>12/01/2008 16:35:23</publishTime>
+    </File>
+    <File Include="CV/CV_Andras_Fuchs_eng_files/item0001.xml">
+      <publishTime>12/01/2008 16:35:23</publishTime>
+    </File>
+    <File Include="CV/CV_Andras_Fuchs_eng_files/props0002.xml">
+      <publishTime>12/01/2008 16:35:23</publishTime>
+    </File>
+    <File Include="CV/CV_format.aspx">
+      <publishTime>09/14/2009 00:23:15</publishTime>
+    </File>
+    <File Include="CV/Icons/ie7.png">
+      <publishTime>12/01/2008 17:01:23</publishTime>
+    </File>
+    <File Include="CV/Icons/pdf.png">
+      <publishTime>12/01/2008 17:01:33</publishTime>
+    </File>
+    <File Include="CV/Icons/word.png">
+      <publishTime>12/01/2008 17:01:28</publishTime>
+    </File>
+    <File Include="DAR/DAR.aspx">
+      <publishTime>07/25/2010 01:59:47</publishTime>
+    </File>
+    <File Include="Downloads/App_LocalResources/Downloads.aspx.de.resx">
+      <publishTime>11/22/2009 19:03:11</publishTime>
+    </File>
+    <File Include="Downloads/App_LocalResources/Downloads.aspx.es.resx">
+      <publishTime>01/07/2010 16:38:44</publishTime>
+    </File>
+    <File Include="Downloads/App_LocalResources/Downloads.aspx.fr.resx">
+      <publishTime>10/09/2011 10:30:30</publishTime>
+    </File>
+    <File Include="Downloads/App_LocalResources/Downloads.aspx.hu.resx">
+      <publishTime>11/17/2009 14:04:02</publishTime>
+    </File>
+    <File Include="Downloads/App_LocalResources/Downloads.aspx.it.resx">
+      <publishTime>12/11/2009 13:20:07</publishTime>
+    </File>
+    <File Include="Downloads/App_LocalResources/Downloads.aspx.resx">
+      <publishTime>11/17/2009 14:06:31</publishTime>
+    </File>
+    <File Include="Downloads/Downloads.aspx">
+      <publishTime>11/17/2009 11:37:11</publishTime>
+    </File>
+    <File Include="error.htm">
+      <publishTime>01/07/2010 17:26:58</publishTime>
+    </File>
+    <File Include="ExcludeMe.htm">
+      <publishTime>01/09/2010 20:10:03</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/28/2011 17:07:16</publishTime>
+    </File>
+    <File Include="Feedback/App_LocalResources/Feedback.aspx.de.resx">
+      <publishTime>11/27/2009 21:32:44</publishTime>
+    </File>
+    <File Include="Feedback/App_LocalResources/Feedback.aspx.es.resx">
+      <publishTime>01/07/2010 16:46:39</publishTime>
+    </File>
+    <File Include="Feedback/App_LocalResources/Feedback.aspx.fr.resx">
+      <publishTime>10/09/2011 10:36:47</publishTime>
+    </File>
+    <File Include="Feedback/App_LocalResources/Feedback.aspx.hu.resx">
+      <publishTime>10/03/2012 12:43:32</publishTime>
+    </File>
+    <File Include="Feedback/App_LocalResources/Feedback.aspx.it.resx">
+      <publishTime>12/11/2009 13:22:32</publishTime>
+    </File>
+    <File Include="Feedback/App_LocalResources/Feedback.aspx.resx">
+      <publishTime>10/03/2012 12:42:57</publishTime>
+    </File>
+    <File Include="Feedback/Feedback.aspx">
+      <publishTime>10/03/2012 12:36:12</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/03/2012 13:19:45</publishTime>
+    </File>
+    <File Include="images/bg.jpg">
+      <publishTime>10/07/2009 17:36:50</publishTime>
+    </File>
+    <File Include="images/country_bg.png">
+      <publishTime>11/11/2009 19:14:55</publishTime>
+    </File>
+    <File Include="images/data_bg.gif">
+      <publishTime>12/05/2009 11:58:50</publishTime>
+    </File>
+    <File Include="images/description_foot.png">
+      <publishTime>12/02/2009 18:06:44</publishTime>
+    </File>
+    <File Include="images/description_foot_blank.png">
+      <publishTime>01/07/2010 13:45:24</publishTime>
+    </File>
+    <File Include="images/help_bg.jpg">
+      <publishTime>08/15/2009 11:59:52</publishTime>
+    </File>
+    <File Include="images/icon01.png">
+      <publishTime>10/11/2009 15:58:50</publishTime>
+    </File>
+    <File Include="images/icon01_h.png">
+      <publishTime>10/11/2009 16:05:18</publishTime>
+    </File>
+    <File Include="images/icon02.png">
+      <publishTime>10/11/2009 16:02:38</publishTime>
+    </File>
+    <File Include="images/icon02_h.png">
+      <publishTime>10/11/2009 16:05:06</publishTime>
+    </File>
+    <File Include="images/icon03.png">
+      <publishTime>10/11/2009 16:02:58</publishTime>
+    </File>
+    <File Include="images/icon03_h.png">
+      <publishTime>10/11/2009 16:04:54</publishTime>
+    </File>
+    <File Include="images/icon04.png">
+      <publishTime>10/11/2009 16:03:12</publishTime>
+    </File>
+    <File Include="images/icon04_h.png">
+      <publishTime>10/11/2009 16:04:40</publishTime>
+    </File>
+    <File Include="images/icon05.png">
+      <publishTime>10/11/2009 16:03:28</publishTime>
+    </File>
+    <File Include="images/icon05_h.png">
+      <publishTime>10/11/2009 16:04:24</publishTime>
+    </File>
+    <File Include="images/icon06.png">
+      <publishTime>10/11/2009 16:03:42</publishTime>
+    </File>
+    <File Include="images/icon06_h.png">
+      <publishTime>10/11/2009 16:04:04</publishTime>
+    </File>
+    <File Include="images/icon_order.png">
+      <publishTime>12/02/2009 18:11:50</publishTime>
+    </File>
+    <File Include="images/icon_order_h.png">
+      <publishTime>12/02/2009 18:11:33</publishTime>
+    </File>
+    <File Include="images/lang_bg.png">
+      <publishTime>11/11/2009 19:15:49</publishTime>
+    </File>
+    <File Include="images/Logos_MagyarPosta.png">
+      <publishTime>09/14/2009 11:37:02</publishTime>
+    </File>
+    <File Include="images/Logos_MasterCard.png">
+      <publishTime>09/14/2009 11:37:13</publishTime>
+    </File>
+    <File Include="images/Logos_PayPal.png">
+      <publishTime>09/14/2009 11:36:50</publishTime>
+    </File>
+    <File Include="images/Logos_VISA.png">
+      <publishTime>07/15/2009 22:05:05</publishTime>
+    </File>
+    <File Include="images/Logo_MagmaLight.png">
+      <publishTime>11/24/2009 21:39:19</publishTime>
+    </File>
+    <File Include="images/Logo_Naplampa.png">
+      <publishTime>11/24/2009 21:39:54</publishTime>
+    </File>
+    <File Include="images/order_button.png">
+      <publishTime>01/07/2010 15:58:38</publishTime>
+    </File>
+    <File Include="images/Pic_Default.jpg">
+      <publishTime>10/28/2009 14:48:20</publishTime>
+    </File>
+    <File Include="images/Pic_Landing.png">
+      <publishTime>11/11/2009 19:47:25</publishTime>
+    </File>
+    <File Include="images/pic_Landing_deu.png">
+      <publishTime>11/18/2009 12:55:11</publishTime>
+    </File>
+    <File Include="images/pic_Landing_eng.png">
+      <publishTime>11/18/2009 13:04:45</publishTime>
+    </File>
+    <File Include="images/pic_Landing_fra.png">
+      <publishTime>12/16/2009 12:48:14</publishTime>
+    </File>
+    <File Include="images/pic_Landing_hun.png">
+      <publishTime>11/18/2009 12:50:24</publishTime>
+    </File>
+    <File Include="images/product_es002.jpg">
+      <publishTime>10/27/2009 21:32:34</publishTime>
+    </File>
+    <File Include="images/product_ES002_120x40.png">
+      <publishTime>08/27/2009 12:03:58</publishTime>
+    </File>
+    <File Include="images/product_es002_mini.png">
+      <publishTime>11/11/2009 20:40:44</publishTime>
+    </File>
+    <File Include="images/product_es004.jpg">
+      <publishTime>10/16/2009 16:35:16</publishTime>
+    </File>
+    <File Include="images/product_ES004_120x40.png">
+      <publishTime>08/27/2009 12:04:07</publishTime>
+    </File>
+    <File Include="images/product_es004_mini.png">
+      <publishTime>11/11/2009 20:40:25</publishTime>
+    </File>
+    <File Include="images/product_es015.jpg">
+      <publishTime>10/27/2009 21:32:52</publishTime>
+    </File>
+    <File Include="images/product_ES015_120x40.png">
+      <publishTime>08/27/2009 12:03:48</publishTime>
+    </File>
+    <File Include="images/product_es015_mini.png">
+      <publishTime>11/11/2009 20:41:00</publishTime>
+    </File>
+    <File Include="images/small_box_bg_center.png">
+      <publishTime>10/11/2009 12:47:08</publishTime>
+    </File>
+    <File Include="images/small_box_bg_foot.png">
+      <publishTime>10/11/2009 12:47:08</publishTime>
+    </File>
+    <File Include="images/small_box_bg_top.png">
+      <publishTime>10/11/2009 12:47:08</publishTime>
+    </File>
+    <File Include="images/Web.config">
+      <publishTime>11/24/2009 13:28:21</publishTime>
+    </File>
+    <File Include="images/work_bg_center.png">
+      <publishTime>10/11/2009 12:52:22</publishTime>
+    </File>
+    <File Include="images/work_bg_foot.png">
+      <publishTime>10/11/2009 12:52:22</publishTime>
+    </File>
+    <File Include="images/work_bg_top.png">
+      <publishTime>10/11/2009 12:52:20</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>08/19/2012 12:12:55</publishTime>
+    </File>
+    <File Include="Links/App_LocalResources/Links.aspx.de.resx">
+      <publishTime>11/22/2009 19:03:39</publishTime>
+    </File>
+    <File Include="Links/App_LocalResources/Links.aspx.es.resx">
+      <publishTime>01/07/2010 16:47:07</publishTime>
+    </File>
+    <File Include="Links/App_LocalResources/Links.aspx.fr.resx">
+      <publishTime>10/09/2011 11:04:24</publishTime>
+    </File>
+    <File Include="Links/App_LocalResources/Links.aspx.hu.resx">
+      <publishTime>11/17/2009 14:04:02</publishTime>
+    </File>
+    <File Include="Links/App_LocalResources/Links.aspx.it.resx">
+      <publishTime>12/11/2009 13:23:09</publishTime>
+    </File>
+    <File Include="Links/App_LocalResources/Links.aspx.resx">
+      <publishTime>11/17/2009 14:01:40</publishTime>
+    </File>
+    <File Include="Links/Links.aspx">
+      <publishTime>11/20/2009 14:31:30</publishTime>
+    </File>
+    <File Include="LogoOnly_114x114.png">
+      <publishTime>07/28/2011 17:13:09</publishTime>
+    </File>
+    <File Include="LogoOnly_32x32.png">
+      <publishTime>07/28/2011 17:03:17</publishTime>
+    </File>
+    <File Include="MasterPage.Master">
+      <publishTime>10/12/2012 15:23:24</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/OrderCompleted.aspx.de.resx">
+      <publishTime>11/22/2009 19:14:17</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/OrderCompleted.aspx.es.resx">
+      <publishTime>01/07/2010 16:48:36</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/OrderCompleted.aspx.fr.resx">
+      <publishTime>10/09/2011 11:10:46</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/OrderCompleted.aspx.hu.resx">
+      <publishTime>02/06/2011 13:08:38</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/OrderCompleted.aspx.it.resx">
+      <publishTime>12/11/2009 13:24:33</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/OrderCompleted.aspx.resx">
+      <publishTime>02/06/2011 13:06:27</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step1.aspx.de.resx">
+      <publishTime>11/27/2009 22:02:16</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step1.aspx.es.resx">
+      <publishTime>01/07/2010 16:47:41</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step1.aspx.fr.resx">
+      <publishTime>10/09/2011 11:07:14</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step1.aspx.hu.resx">
+      <publishTime>07/20/2010 11:32:13</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step1.aspx.it.resx">
+      <publishTime>12/11/2009 16:09:22</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step1.aspx.resx">
+      <publishTime>07/20/2010 11:32:13</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step2.aspx.de.resx">
+      <publishTime>11/27/2009 21:34:06</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step2.aspx.es.resx">
+      <publishTime>01/07/2010 16:48:10</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step2.aspx.fr.resx">
+      <publishTime>10/09/2011 11:09:42</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step2.aspx.hu.resx">
+      <publishTime>11/17/2009 14:52:20</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step2.aspx.it.resx">
+      <publishTime>12/11/2009 13:24:04</publishTime>
+    </File>
+    <File Include="Order/App_LocalResources/Order_step2.aspx.resx">
+      <publishTime>11/17/2009 13:56:56</publishTime>
+    </File>
+    <File Include="Order/Order.aspx">
+      <publishTime>12/11/2009 11:59:48</publishTime>
+    </File>
+    <File Include="Order/OrderCompleted.aspx">
+      <publishTime>06/16/2011 15:56:12</publishTime>
+    </File>
+    <File Include="Order/OrderReview.aspx">
+      <publishTime>11/16/2009 10:42:07</publishTime>
+    </File>
+    <File Include="Order/Order_step1.aspx">
+      <publishTime>10/05/2011 13:20:11</publishTime>
+    </File>
+    <File Include="Order/Order_step2.aspx">
+      <publishTime>10/03/2012 12:23:00</publishTime>
+    </File>
+    <File Include="Partners/App_LocalResources/Partners.aspx.de.resx">
+      <publishTime>11/27/2009 21:34:51</publishTime>
+    </File>
+    <File Include="Partners/App_LocalResources/Partners.aspx.es.resx">
+      <publishTime>01/07/2010 16:49:25</publishTime>
+    </File>
+    <File Include="Partners/App_LocalResources/Partners.aspx.fr.resx">
+      <publishTime>10/09/2011 11:13:40</publishTime>
+    </File>
+    <File Include="Partners/App_LocalResources/Partners.aspx.hu.resx">
+      <publishTime>11/17/2009 15:01:14</publishTime>
+    </File>
+    <File Include="Partners/App_LocalResources/Partners.aspx.it.resx">
+      <publishTime>12/11/2009 13:25:03</publishTime>
+    </File>
+    <File Include="Partners/App_LocalResources/Partners.aspx.resx">
+      <publishTime>11/17/2009 15:05:13</publishTime>
+    </File>
+    <File Include="Partners/Partners.aspx">
+      <publishTime>11/16/2009 12:25:46</publishTime>
+    </File>
+    <File Include="Products/App_LocalResources/Products.aspx.de.resx">
+      <publishTime>12/16/2009 12:19:30</publishTime>
+    </File>
+    <File Include="Products/App_LocalResources/Products.aspx.es.resx">
+      <publishTime>01/07/2010 17:11:32</publishTime>
+    </File>
+    <File Include="Products/App_LocalResources/Products.aspx.fr.resx">
+      <publishTime>10/09/2011 12:08:44</publishTime>
+    </File>
+    <File Include="Products/App_LocalResources/Products.aspx.hu.resx">
+      <publishTime>06/30/2011 12:49:41</publishTime>
+    </File>
+    <File Include="Products/App_LocalResources/Products.aspx.it.resx">
+      <publishTime>12/11/2009 18:11:58</publishTime>
+    </File>
+    <File Include="Products/App_LocalResources/Products.aspx.resx">
+      <publishTime>06/30/2011 12:53:47</publishTime>
+    </File>
+    <File Include="Products/Products.aspx">
+      <publishTime>01/18/2010 12:14:13</publishTime>
+    </File>
+    <File Include="Recommend/App_LocalResources/Recommend.aspx.de.resx">
+      <publishTime>11/22/2009 18:53:44</publishTime>
+    </File>
+    <File Include="Recommend/App_LocalResources/Recommend.aspx.es.resx">
+      <publishTime>01/07/2010 16:55:20</publishTime>
+    </File>
+    <File Include="Recommend/App_LocalResources/Recommend.aspx.fr.resx">
+      <publishTime>10/09/2011 12:10:39</publishTime>
+    </File>
+    <File Include="Recommend/App_LocalResources/Recommend.aspx.hu.resx">
+      <publishTime>11/17/2009 14:04:02</publishTime>
+    </File>
+    <File Include="Recommend/App_LocalResources/Recommend.aspx.it.resx">
+      <publishTime>12/11/2009 13:31:01</publishTime>
+    </File>
+    <File Include="Recommend/App_LocalResources/Recommend.aspx.resx">
+      <publishTime>11/17/2009 14:08:05</publishTime>
+    </File>
+    <File Include="Recommend/Recommend.aspx">
+      <publishTime>11/17/2009 11:36:53</publishTime>
+    </File>
+    <File Include="Research/Research.aspx">
+      <publishTime>12/11/2009 11:59:57</publishTime>
+    </File>
+    <File Include="styles/base.css">
+      <publishTime>10/12/2012 15:24:33</publishTime>
+    </File>
+    <File Include="styles/form.css">
+      <publishTime>09/23/2011 15:59:36</publishTime>
+    </File>
+    <File Include="styles/Web.config">
+      <publishTime>11/24/2009 13:28:19</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/03/2012 12:40:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

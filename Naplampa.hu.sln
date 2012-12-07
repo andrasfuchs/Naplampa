@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaplampaServiceHost", "NaplampaServiceHost\NaplampaServiceHost.csproj", "{E8D28BDC-E11E-4B86-B819-F717BE26B85C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaplampaAdmin", "NaplampaAdmin\NaplampaAdmin.csproj", "{98FDDF58-76E3-4EFD-A54D-F57F06849C0B}"

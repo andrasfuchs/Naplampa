@@ -392,7 +392,7 @@ Tisztelt {1}!&lt;br /&gt;
 &lt;br /&gt;
 Az Ön csomagja feladásra került. Várhatóan 1-2 munkanapon belül megérkezik.&lt;br /&gt;
 &lt;br /&gt;
-A rendelés részleteit, státuszát és a SZÁMLÁT megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;. (Nyomtatás a Ctrl+P billentyűkombinációval)&lt;br /&gt;
+A rendelés részleteit megtekintheti &lt;a href="http://www.naplampa.hu/Billing/OrderInfo.aspx?OrderID={0}&amp;PassCode={3}"&gt;ITT&lt;/a&gt;. (Nyomtatás a Ctrl+P billentyűkombinációval)&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;
 Köszönjük a vásárlást!&lt;br /&gt;

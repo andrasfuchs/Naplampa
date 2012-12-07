@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
   <!-- EF Runtime content -->
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="NaplampaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+    <Schema Namespace="NaplampaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="NaplampaModelStoreContainer">
-          <EntitySet Name="Address" EntityType="NaplampaModel.Store.Address" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Country" EntityType="NaplampaModel.Store.Country" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Currency" EntityType="NaplampaModel.Store.Currency" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Discount" EntityType="NaplampaModel.Store.Discount" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Invoice" EntityType="NaplampaModel.Store.Invoice" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="InvoiceLine" EntityType="NaplampaModel.Store.InvoiceLine" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Log" EntityType="NaplampaModel.Store.Log" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Order" EntityType="NaplampaModel.Store.Order" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="OrderProductXRef" EntityType="NaplampaModel.Store.OrderProductXRef" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Partner" EntityType="NaplampaModel.Store.Partner" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="PartnerRight" EntityType="NaplampaModel.Store.PartnerRight" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Person" EntityType="NaplampaModel.Store.Person" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Product" EntityType="NaplampaModel.Store.Product" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="StockItem" EntityType="NaplampaModel.Store.StockItem" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Survey" EntityType="NaplampaModel.Store.Survey" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="SurveyResult" EntityType="NaplampaModel.Store.SurveyResult" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Transaction" EntityType="NaplampaModel.Store.Transaction" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Address" EntityType="NaplampaModel.Store.Address" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Country" EntityType="NaplampaModel.Store.Country" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Currency" EntityType="NaplampaModel.Store.Currency" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Discount" EntityType="NaplampaModel.Store.Discount" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Invoice" EntityType="NaplampaModel.Store.Invoice" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="InvoiceLine" EntityType="NaplampaModel.Store.InvoiceLine" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Log" EntityType="NaplampaModel.Store.Log" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Order" EntityType="NaplampaModel.Store.Order" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderProductXRef" EntityType="NaplampaModel.Store.OrderProductXRef" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Partner" EntityType="NaplampaModel.Store.Partner" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="PartnerRight" EntityType="NaplampaModel.Store.PartnerRight" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Person" EntityType="NaplampaModel.Store.Person" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Product" EntityType="NaplampaModel.Store.Product" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="StockItem" EntityType="NaplampaModel.Store.StockItem" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Survey" EntityType="NaplampaModel.Store.Survey" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SurveyResult" EntityType="NaplampaModel.Store.SurveyResult" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Transaction" EntityType="NaplampaModel.Store.Transaction" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
           <AssociationSet Name="FK_Address_Country" Association="NaplampaModel.Store.FK_Address_Country">
             <End Role="Country" EntitySet="Country" />
             <End Role="Address" EntitySet="Address" />
@@ -958,7 +958,7 @@
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="NaplampaModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <Schema Namespace="NaplampaModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="NaplampaEntities">
           <EntitySet Name="Address" EntityType="NaplampaModel.Address" />
           <EntitySet Name="Country" EntityType="NaplampaModel.Country" />
@@ -1615,7 +1615,7 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="NaplampaModelStoreContainer" CdmEntityContainer="NaplampaEntities">
           <EntitySetMapping Name="Address">
             <EntityTypeMapping TypeName="IsTypeOf(NaplampaModel.Address)">
@@ -2199,14 +2199,14 @@
     </edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
-  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:Designer>
     <edmx:Connection>
-      <DesignerInfoPropertySet>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
         <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
       </DesignerInfoPropertySet>
     </edmx:Connection>
     <edmx:Options>
-      <DesignerInfoPropertySet>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="True" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
@@ -2214,7 +2214,7 @@
     </edmx:Options>
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram Name="NaplampaModel" ZoomLevel="85">
+      <Diagram Name="NaplampaModel" ZoomLevel="85" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
         <EntityTypeShape EntityType="NaplampaModel.Address" Width="1.5" PointX="5.25" PointY="12.75" Height="3.5186979166666639" IsExpanded="true" />
         <EntityTypeShape EntityType="NaplampaModel.Country" Width="1.5" PointX="3" PointY="13.5" Height="2.1725878906249996" IsExpanded="true" />
         <EntityTypeShape EntityType="NaplampaModel.Currency" Width="1.5" PointX="0.75" PointY="15" Height="3.5186979166666674" IsExpanded="true" />
@@ -2552,18 +2552,18 @@
           <ConnectorPoint PointX="14" PointY="10.96875" />
           <ConnectorPoint PointX="18" PointY="10.96875" />
           </AssociationConnector>
-        <AssociationConnector Association="NaplampaModel.FK_Partner_Partner" >
+        <AssociationConnector Association="NaplampaModel.FK_Partner_Partner">
           <ConnectorPoint PointX="10.542692307692308" PointY="17.191712239583335" />
           <ConnectorPoint PointX="10.542692307692308" PointY="17.441712239583335" />
           <ConnectorPoint PointX="10.875" PointY="17.441712239583335" />
           <ConnectorPoint PointX="10.875" PointY="17.191712239583335" /></AssociationConnector>
-        <AssociationConnector Association="NaplampaModel.FK_Discount_Country" >
+        <AssociationConnector Association="NaplampaModel.FK_Discount_Country">
           <ConnectorPoint PointX="4.1249994999999995" PointY="16.826396484375003" />
           <ConnectorPoint PointX="4.1249994999999995" PointY="17" />
           <ConnectorPoint PointX="4.5625" PointY="17" />
           <ConnectorPoint PointX="4.5625" PointY="17.718620546874998" />
           <ConnectorPoint PointX="5.25" PointY="17.718620546874998" /></AssociationConnector>
-        <AssociationConnector Association="NaplampaModel.FK_Country_Person" >
+        <AssociationConnector Association="NaplampaModel.FK_Country_Person">
           <ConnectorPoint PointX="12.75" PointY="23.187621254833758" />
           <ConnectorPoint PointX="12.583333333333334" PointY="23.187621254833758" />
           <ConnectorPoint PointX="12.416666666666666" PointY="23.187621254833758" />
@@ -2572,12 +2572,12 @@
           <ConnectorPoint PointX="3.468750375" PointY="16.920146484375003" />
           <ConnectorPoint PointX="3.468750375" PointY="16.826396484375003" /></AssociationConnector>
         <EntityTypeShape EntityType="NaplampaModel.PartnerRight" Width="1.5" PointX="15" PointY="21.125" Height="1.9802864583333317" />
-        <AssociationConnector Association="NaplampaModel.FK_PartnerRight_Order" >
+        <AssociationConnector Association="NaplampaModel.FK_PartnerRight_Order">
           <ConnectorPoint PointX="14.25" PointY="16.247472330729167" />
           <ConnectorPoint PointX="14.625" PointY="16.247472330729167" />
           <ConnectorPoint PointX="14.625" PointY="22.115143229166666" />
           <ConnectorPoint PointX="15" PointY="22.115143229166666" /></AssociationConnector>
-        <AssociationConnector Association="NaplampaModel.FK_PartnerRight_Partner" >
+        <AssociationConnector Association="NaplampaModel.FK_PartnerRight_Partner">
           <ConnectorPoint PointX="10.7463363984375" PointY="17.191712239583335" />
           <ConnectorPoint PointX="10.7463363984375" PointY="17.3125" />
           <ConnectorPoint PointX="10.791666666666666" PointY="17.3125" />

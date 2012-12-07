@@ -68,22 +68,22 @@
         if (acceptEncoding == null || acceptEncoding.Length == 0)
             return;
 
-        acceptEncoding = acceptEncoding.ToLower();
+        //acceptEncoding = acceptEncoding.ToLower();
 
-        if (acceptEncoding.Contains("deflate") || acceptEncoding == "*")
-        {
-            // defalte
-            app.Response.Filter = new System.IO.Compression.DeflateStream(prevUncompressedStream,
-                System.IO.Compression.CompressionMode.Compress);
-            app.Response.AppendHeader("Content-Encoding", "deflate");
-        }
-        else if (acceptEncoding.Contains("gzip"))
-        {
-            // gzip
-            app.Response.Filter = new System.IO.Compression.GZipStream(prevUncompressedStream,
-                System.IO.Compression.CompressionMode.Compress);
-            app.Response.AppendHeader("Content-Encoding", "gzip");
-        }
+        //if (acceptEncoding.Contains("deflate") || acceptEncoding == "*")
+        //{
+        //    // defalte
+        //    app.Response.Filter = new System.IO.Compression.DeflateStream(prevUncompressedStream,
+        //        System.IO.Compression.CompressionMode.Compress);
+        //    app.Response.AppendHeader("Content-Encoding", "deflate");
+        //}
+        //else if (acceptEncoding.Contains("gzip"))
+        //{
+        //    // gzip
+        //    app.Response.Filter = new System.IO.Compression.GZipStream(prevUncompressedStream,
+        //        System.IO.Compression.CompressionMode.Compress);
+        //    app.Response.AppendHeader("Content-Encoding", "gzip");
+        //}
     }    
            
 </script>
