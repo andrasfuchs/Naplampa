@@ -12,7 +12,7 @@
     <Window.Resources>
         <util:OrderValueConverter x:Key="orderValueConverter"/>
 
-        <Style x:Key="MyRowStyle" TargetType="{x:Type my:DataGridRow}">
+        <Style x:Key="MyRowStyle" TargetType="{x:Type DataGridRow}">
             <Setter Property="Background">
                 <Setter.Value>
                     <MultiBinding Converter="{StaticResource orderValueConverter}" >
@@ -29,10 +29,10 @@
 
         <!-- Right Aligned DataGridColumnHeader Style -->
         <Style x:Key="RightAlignedCellStyle"
-               TargetType="{x:Type my:DataGridCell}">
+               TargetType="{x:Type DataGridCell}">
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type my:DataGridCell}">
+                    <ControlTemplate TargetType="{x:Type DataGridCell}">
                         <Grid>
                             <ContentPresenter HorizontalAlignment="Right" />
                         </Grid>
@@ -81,34 +81,34 @@
             <Button Height="23" Name="searchButton" Width="150" Click="SearchButton_Click" Background="#FFF46700" Foreground="White">Search</Button>
         </StackPanel>
 
-        <my:DataGrid Grid.Row="2" AutoGenerateColumns="False" Margin="12" Name="orderDataGrid" CanUserAddRows="False" 
+        <DataGrid Grid.Row="2" AutoGenerateColumns="False" Margin="12" Name="orderDataGrid" CanUserAddRows="False" 
                      CanUserDeleteRows="False" SelectionMode="Extended" SelectionUnit="FullRow" VerticalAlignment="Stretch" 
                      SelectionChanged="orderDataGrid_SelectionChanged" IsReadOnly="True" RowStyle="{StaticResource MyRowStyle}" 
                      HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible">
-            <my:DataGrid.Background>
+            <DataGrid.Background>
                 <ImageBrush ImageSource="/NaplampaAdmin;component/Images/logo_Naplampa.png" Stretch="None" TileMode="None" />
-            </my:DataGrid.Background>
-            <my:DataGrid.Columns>
-                <my:DataGridTextColumn Header="OrderID" Binding="{Binding Path=OrderId}"/>
-                <my:DataGridTextColumn Header="Created"  Binding="{Binding Path=Created}" SortDirection="Ascending"/>
-                <my:DataGridTextColumn Header="First name"  Binding="{Binding Path=Partner.ContactPerson.FirstName}"/>
-                <my:DataGridTextColumn Header="Last name"  Binding="{Binding Path=Partner.ContactPerson.LastName}"/>
-                <my:DataGridTextColumn Header="E-mail"  Binding="{Binding Path=Partner.ContactPerson.Email}"/>
-                <my:DataGridTextColumn Header="OrderStatus"  Binding="{Binding Path=OrderStatus}"/>
-                <my:DataGridComboBoxColumn Header="Status" x:Name="statusColumn" SelectedValueBinding="{Binding Path=OrderStatus}" SelectedValuePath="Key" DisplayMemberPath="Value"/>
-                <my:DataGridComboBoxColumn Header="Payment method" x:Name="paymentMethodColumn" SelectedValueBinding="{Binding Path=PaymentMethod}" SelectedValuePath="Key" DisplayMemberPath="Value"/>
-                <my:DataGridTextColumn Header="OrderTotal"  Binding="{Binding Path=OrderTotal}" CellStyle="{StaticResource RightAlignedCellStyle}" />
-                <my:DataGridTextColumn Header="Currency"  Binding="{Binding Path=Currency.ISO}"/>
-                <my:DataGridTextColumn Header="Weight (g)"  Binding="{Binding Path=EstimatedPackageWeight}" CellStyle="{StaticResource RightAlignedCellStyle}" />
-                <my:DataGridComboBoxColumn Header="Country" x:Name="countryColumn" SelectedValueBinding="{Binding Path=DeliveryAddress.Country.Name}" SelectedValuePath="Key" DisplayMemberPath="Value"/>
-                <my:DataGridTextColumn Header="Town"  Binding="{Binding Path=DeliveryAddress.Town}"/>
-                <my:DataGridTextColumn Header="Postal code"  Binding="{Binding Path=DeliveryAddress.PostalCode}"/>
-                <my:DataGridTextColumn Header="Address line"  Binding="{Binding Path=DeliveryAddress.AddressLine}"/>
-                <my:DataGridCheckBoxColumn Header="Newsletter" Binding="{Binding Path=Partner.ContactPerson.Newsletter}"/>
-                <my:DataGridTextColumn Header="Comment by seller" Binding="{Binding Path=CommentBySeller}"/>
-                <my:DataGridTextColumn Header="Comment by buyer" Binding="{Binding Path=CommentByBuyer}"/>
-            </my:DataGrid.Columns>
-        </my:DataGrid>
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="OrderID" Binding="{Binding Path=OrderId}"/>
+                <DataGridTextColumn Header="Created"  Binding="{Binding Path=Created}" SortDirection="Ascending"/>
+                <DataGridTextColumn Header="First name"  Binding="{Binding Path=Partner.ContactPerson.FirstName}"/>
+                <DataGridTextColumn Header="Last name"  Binding="{Binding Path=Partner.ContactPerson.LastName}"/>
+                <DataGridTextColumn Header="E-mail"  Binding="{Binding Path=Partner.ContactPerson.Email}"/>
+                <DataGridTextColumn Header="OrderStatus"  Binding="{Binding Path=OrderStatus}"/>
+                <DataGridComboBoxColumn Header="Status" x:Name="statusColumn" SelectedValueBinding="{Binding Path=OrderStatus}" SelectedValuePath="Key" DisplayMemberPath="Value"/>
+                <DataGridComboBoxColumn Header="Payment method" x:Name="paymentMethodColumn" SelectedValueBinding="{Binding Path=PaymentMethod}" SelectedValuePath="Key" DisplayMemberPath="Value"/>
+                <DataGridTextColumn Header="OrderTotal"  Binding="{Binding Path=OrderTotal}" CellStyle="{StaticResource RightAlignedCellStyle}" />
+                <DataGridTextColumn Header="Currency"  Binding="{Binding Path=Currency.ISO}"/>
+                <DataGridTextColumn Header="Weight (g)"  Binding="{Binding Path=EstimatedPackageWeight}" CellStyle="{StaticResource RightAlignedCellStyle}" />
+                <DataGridComboBoxColumn Header="Country" x:Name="countryColumn" SelectedValueBinding="{Binding Path=DeliveryAddress.Country.Name}" SelectedValuePath="Key" DisplayMemberPath="Value"/>
+                <DataGridTextColumn Header="Town"  Binding="{Binding Path=DeliveryAddress.Town}"/>
+                <DataGridTextColumn Header="Postal code"  Binding="{Binding Path=DeliveryAddress.PostalCode}"/>
+                <DataGridTextColumn Header="Address line"  Binding="{Binding Path=DeliveryAddress.AddressLine}"/>
+                <DataGridCheckBoxColumn Header="Newsletter" Binding="{Binding Path=Partner.ContactPerson.Newsletter}"/>
+                <DataGridTextColumn Header="Comment by seller" Binding="{Binding Path=CommentBySeller}"/>
+                <DataGridTextColumn Header="Comment by buyer" Binding="{Binding Path=CommentByBuyer}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
         <StackPanel Grid.Row="3" CanHorizontallyScroll="True" Orientation="Horizontal" VerticalAlignment="Bottom" Height="Auto" Margin="12" Name="pnlBottomPart">
             <StackPanel Width="170">
@@ -130,7 +130,7 @@
                     <Label Grid.Row="0" Grid.Column="0" Name="trackingNumberLabel" HorizontalContentAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="14" Content="Nyomkövetés"></Label>
                     <TextBox Grid.Row="0" Grid.Column="1" Height="23" Name="trackingNumberTextBox" />
                     <Label Grid.Row="1" Grid.Column="0" Name="sentOnLabel" HorizontalContentAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="14" Content="Elküldve"></Label>
-                    <my:DatePicker Grid.Row="1" Grid.Column="1" Height="25" Name="sentDatePicker" />
+                    <DatePicker Grid.Row="1" Grid.Column="1" Height="25" Name="sentDatePicker" />
                     <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Center" VerticalAlignment="Center" Name="sentButton" Width="150" Click="SentButton_Click" Background="#FFF46700" Foreground="White">Package sent</Button>
                 </Grid>
             </Border>

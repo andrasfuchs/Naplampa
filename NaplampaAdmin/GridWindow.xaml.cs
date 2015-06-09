@@ -15,7 +15,6 @@ using NaplampaAdmin.NaplampaService;
 using NaplampaAdmin.Util;
 using NaplampaAdmin.GlobalResources;
 using System.Threading;
-using Microsoft.Windows.Controls;
 using System.Collections.ObjectModel;
 using System.Windows.Threading;
 
