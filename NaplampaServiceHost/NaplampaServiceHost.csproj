@@ -83,6 +83,7 @@
     <Content Include="NaplampaService.svc" />
     <None Include="Properties\PublishProfiles\Naplampa UK.pubxml" />
     <None Include="Properties\PublishProfiles\Naplampa WCF - HFL.pubxml" />
+    <None Include="Properties\PublishProfiles\wcf.naplampa.hu - Web Deploy.pubxml" />
     <None Include="Service References\PayPalService\configuration91.svcinfo" />
     <None Include="Service References\PayPalService\configuration.svcinfo" />
     <None Include="Service References\PayPalService\NaplampaWcfHost.PayPalService.AddressVerifyResponseType.datasource">

@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
-    <TimeStampOfAssociatedLegacyPublishXmlFile>2012-01-03T18:17:50.7201893+01:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-03-20T15:02:35.3780066+01:00</TimeStampOfAssociatedLegacyPublishXmlFile>
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPcMxIXnJE0SkZw3i/NOcvQAAAAACAAAAAAADZgAAqAAAABAAAAC71BSXwWJ+kdP5xSn0SOqhAAAAAASAAACgAAAAEAAAALDJpdBahkYvCPsNnx4EUI4YAAAA4BCfQgEE6hnFEgNoj/Webw4Zuc8ZZSv7FAAAAGN7JGkspsR8HL2lO6EyfBKREyUU</EncryptedPassword>
   </PropertyGroup>
   <ItemGroup>

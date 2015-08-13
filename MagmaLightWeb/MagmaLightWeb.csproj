@@ -101,6 +101,7 @@
     <Content Include="Order\OrderReview.aspx" />
     <Content Include="Order\Order_step1.aspx" />
     <None Include="Properties\PublishProfiles\Naplampa Web - HFL.pubxml" />
+    <None Include="Properties\PublishProfiles\naplampa.hu - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\PublishToUK_FTP.pubxml" />
     <None Include="Service References\NaplampaService\MagmaLightWeb.NaplampaService.Country.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
