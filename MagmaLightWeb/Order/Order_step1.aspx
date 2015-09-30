@@ -30,11 +30,11 @@
                 <div class="form_product_small_cell">
                 
                             <asp:Button ID="btnProd1Minus" runat="server" Text="-" OnClick="btnProd1Minus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton" Enabled="false"/>
                             <asp:TextBox ID="txtProduct1" runat="server" MaxLength="3" Width="31px" Wrap="False"
-                                AutoPostBack="true">0</asp:TextBox>
+                                AutoPostBack="true"  Enabled="false">0</asp:TextBox>
                             <asp:Button ID="btnProd1Plus" runat="server" Text="+" OnClick="btnProd1Plus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton" Enabled="false"/>
 
                 </div>
                 <div class="form_separator_minor">&nbsp;</div>
@@ -62,7 +62,7 @@
                             <asp:TextBox ID="txtProduct4" runat="server" MaxLength="3" Width="31px" Wrap="False"
                                 AutoPostBack="true">0</asp:TextBox>
                             <asp:Button ID="btnProd4Plus" runat="server" Text="+" OnClick="btnProd4Plus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton"/>
 
                 </div>
                 <div class="form_separator_minor">&nbsp;</div>
@@ -78,20 +78,20 @@
                 <div class="form_product_small_cell">
 
                             <asp:Button ID="btnProd3Minus" runat="server" Text="-" OnClick="btnProd3Minus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton" Enabled="false"/>
                             <asp:TextBox ID="txtProduct3" runat="server" MaxLength="3" Width="31px" Wrap="False"
-                                AutoPostBack="true">0</asp:TextBox>
+                                AutoPostBack="true" Enabled="false">0</asp:TextBox>
                             <asp:Button ID="btnProd3Plus" runat="server" Text="+" OnClick="btnProd3Plus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton" Enabled="false"/>
 
                             <br />
 
                             <asp:Button ID="btnProd5Minus" runat="server" Text="-" OnClick="btnProd5Minus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton" Enabled="false" />
                             <asp:TextBox ID="txtProduct5" runat="server" MaxLength="3" Width="31px" Wrap="False"
-                                AutoPostBack="true">0</asp:TextBox>
+                                AutoPostBack="true" Enabled="false">0</asp:TextBox>
                             <asp:Button ID="btnProd5Plus" runat="server" Text="+" OnClick="btnProd5Plus_Click"
-                                CausesValidation="false" CssClass="pmbutton" />
+                                CausesValidation="false" CssClass="pmbutton" Enabled="false"/>
                 </div>
             </asp:Panel>
             <br />

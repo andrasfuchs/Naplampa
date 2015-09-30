@@ -77,11 +77,11 @@ namespace MagmaLightWeb.Order
             Product[] products = cm.CheckAndLoadProducts();
 
             // fill the product descriptions
-            int prodES004Count = SetProduct(1, products.First<Product>(p => p.Code == "ES004"), Session["LastViewedProductCode"] as string == "ES004" ? 1 : -1);
+            int prodES004Count = SetProduct(1, products.First<Product>(p => p.Code == "ES004"), Session["LastViewedProductCode"] as string == "ES004" ? -1 : -1);
             int prodES002Count = SetProduct(2, products.First<Product>(p => p.Code == "ES002"), Session["LastViewedProductCode"] as string == "ES002" ? 1 : -1);
-            int prodES015Count = SetProduct(3, products.First<Product>(p => p.Code == "ES015"), Session["LastViewedProductCode"] as string == "ES015" ? 1 : -1);
+            int prodES015Count = SetProduct(3, products.First<Product>(p => p.Code == "ES015"), Session["LastViewedProductCode"] as string == "ES015" ? -1 : -1);
             int prodES002WCount = SetProduct(4, products.First<Product>(p => p.Code == "ES002W"), Session["LastViewedProductCode"] as string == "ES002W" ? 1 : -1);
-            int prodES015WCount = SetProduct(5, products.First<Product>(p => p.Code == "ES015W"), Session["LastViewedProductCode"] as string == "ES015W" ? 1 : -1);
+            int prodES015WCount = SetProduct(5, products.First<Product>(p => p.Code == "ES015W"), Session["LastViewedProductCode"] as string == "ES015W" ? -1 : -1);
             Session["LastViewedProductCode"] = null;
 
             // calculate price
